@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on B&amp;B Klein Geluk Berghem</title>
-    <link>https://jcraane.github.io/gastenverblijf/categories/</link>
+    <link>https://jcraane.github/categories/</link>
     <description>Recent content in Categories on B&amp;B Klein Geluk Berghem</description>
     <generator>Hugo</generator>
     <language>nl-nl</language>
-    <atom:link href="https://jcraane.github.io/gastenverblijf/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jcraane.github/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
