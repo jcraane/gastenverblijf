@@ -1,0 +1,26 @@
+baseURL = 'https://jcraane.github/'
+languageCode = 'nl-nl'
+defaultContentLanguage = 'nl'
+title = 'B&B Klein Geluk Berghem'
+theme = 'ananke'
+publishDir = "docs/"
+
+googleAnalytics = ""
+sectionPagesMenu = 'main'
+enableRobotsTXT = true
+relativeURLs = true
+
+[sitemap]
+changefreq = "monthly"
+priority = 0.5
+filename = "sitemap.xml"
+
+[params]
+custom_css = ["custom.css"]
+cover_dimming_class = 'cover-gradient'
+ananke.show_recent_posts = false
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

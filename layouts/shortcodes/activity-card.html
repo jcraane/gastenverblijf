@@ -1,0 +1,11 @@
+<div class="activity-card">
+    <div class="activity-content">
+        <h4>{{ .Get "title" }}</h4>
+        <p>{{ .Get "description" }}</p>
+        {{ if .Get "link" }}
+        <a href="{{ .Get "link" }}" target="_blank" rel="noopener" class="activity-link">
+            {{ .Get "link_text" | default "Bezoek website →" }}
+        </a>
+        {{ end }}
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="pricing-card {{ if .Get "highlight" }}pricing-card--highlight{{ end }}">
+    <div class="pricing-card__header">
+        <h4 class="pricing-card__title">{{ .Get "title" }}</h4>
+        {{ with .Get "subtitle" }}<p class="pricing-card__subtitle">{{ . }}</p>{{ end }}
+    </div>
+    <div class="pricing-card__price">
+        <span class="pricing-card__amount">{{ .Get "price" }}</span>
+        <span class="pricing-card__period">{{ .Get "period" | default "per nacht" }}</span>
+    </div>
+    <div class="pricing-card__details">
+        {{ .Inner | markdownify }}
+    </div>
+</div>

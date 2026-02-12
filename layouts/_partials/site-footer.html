@@ -1,0 +1,28 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="site-footer__inner">
+    <div class="site-footer__brand">
+      <a href="{{ .Site.Home.RelPermalink }}" class="site-footer__logo">{{ .Site.Title }}</a>
+      <p class="site-footer__tagline">Even helemaal niets, behalve genieten.</p>
+      <p class="site-footer__address">Berghem, Noord-Brabant</p>
+    </div>
+    <div class="site-footer__links">
+      <h4 class="site-footer__heading">Pagina's</h4>
+      <ul class="site-footer__nav">
+        {{ range .Site.Menus.main }}
+        <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </div>
+    <div class="site-footer__info">
+      <h4 class="site-footer__heading">Praktisch</h4>
+      <ul class="site-footer__nav">
+        <li>Inchecken: 15:00 – 17:00</li>
+        <li>Uitchecken: vóór 10:30</li>
+        <li><a href="/contact/">Contact opnemen</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="site-footer__bottom">
+    <span>&copy; {{ .Site.Title }} {{ now.Format "2006" }}</span>
+  </div>
+</footer>

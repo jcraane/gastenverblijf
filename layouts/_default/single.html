@@ -1,0 +1,12 @@
+{{ define "header" }}
+  {{ partials.Include "page-header.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  {{ $widthClass := .Params.content_width | compare.Default "content-width" }}
+  <article class="ph3 ph4-ns pv4 pv5-l {{ $widthClass }}">
+    <div class="nested-copy-line-height lh-copy f4 nested-links {{ $.Param "text_color" | compare.Default "mid-gray" }}">
+      {{- .Content -}}
+    </div>
+  </article>
+{{ end }}

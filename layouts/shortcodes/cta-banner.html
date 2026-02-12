@@ -1,0 +1,9 @@
+<div class="cta-banner mv5">
+    {{ with .Get "title" }}<h3 class="cta-banner__title">{{ . }}</h3>{{ end }}
+    {{ with .Get "text" }}<p class="cta-banner__text">{{ . }}</p>{{ end }}
+    {{ with .Get "button_link" }}
+    <a href="{{ . }}" class="cta-banner__button">
+        {{ $.Get "button_text" | default "Meer informatie" }}
+    </a>
+    {{ end }}
+</div>

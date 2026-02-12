@@ -1,0 +1,14 @@
+[yourName]
+other = "Naam"
+
+[emailAddress]
+other = "E-mailadres"
+
+[message]
+other = "Bericht"
+
+[send]
+other = "Verzenden"
+
+[emailRequiredNote]
+other = "E-mailadres is verplicht."

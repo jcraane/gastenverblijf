@@ -1,0 +1,43 @@
+{{ $.Scratch.Add "labelClasses" "f6 b db mb1 mt3 sans-serif" }}
+{{ $.Scratch.Add "inputClasses" "w-100 f5 pv3 ph3 contact-input" }}
+
+<div class="sans-serif">
+    <div class="mb3">
+        <label class="{{ $.Scratch.Get "labelClasses" }}" for="mailto-name">{{ lang.Translate "yourName" }}</label>
+        <input type="text" id="mailto-name" class="{{ $.Scratch.Get "inputClasses" }}" required placeholder=" ">
+    </div>
+
+    <div class="mb3">
+        <label class="{{ $.Scratch.Get "labelClasses" }}" for="mailto-email">{{ lang.Translate "emailAddress" }}</label>
+        <input type="email" id="mailto-email" class="{{ $.Scratch.Get "inputClasses" }}" required placeholder=" ">
+    </div>
+
+    <div class="mb3">
+        <label class="{{ $.Scratch.Get "labelClasses" }}" for="mailto-message">{{ lang.Translate "message" }}</label>
+        <textarea id="mailto-message" class="{{ $.Scratch.Get "inputClasses" }} h4"></textarea>
+    </div>
+
+    <button id="mailto-submit" class="contact-button">
+        {{ lang.Translate "send" }}
+    </button>
+</div>
+
+<script>
+document.getElementById('mailto-submit').addEventListener('click', function() {
+    var name = document.getElementById('mailto-name').value;
+    var email = document.getElementById('mailto-email').value;
+    var message = document.getElementById('mailto-message').value;
+    var recipient = "{{ .Get "email" }}";
+    var subject = "{{ .Get "subject" | default "Contact van website" }}";
+
+    var body = "{{ T "yourName" }}: " + name + "\n" +
+               "{{ T "emailAddress" }}: " + email + "\n\n" +
+               "{{ T "message" }}:\n" + message;
+
+    var mailtoLink = "mailto:" + recipient +
+                     "?subject=" + encodeURIComponent(subject) +
+                     "&body=" + encodeURIComponent(body);
+
+    window.location.href = mailtoLink;
+});
+</script>
