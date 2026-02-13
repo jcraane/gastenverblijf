@@ -2,5 +2,37 @@ url: http://localhost:1313/activiteiten/
 ---
 - launchApp
 - assertVisible: "Activiteiten"
-- assertVisible: "Natuur & Wandelen"
-- assertVisible: "Actief & Sportief"
+
+# Natuur & Wandelen section
+- assertVisible: "Herperduin"
+- assertVisible: "De Maashorst"
+
+# Eten & Drinken section
+- scrollUntilVisible:
+    element: "Pan & Zo"
+    timeout: 10000
+- assertVisible: "Pan & Zo"
+- assertVisible: "Restaurant Clemens"
+
+# Actief & Sportief section
+- scrollUntilVisible:
+    element: "Klimpark Uden"
+    timeout: 10000
+- assertVisible: "Klimpark Uden"
+- assertVisible: "Solexverhuur Herpen"
+
+# Zwemmen & Waterplezier section
+- scrollUntilVisible:
+    element: "Zwembad De Kriekenput"
+    timeout: 10000
+- assertVisible: "Zwembad De Kriekenput"
+
+# Cultuur & Uitgaan section
+- scrollUntilVisible:
+    element: "Kinepolis Oss"
+    timeout: 10000
+- assertVisible: "Kinepolis Oss"
+- scrollUntilVisible:
+    element: "Museum Jan Cunen"
+    timeout: 10000
+- assertVisible: "Museum Jan Cunen"
