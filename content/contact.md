@@ -2,6 +2,7 @@
 title: "Contact"
 description: "Neem contact met ons op voor vragen of reserveringen."
 featured_image: '/images/verblijf/looppad_naar_voordeur.jpg'
+content_width: 'content-width-wide'
 menu: 'main'
 ---
 

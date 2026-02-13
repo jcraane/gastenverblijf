@@ -4,6 +4,7 @@ description: "Onze prijzen en wat er inbegrepen is."
 featured_image: '/images/verblijf/terras_vanuit_achter.jpg'
 omit_header_text: false
 featured_image_class: "cover bg-center"
+content_width: 'content-width-wide'
 menu: 'main'
 ---
 
