@@ -1,0 +1,6 @@
+url: http://localhost:1313/activiteiten/
+---
+- launchApp
+- assertVisible: "Activiteiten"
+- assertVisible: "Natuur & Wandelen"
+- assertVisible: "Actief & Sportief"

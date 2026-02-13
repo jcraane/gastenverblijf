@@ -1,0 +1,7 @@
+url: http://localhost:1313/contact/
+---
+- launchApp
+- assertVisible: "Contact"
+- assertVisible: "Stuur ons een bericht"
+- assertVisible: "Contactgegevens"
+- assertVisible: "Penningkruid 21"

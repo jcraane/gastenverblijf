@@ -1,0 +1,5 @@
+url: http://localhost:1313/omgeving/
+---
+- launchApp
+- assertVisible: "Omgeving"
+- assertVisible: "Wandelen en Fietsen in Alle Rust"

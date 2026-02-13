@@ -1,0 +1,6 @@
+url: http://localhost:1313/gastenverblijf/
+---
+- launchApp
+- assertVisible: "Ons Gastenverblijf"
+- assertVisible: "Algemene voorzieningen"
+- assertVisible: "Badkamer"
