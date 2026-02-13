@@ -24,7 +24,7 @@ Heeft u vragen over ons gastenverblijf, de omgeving of wilt u een reservering ma
     <span class="contact-info-icon">&#x1f3e0;</span>
     <div>
         <span class="contact-info-label">Adres</span>
-        <span class="contact-info-value">Berghem, Noord-Brabant</span>
+        <span class="contact-info-value">Penningkruid 21, 5351KA, Berghem, Noord-Brabant</span>
     </div>
 </div>
 
