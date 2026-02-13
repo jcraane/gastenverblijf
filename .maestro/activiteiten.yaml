@@ -4,6 +4,9 @@ url: http://localhost:1313/activiteiten/
 - assertVisible: "Activiteiten"
 
 # Natuur & Wandelen section
+- scrollUntilVisible:
+    element: "Herperduin"
+    timeout: 10000
 - assertVisible: "Herperduin"
 - assertVisible: "De Maashorst"
 

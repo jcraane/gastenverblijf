@@ -584,3 +584,157 @@ a {
 .contact-button:active {
     transform: scale(0.98);
 }
+
+/* ============================================
+   Sticky Category Navigation
+   ============================================ */
+.activity-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 0.75rem 0;
+    margin-bottom: 1.5rem;
+    position: sticky;
+    top: 0;
+    background: var(--color-bg-alt);
+    z-index: 100;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.activity-nav__link {
+    display: inline-block;
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--color-text);
+    background: var(--color-bg);
+    border: 1px solid var(--color-border);
+    transition: background-color var(--transition-fast), color var(--transition-fast), border-color var(--transition-fast);
+    white-space: nowrap;
+}
+
+.activity-nav__link:hover {
+    background: var(--color-primary);
+    color: #fff;
+    border-color: var(--color-primary);
+    text-decoration: none;
+}
+
+/* ============================================
+   Activity Sections — Color Accents
+   ============================================ */
+.activity-section {
+    padding: 2rem 0;
+    margin: 0 -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 8px;
+    scroll-margin-top: 4rem;
+}
+
+.activity-section:nth-child(even) {
+    background: var(--color-bg);
+}
+
+.activity-section h3 {
+    font-size: 1.4rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid var(--color-primary);
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+/* Per-category accent colors */
+.activity-section--natuur h3 {
+    border-bottom-color: var(--color-primary);
+}
+.activity-section--natuur .activity-card {
+    border-left-color: var(--color-primary);
+}
+
+.activity-section--eten h3 {
+    border-bottom-color: var(--color-secondary);
+}
+.activity-section--eten .activity-card {
+    border-left-color: var(--color-secondary);
+}
+
+.activity-section--actief h3 {
+    border-bottom-color: #e07b3c;
+}
+.activity-section--actief .activity-card {
+    border-left-color: #e07b3c;
+}
+
+.activity-section--zwemmen h3 {
+    border-bottom-color: #3a86a8;
+}
+.activity-section--zwemmen .activity-card {
+    border-left-color: #3a86a8;
+}
+
+.activity-section--cultuur h3 {
+    border-bottom-color: #7b5ea7;
+}
+.activity-section--cultuur .activity-card {
+    border-left-color: #7b5ea7;
+}
+
+/* ============================================
+   Enhanced Activity Cards — Images, Featured, Distance
+   ============================================ */
+.activity-card__img-wrap {
+    margin: -1rem -1rem 1rem -1rem;
+    border-radius: 6px 6px 0 0;
+    overflow: hidden;
+}
+
+.activity-card__img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+    transition: transform 0.3s ease;
+}
+
+.activity-card:hover .activity-card__img {
+    transform: scale(1.05);
+}
+
+.activity-card--featured {
+    border-left-color: var(--color-secondary) !important;
+    border-left-width: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+@media (min-width: 48em) {
+    .activity-card--featured {
+        grid-column: span 2;
+    }
+
+    .activity-card--featured .activity-card__img {
+        height: 200px;
+    }
+}
+
+.activity-card__distance {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    background: var(--color-primary-light);
+    color: var(--color-primary-dark);
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    vertical-align: middle;
+    margin-left: 0.25rem;
+}
+
+/* Smooth scroll only for anchor link navigation */
+@media (prefers-reduced-motion: no-preference) {
+    html:has(:target) {
+        scroll-behavior: smooth;
+    }
+}

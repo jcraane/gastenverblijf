@@ -51,6 +51,3 @@ hugo
 - Follow Hugo and Ananke theme conventions
 - Custom CSS goes in `assets/ananke/css/custom.css`
 
-## Testing
-
-UI testing is done using Meastro. Testscript are in the .meastro folder. Run with Meastro MCP.

@@ -1,6 +1,12 @@
-<div class="activity-card">
+{{ $featured := .Get "featured" }}
+<div class="activity-card{{ if $featured }} activity-card--featured{{ end }}">
+    {{ with .Get "img" }}
+    <div class="activity-card__img-wrap">
+        <img src="{{ . }}" alt="{{ $.Get "title" }}" class="activity-card__img" loading="lazy">
+    </div>
+    {{ end }}
     <div class="activity-content">
-        <h4>{{ .Get "title" }}</h4>
+        <h4>{{ .Get "title" }}{{ with .Get "distance" }} <span class="activity-card__distance">{{ . }}</span>{{ end }}</h4>
         <p>{{ .Get "description" }}</p>
         {{ if .Get "link" }}
         <a href="{{ .Get "link" }}" target="_blank" rel="noopener" class="activity-link">
