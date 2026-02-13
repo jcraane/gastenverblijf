@@ -24,7 +24,9 @@ Wij verwelkomen je graag voor een ontspannen verblijf. Om de kwaliteit en hygië
 
 Goed om te weten: Door de eenmalige schoonmaakkosten wordt je verblijf per nacht voordeliger naarmate je langer bij ons tot rust komt!
 
-Prijzen zijn exclusief toeristenbelasting. Huisdieren zijn niet toegestaan.
+- Prijzen zijn exclusief toeristenbelasting
+- Huisdieren zijn niet toegestaan
+- Het maximale verblijf is 1 week
 
 ### Inbegrepen in de prijs
 
