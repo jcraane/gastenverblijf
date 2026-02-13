@@ -29,15 +29,6 @@ Gezellige restaurants en terrassen op steenworp afstand.
     {{< activity-card title="Bomenpark" description="Luxe lunch en diner op een unieke locatie." link="https://bomenpark.nl/" link_text="Luxe lunch & diner →" >}}
 {{< /activity-grid >}}
 
-### 🧒 Voor de Kinderen
-Spelen, ontdekken en ravotten in de buitenlucht.
-
-{{< activity-grid >}}
-    {{< activity-card title="Speelbos Herperduin" description="Klauteren op de enorme speeltoestellen in het bos." link="https://www.bezoekdemaashorst.nl/speelbos-herperduin" link_text="Meer info →" >}}
-    {{< activity-card title="Speeltuin Elkerliek" description="Een klassieke, veilige speeltuin in de buurt." link="https://speeltuinelkerliek.nl/" link_text="Website →" >}}
-    {{< activity-card title="Docus de Das Avonturenpad" description="Een spannende belevenisroute voor de kleintjes." link="https://docusdedas.nl/" link_text="Ontdek Docus →" >}}
-{{< /activity-grid >}}
-
 ### ⚡ Actief & Sportief
 Voor de avonturiers en sportievelingen.
 
