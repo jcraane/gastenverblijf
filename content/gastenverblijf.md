@@ -1,7 +1,7 @@
 ---
 title: "Ons Gastenverblijf"
 description: "Meer informatie over ons sfeervolle gastenverblijf."
-featured_image: '/images/verblijf/slaapkamer_hoek_2.jpg'
+featured_image: '/images/verblijf/terras_vanuit_achter.jpg'
 content_width: 'content-width-wide'
 menus: 'main'
 ---

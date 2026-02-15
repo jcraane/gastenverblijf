@@ -3,7 +3,7 @@ title: "B&B Puur Geluk"
 description: "Even helemaal niets, behalve genieten."
 theme_version: '2.8.2'
 cascade:
-  featured_image: '/images/omgeving/heide.jpg'
+  featured_image: '/images/verblijf/slaapkamer_vanuit_hoek.jpg'
 ---
 
 ## Welkom bij B&B Puur Geluk
