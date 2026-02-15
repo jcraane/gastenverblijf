@@ -1,7 +1,7 @@
 baseURL = 'https://jcraane.github/'
 languageCode = 'nl-nl'
 defaultContentLanguage = 'nl'
-title = 'B&B Klein Geluk Berghem'
+title = 'B&B Puur Geluk Berghem'
 theme = 'ananke'
 publishDir = "docs/"
 

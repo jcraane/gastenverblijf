@@ -1,12 +1,12 @@
 ---
-title: "B&B Klein Geluk"
+title: "B&B Puur Geluk"
 description: "Even helemaal niets, behalve genieten."
 theme_version: '2.8.2'
 cascade:
   featured_image: '/images/omgeving/heide.jpg'
 ---
 
-## Welkom bij B&B Klein Geluk
+## Welkom bij B&B Puur Geluk
 
 Aan de rand van natuurgebied De Maashorst in Berghem vind je ons onlangs volledig gerenoveerde gastenverblijf. Een plek waar comfort en natuur samenkomen, ideaal om even helemaal tot rust te komen.
 
@@ -34,7 +34,7 @@ Stap buiten en je staat in het grootste aaneengesloten natuurgebied van Noord-Br
   {{< grid-image src="/images/verblijf/terras_vanuit_achter.jpg" alt="Privéterras" >}}
 {{< /image-grid >}}
 
-### Waarom Klein Geluk?
+### Waarom Puur Geluk?
 
 {{< feature-list >}}
   {{< feature-item label="Volledig gerenoveerd in 2024" >}}

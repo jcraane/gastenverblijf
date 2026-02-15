@@ -1,6 +1,6 @@
 url: http://localhost:1313/
 ---
 - launchApp
-- assertVisible: "Welkom bij B&B Klein Geluk"
-- assertVisible: "Waarom Klein Geluk?"
+- assertVisible: "Welkom bij B&B Puur Geluk"
+- assertVisible: "Waarom Puur Geluk?"
 - assertVisible: "Bekijk tarieven"

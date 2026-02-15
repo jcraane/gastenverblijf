@@ -1,4 +1,4 @@
-# B&B Klein Geluk Berghem - Website
+# B&B Puur Geluk Berghem - Website
 
 ## Project overview
 Static website for our guesthouse (gastenverblijf / B&B) in Berghem, Netherlands. Built with Hugo and the Ananke theme. The site is in Dutch. Work in progress.
