@@ -54,7 +54,7 @@ Kom tot rust, laad jezelf op en ervaar de gastvrijheid op deze unieke plek in Be
 
 {{< image-grid >}}
   {{< grid-image src="/images/verblijf/zithoek_1.jpg" alt="Zithoek" >}}
-  {{< grid-image src="/images/verblijf/tafel.jpg" alt="Eettafel" >}}
+  {{< grid-image src="/images/verblijf/sfeerfotos/sfeerfoto_boek_2.jpg" alt="Eettafel" >}}
 {{< /image-grid >}}
 
 ### Slaapgedeelte
@@ -89,6 +89,12 @@ Kom tot rust, laad jezelf op en ervaar de gastvrijheid op deze unieke plek in Be
   {{< grid-image src="/images/verblijf/douche.jpg" alt="Douche" >}}
 {{< /image-grid >}}
 
+### Plattegrond
+
+<div style="text-align: center;">
+  <img src="/images/situatie/situatie.png" alt="Plattegrond van het gastenverblijf" style="max-width: 50%; height: auto;">
+</div>
+
 ### Impressie
 
 {{< image-grid >}}
@@ -97,12 +103,10 @@ Kom tot rust, laad jezelf op en ervaar de gastvrijheid op deze unieke plek in Be
   {{< grid-image src="/images/verblijf/keuken_2.jpg" alt="Keuken vanuit de zithoek" >}}
   {{< grid-image src="/images/verblijf/zithoek_4.jpg" alt="Zithoek" >}}
   {{< grid-image src="/images/verblijf/terras_vanuit_achter.jpg" alt="Terras" >}}
-  {{< grid-image src="/images/verblijf/tafel.jpg" alt="Eettafel" >}}
   {{< grid-image src="/images/verblijf/badkamer.jpg" alt="Badkamer" >}}
   {{< grid-image src="/images/verblijf/slaapkamer_3.jpg" alt="Slaapkamer" >}}
   {{< grid-image src="/images/verblijf/slaapkamer_vanuit_hoek.jpg" alt="Slaapkamer vanuit hoek" >}}
   {{< grid-image src="/images/verblijf/looppad_naar_voordeur.jpg" alt="Looppad naar voordeur" >}}
-  {{< grid-image src="/images/verblijf/sfeerfotos/sfeerfoto_boek_2.jpg" alt="Sfeervolle eettafel" >}}
   {{< grid-image src="/images/verblijf/sfeerfotos/sfeerfoto_koffie.jpg" alt="Nespresso en thee" >}}
   {{< grid-image src="/images/verblijf/sfeerfotos/sfeerfoto_neon_licht.jpg" alt="Sfeerverlichting" >}}
 {{< /image-grid >}}
