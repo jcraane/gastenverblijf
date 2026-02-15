@@ -40,7 +40,7 @@ Kom tot rust, laad jezelf op en ervaar de gastvrijheid op deze unieke plek in Be
 
 {{< image-grid >}}
   {{< grid-image src="/images/verblijf/keuken_1.jpg" alt="Keuken" >}}
-  {{< grid-image src="/images/verblijf/keuken_2.jpg" alt="Keuken vanuit de zithoek" >}}
+  {{< grid-image src="/images/verblijf/sfeerfotos/sfeerfoto_koffie.jpg" alt="Nespresso en thee" >}}
 {{< /image-grid >}}
 
 ### Woonkamer
@@ -102,6 +102,9 @@ Kom tot rust, laad jezelf op en ervaar de gastvrijheid op deze unieke plek in Be
   {{< grid-image src="/images/verblijf/slaapkamer_3.jpg" alt="Slaapkamer" >}}
   {{< grid-image src="/images/verblijf/slaapkamer_vanuit_hoek.jpg" alt="Slaapkamer vanuit hoek" >}}
   {{< grid-image src="/images/verblijf/looppad_naar_voordeur.jpg" alt="Looppad naar voordeur" >}}
+  {{< grid-image src="/images/verblijf/sfeerfotos/sfeerfoto_boek_2.jpg" alt="Sfeervolle eettafel" >}}
+  {{< grid-image src="/images/verblijf/sfeerfotos/sfeerfoto_koffie.jpg" alt="Nespresso en thee" >}}
+  {{< grid-image src="/images/verblijf/sfeerfotos/sfeerfoto_neon_licht.jpg" alt="Sfeerverlichting" >}}
 {{< /image-grid >}}
 
 {{< cta-banner title="Interesse?" text="Bekijk onze tarieven of neem direct contact op." button_text="Bekijk tarieven" button_link="/tarieven/" >}}
