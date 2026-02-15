@@ -11,7 +11,7 @@ Ben je op zoek naar een plek waar comfort en natuur samenkomen? Aan de rand van 
 
 De accommodatie is met veel liefde sfeervol en warm ingericht, waardoor je je direct thuis voelt. Je geniet hier van optimale privacy met een eigen inrit en een volledig uitgeruste keuken, sfeervolle woonkamer en moderne badkamer. Omdat het verblijf geheel gelijkvloers is, ervaar je een heerlijk ruimtelijk en toegankelijk gevoel.
 
-Buiten word je omringd door een bosrijke omgeving. Na een dag wandelen of fietsen kun je heerlijk nagenieten op het sfeervol verlichte privéterras, een idyllische plek voor een goed glas wijn in de buitenlucht. Om de rust en de frisse ambiance voor al onze gasten te waarborgen, is het B&B huisdiervrij en is roken enkel toegestaan op het terras.
+et gastenverblijf ligt aan de rand van een bosrijke omgeving.. Na een dag wandelen of fietsen kun je heerlijk nagenieten op het sfeervol verlichte privéterras, een idyllische plek voor een goed glas wijn in de buitenlucht. Om de rust en de frisse ambiance voor al onze gasten te waarborgen, is het B&B huisdiervrij en is roken enkel toegestaan op het terras.
 
 Kom tot rust, laad jezelf op en ervaar de gastvrijheid op deze unieke plek in Berghem.
 
