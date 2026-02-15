@@ -92,7 +92,7 @@ Kom tot rust, laad jezelf op en ervaar de gastvrijheid op deze unieke plek in Be
 ### Plattegrond
 
 <div style="text-align: center;">
-  <img src="/images/situatie/situatie.png" alt="Plattegrond van het gastenverblijf" style="max-width: 50%; height: auto;">
+  <img src="/images/situatie/situatie.png" alt="Plattegrond van het gastenverblijf" style="max-width: 65%; height: auto;">
 </div>
 
 ### Impressie
