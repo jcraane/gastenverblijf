@@ -30,7 +30,10 @@ Wat De Maashorst echt bijzonder maakt, is de aanwezigheid van de grote grazers. 
   {{< grid-image src="/images/omgeving/winter_scenery.jpg" alt="De Maashorst in de winter" caption="De Maashorst in de winter" >}}
 {{< /image-grid >}}
 
-> **Wist u dat?** De Maashorst is niet alleen groot, maar ook een van de weinige plekken in Nederland waar de natuur nog echt haar eigen gang mag gaan.
+<div class="callout">
+<h3>Wist u dat?</h3>
+<p>De Maashorst is niet alleen groot, maar ook een van de weinige plekken in Nederland waar de natuur nog echt haar eigen gang mag gaan.</p>
+</div>
 
 ### Een Plek om te Onthaasten
 
