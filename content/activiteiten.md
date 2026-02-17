@@ -1,6 +1,6 @@
 ---
 title: "Activiteiten"
-description: "Ontdek de pracht van de Maashorst, het grootste aaneengesloten natuurgebied van Noord-Brabant, direct naast Berghem."
+description: "Ontdek de veelzijdigheid van Berghem en omgeving."
 featured_image: '/images/omgeving/heide.jpg'
 omit_header_text: false
 featured_image_class: "cover bg-center"
@@ -10,7 +10,7 @@ menu:
     weight: 30
 ---
 
-Ontdek de veelzijdigheid van Berghem en omgeving. Of je nu op zoek bent naar rust in de natuur, een sportieve uitdaging of een gezellig diner: er is voor ieder wat wils.
+Of je nu op zoek bent naar rust in de natuur, een sportieve uitdaging of een gezellig diner: er is voor ieder wat wils.
 
 {{< activity-nav >}}
   <a href="#natuur" class="activity-nav__link">Natuur & Wandelen</a>
