@@ -6,7 +6,6 @@ content_width: 'content-width-wide'
 menus: 'main'
 ---
 
-Ontsnap naar de rust: Jouw privé-natuurpareltje in Berghem
 Ben je op zoek naar een plek waar comfort en natuur samenkomen? Aan de rand van het prachtige natuurgebied De Maashorst in Berghem ligt ons onlangs volledig gerenoveerde B&B. Dit verborgen pareltje van 33 m² biedt de perfecte balans tussen luxe en sereniteit, ideaal voor een ontspannen verblijf met z'n tweeën.
 
 De accommodatie is met veel liefde sfeervol en warm ingericht, waardoor je je direct thuis voelt. Je geniet hier van optimale privacy met een eigen inrit en een volledig uitgeruste keuken, sfeervolle woonkamer en moderne badkamer. Omdat het verblijf geheel gelijkvloers is, ervaar je een heerlijk ruimtelijk en toegankelijk gevoel.
