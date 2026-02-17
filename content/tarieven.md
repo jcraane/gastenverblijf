@@ -8,7 +8,7 @@ content_width: 'content-width-wide'
 menu: 'main'
 ---
 
-Wij verwelkomen je graag voor een ontspannen verblijf. Om de kwaliteit en hygiëne van ons onlangs gerenoveerde gastenverblijf te waarborgen, hanteren wij de volgende tarieven:
+Wij verwelkomen je graag voor een ontspannen verblijf. Wij vinden het belangrijk dat je kunt genieten van een fris en hoogwaardig verblijf. Om onze hoge standaard van kwaliteit en hygiëne te behouden, hanteren wij de volgende tarieven voor ons onlangs vernieuwde gastenverblijf:
 
 <div class="pricing-cards">
 {{< pricing-card title="Laagseizoen" subtitle="Buiten schoolvakanties" price="€ 85,-" period="per nacht" >}}
