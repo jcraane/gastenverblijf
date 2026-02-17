@@ -67,7 +67,7 @@ Kom tot rust, laad jezelf op en ervaar de gastvrijheid op deze unieke plek in Be
 {{< /feature-list >}}
 
 {{< image-grid >}}
-  {{< grid-image src="/images/verblijf/zithoek_1.jpg" alt="Zithoek" >}}
+  {{< grid-image src="/images/verblijf/tv_meubel.jpg" alt="TV meubel" >}}
   {{< grid-image src="/images/verblijf/sfeerfotos/sfeerfoto_boek_2.jpg" alt="Eettafel" >}}
 {{< /image-grid >}}
 
