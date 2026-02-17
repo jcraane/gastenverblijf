@@ -58,7 +58,7 @@ Kom tot rust, laad jezelf op en ervaar de gastvrijheid op deze unieke plek in Be
 
 <div class="callout">
 <h3>Ontbijten op uw eigen manier</h3>
-<p>Bij B&B Puur Geluk kiest u voor een verblijf op basis van volledige privacy en eigen planning. Wij bieden een zogenaamd 'B&B Light' concept aan: een heerlijke overnachting, maar zonder geserveerd ontbijt. Bij ons geen vaste tijden, maar de vrijheid om zelf de keukenprins(es) uit te hangen! De keuken is van alle gemakken voorzien zodat u in alle rust uw eigen favoriete ontbijt kunt bereiden. Zin in verse croissants? De supermarkt bevindt zich op slechts 5 minuten rijden (2,1 km).</p>
+<p>Bij B&B Puur Geluk kiest u voor een verblijf op basis van volledige privacy en eigen planning. Wij bieden een zogenaamd 'B&B Light' concept aan: een heerlijke overnachting, maar zonder geserveerd ontbijt. Bij ons geen vaste tijden, maar de vrijheid om zelf de keukenprins(es) uit te hangen! De keuken is van alle gemakken voorzien zodat u in alle rust uw eigen favoriete ontbijt kunt bereiden. Zin in verse croissants? Bak deze af in de combi-oven of rijdt in 5 min naar de dichtstbijzijnde supermarkt of bakker (2,1 km).</p>
 </div>
 
 <div class="room-section">
