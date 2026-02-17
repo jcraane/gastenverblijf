@@ -92,7 +92,7 @@ Verfrissing op warme dagen of sportief banen zwemmen. De regio biedt verschillen
 {{< split img="/images/omgeving/winter_scenery.jpg" alt="Cultuur in de regio" >}}
 ### 🎭 Cultuur & Uitgaan
 
-Bioscoop, theater en musea in de regio. Van de nieuwste blockbusters tot ambachtelijke brouwerijen: er valt altijd iets te beleven.
+Bioscoop, theater en musea in de regio. Van de nieuwste blockbusters tot ambachtelijke brouwerijen: er valt altijd iets te beleven. Op <a href="https://www.trefhetinoss.nl/" target="_blank" rel="noopener">Tref het in Oss</a> vind je het actuele aanbod aan evenementen en uitgaanstips.
 {{< /split >}}
 
 <h4>Bioscopen</h4>
