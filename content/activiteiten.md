@@ -27,9 +27,9 @@ Geniet van de rust en de unieke flora en fauna van de Brabantse natuur. De Maash
 {{< /split >}}
 
 {{< activity-grid >}}
-    {{< activity-card title="Herperduin" description="Ontdek de prachtige natuur van Herperduin met haar vennen en stuifzand." link="https://www.bezoekdemaashorst.nl" link_text="Ontdek de Maashorst →" img="/images/omgeving/heide.jpg" featured="true" distance="10 min fietsen" >}}
+    {{< activity-card title="Natuurgebied Herperduin - De Maashorst" description="Natuurgebied Herperduin wordt ook wel de \"Achtertuin\" van Berghem genoemd. Herperduin maakt onderdeel uit van natuurgebied de Maashorst." link="https://natuurgebieddemaashorst.nl/" link_text="Ontdek de Maashorst →" img="/images/omgeving/heide.jpg" featured="true" distance="10 min fietsen" >}}
     {{< activity-card title="De Maashorst" description="Bezoek het hart van de Maashorst en leer meer over de oerbeesten." link="https://www.allemaalmaashorst.nl" link_text="Bezoekerscentrum →" distance="5 min fietsen" >}}
-    {{< activity-card title="Bomenpark" description="Prachtig park met wandelroutes en een uitkijktoren." link="https://bomenpark.nl/" link_text="Wandelroute & Park →" >}}
+
 {{< /activity-grid >}}
 
 {{< /activity-section >}}
