@@ -42,7 +42,7 @@ Stap buiten en je staat in het grootste aaneengesloten natuurgebied van Noord-Br
 {{< feature-list >}}
   {{< feature-item label="Volledig gerenoveerd in 2025" >}}
   {{< feature-item label="Privéterras met sfeerverlichting" >}}
-  {{< feature-item label="Aan de rand van De Maashorst" >}}
+  {{< feature-item label="Nabij naturgebied De Maashorst" >}}
   {{< feature-item label="Eigen inrit en parkeerplaats" >}}
   {{< feature-item label="Geheel gelijkvloers" >}}
   {{< feature-item label="Inclusief airco, wifi en Nespresso" >}}

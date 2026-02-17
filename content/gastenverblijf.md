@@ -22,7 +22,7 @@ Kom tot rust, laad jezelf op en ervaar de gastvrijheid op deze unieke plek in Be
   {{< feature-item label="Airco" >}}
   {{< feature-item label="Wifi" >}}
   {{< feature-item label="Sfeervol verlicht privéterras" >}}
-  {{< feature-item label="Gratis parkeren" >}}
+  {{< feature-item label="Eigen inrit en parkeerplaats" >}}
   {{< feature-item label="Uitzicht op de tuin" >}}
 {{< /feature-list >}}
 
