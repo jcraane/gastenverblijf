@@ -8,13 +8,27 @@ menu:
     weight: 10
 ---
 
-Ben je op zoek naar een plek waar comfort en natuur samenkomen? Aan de rand van het prachtige natuurgebied De Maashorst in Berghem ligt ons onlangs volledig gerenoveerde B&B. Deze sfeervolle plek van 33 m² biedt de perfecte balans tussen luxe en absolute rust. Het is de ideale uitvalsbasis voor een ontspannen verblijf met z’n tweeën, waar je geniet van hoogwaardige afwerking en de stilte van de natuur.
+Aan de rand van het prachtige natuurgebied De Maashorst in Berghem ligt ons onlangs volledig gerenoveerde B&B. Een sfeervolle plek van 33 m² die de perfecte balans biedt tussen luxe en absolute rust — ideaal voor een ontspannen verblijf met z'n tweeën.
 
-De accommodatie is met veel liefde sfeervol en warm ingericht, waardoor je je direct thuis voelt. Je geniet hier van optimale privacy met een eigen inrit en een volledig uitgeruste keuken, sfeervolle woonkamer en moderne badkamer. Omdat het verblijf geheel gelijkvloers is, ervaar je een heerlijk ruimtelijk en toegankelijk gevoel.
+{{< split img="/images/verblijf/zithoek_1.jpg" alt="Sfeervolle zithoek" >}}
+### Sfeervol & comfortabel
 
-Het gastenverblijf ligt aan de rand van een bosrijke omgeving.. Na een dag wandelen of fietsen kun je heerlijk nagenieten op het sfeervol verlichte privéterras, een idyllische plek voor een goed glas wijn in de buitenlucht. Om de rust en de frisse ambiance voor al onze gasten te waarborgen, is het B&B huisdiervrij en is roken enkel toegestaan op het terras.
+De accommodatie is met veel liefde warm ingericht, waardoor je je direct thuis voelt. Na een dag wandelen of fietsen geniet je op het sfeervol verlichte privéterras van een goed glas wijn in de buitenlucht.
+{{< /split >}}
 
-Kom tot rust, laad jezelf op en ervaar de gastvrijheid op deze unieke plek in Berghem.
+{{< feature-list >}}
+  {{< feature-item label="Volledig gerenoveerd in 2025" >}}
+  {{< feature-item label="33 m² voor 2 personen" >}}
+  {{< feature-item label="Geheel gelijkvloers" >}}
+  {{< feature-item label="Eigen inrit en parkeerplaats" >}}
+  {{< feature-item label="Privéterras met sfeerverlichting" >}}
+  {{< feature-item label="Volledig uitgeruste keuken" >}}
+{{< /feature-list >}}
+
+<div class="callout">
+<h3>Goed om te weten</h3>
+<p>Om de rust en frisse ambiance voor al onze gasten te waarborgen, is het B&B huisdiervrij en is roken enkel toegestaan op het terras.</p>
+</div>
 
 {{< activity-nav >}}
   <a href="#algemene-voorzieningen" class="activity-nav__link">Voorzieningen</a>
