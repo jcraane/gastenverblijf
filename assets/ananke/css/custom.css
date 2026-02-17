@@ -145,7 +145,7 @@ img {
    ============================================ */
 blockquote {
     border-left: 4px solid var(--color-primary);
-    background-color: var(--color-primary-light);
+    background-color: #eef1eb;
     padding: 1rem 1.5rem;
     margin: 2rem 0;
     font-style: italic;

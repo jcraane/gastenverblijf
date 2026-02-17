@@ -16,7 +16,6 @@ De accommodatie is met veel liefde warm ingericht, waardoor je je direct thuis v
 
 {{< feature-list >}}
   {{< feature-item label="Volledig gerenoveerd in 2025" >}}
-  {{< feature-item label="33 m² voor 2 personen" >}}
   {{< feature-item label="Geheel gelijkvloers" >}}
   {{< feature-item label="Eigen inrit en parkeerplaats" >}}
   {{< feature-item label="Privéterras met sfeerverlichting" >}}
@@ -70,7 +69,7 @@ De accommodatie is met veel liefde warm ingericht, waardoor je je direct thuis v
   {{< feature-item label="Inductie kookplaat met afzuiging" >}}
   {{< feature-item label="Waterkoker" >}}
   {{< feature-item label="Broodrooster" >}}
-  {{< feature-item label="Inclusief keukenlinnen" >}}
+  {{< feature-item label="Keukenlinnen" >}}
 {{< /feature-list >}}
 
 {{< image-grid >}}
