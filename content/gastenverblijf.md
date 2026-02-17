@@ -26,6 +26,11 @@ Kom tot rust, laad jezelf op en ervaar de gastvrijheid op deze unieke plek in Be
   {{< feature-item label="Uitzicht op de tuin" >}}
 {{< /feature-list >}}
 
+{{< image-grid >}}
+  {{< grid-image src="/images/verblijf/terras_vanuit_links.jpg" alt="Terras" >}}
+  {{< grid-image src="/images/verblijf/inrit.jpg" alt="Inrit" >}}
+{{< /image-grid >}}
+
 </div>
 
 <div class="room-section">
@@ -41,6 +46,7 @@ Kom tot rust, laad jezelf op en ervaar de gastvrijheid op deze unieke plek in Be
   {{< feature-item label="Inductie kookplaat met afzuiging" >}}
   {{< feature-item label="Waterkoker" >}}
   {{< feature-item label="Broodrooster" >}}
+  {{< feature-item label="Inclusief keukenlinnen" >}}
 {{< /feature-list >}}
 
 {{< image-grid >}}
