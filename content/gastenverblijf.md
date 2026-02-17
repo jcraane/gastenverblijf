@@ -6,13 +6,15 @@ content_width: 'content-width-wide'
 menus: 'main'
 ---
 
-Ben je op zoek naar een plek waar comfort en natuur samenkomen? Aan de rand van het prachtige natuurgebied De Maashorst in Berghem ligt ons onlangs volledig gerenoveerde B&B. Dit verborgen pareltje van 33 m² biedt de perfecte balans tussen luxe en sereniteit, ideaal voor een ontspannen verblijf met z'n tweeën.
+Ben je op zoek naar een plek waar comfort en natuur samenkomen? Aan de rand van het prachtige natuurgebied De Maashorst in Berghem ligt ons onlangs volledig gerenoveerde B&B. Deze sfeervolle plek van 33 m² biedt de perfecte balans tussen luxe en absolute rust. Het is de ideale uitvalsbasis voor een ontspannen verblijf met z’n tweeën, waar je geniet van hoogwaardige afwerking en de stilte van de natuur.
 
 De accommodatie is met veel liefde sfeervol en warm ingericht, waardoor je je direct thuis voelt. Je geniet hier van optimale privacy met een eigen inrit en een volledig uitgeruste keuken, sfeervolle woonkamer en moderne badkamer. Omdat het verblijf geheel gelijkvloers is, ervaar je een heerlijk ruimtelijk en toegankelijk gevoel.
 
-et gastenverblijf ligt aan de rand van een bosrijke omgeving.. Na een dag wandelen of fietsen kun je heerlijk nagenieten op het sfeervol verlichte privéterras, een idyllische plek voor een goed glas wijn in de buitenlucht. Om de rust en de frisse ambiance voor al onze gasten te waarborgen, is het B&B huisdiervrij en is roken enkel toegestaan op het terras.
+Het gastenverblijf ligt aan de rand van een bosrijke omgeving.. Na een dag wandelen of fietsen kun je heerlijk nagenieten op het sfeervol verlichte privéterras, een idyllische plek voor een goed glas wijn in de buitenlucht. Om de rust en de frisse ambiance voor al onze gasten te waarborgen, is het B&B huisdiervrij en is roken enkel toegestaan op het terras.
 
 Kom tot rust, laad jezelf op en ervaar de gastvrijheid op deze unieke plek in Berghem.
+
+<div class="room-section">
 
 ### Algemene voorzieningen
 
@@ -23,6 +25,10 @@ Kom tot rust, laad jezelf op en ervaar de gastvrijheid op deze unieke plek in Be
   {{< feature-item label="Gratis parkeren" >}}
   {{< feature-item label="Uitzicht op de tuin" >}}
 {{< /feature-list >}}
+
+</div>
+
+<div class="room-section">
 
 ### Keuken
 
@@ -42,9 +48,14 @@ Kom tot rust, laad jezelf op en ervaar de gastvrijheid op deze unieke plek in Be
   {{< grid-image src="/images/verblijf/sfeerfotos/sfeerfoto_koffie.jpg" alt="Nespresso en thee" >}}
 {{< /image-grid >}}
 
-### Ontbijten op uw eigen manier
+</div>
 
-Bij B&B Puur Geluk kiest u voor een verblijf op basis van volledige privacy en eigen planning. Wij bieden een zogenaamd 'B&B Light' concept aan: een heerlijke overnachting, maar zonder geserveerd ontbijt. Bij ons geen vaste tijden, maar de vrijheid om zelf de keukenprins(es) uit te hangen! De keuken is van alle gemakken voorzien zodat u in alle rust uw eigen favoriete ontbijt kunt bereiden. Zin in verse croissants? De supermarkt bevindt zich op slechts 5 minuten rijden (2,1 km).
+<div class="callout">
+<h3>Ontbijten op uw eigen manier</h3>
+<p>Bij B&B Puur Geluk kiest u voor een verblijf op basis van volledige privacy en eigen planning. Wij bieden een zogenaamd 'B&B Light' concept aan: een heerlijke overnachting, maar zonder geserveerd ontbijt. Bij ons geen vaste tijden, maar de vrijheid om zelf de keukenprins(es) uit te hangen! De keuken is van alle gemakken voorzien zodat u in alle rust uw eigen favoriete ontbijt kunt bereiden. Zin in verse croissants? De supermarkt bevindt zich op slechts 5 minuten rijden (2,1 km).</p>
+</div>
+
+<div class="room-section">
 
 ### Woonkamer
 
@@ -59,6 +70,10 @@ Bij B&B Puur Geluk kiest u voor een verblijf op basis van volledige privacy en e
   {{< grid-image src="/images/verblijf/zithoek_1.jpg" alt="Zithoek" >}}
   {{< grid-image src="/images/verblijf/sfeerfotos/sfeerfoto_boek_2.jpg" alt="Eettafel" >}}
 {{< /image-grid >}}
+
+</div>
+
+<div class="room-section">
 
 ### Slaapgedeelte
 
@@ -77,6 +92,10 @@ Bij B&B Puur Geluk kiest u voor een verblijf op basis van volledige privacy en e
   {{< grid-image src="/images/verblijf/slaapkamer_tv.jpg" alt="Slaapkamer met TV" >}}
 {{< /image-grid >}}
 
+</div>
+
+<div class="room-section">
+
 ### Badkamer
 
 {{< feature-list >}}
@@ -91,6 +110,8 @@ Bij B&B Puur Geluk kiest u voor een verblijf op basis van volledige privacy en e
   {{< grid-image src="/images/verblijf/badkamer.jpg" alt="Badkamer" >}}
   {{< grid-image src="/images/verblijf/douche.jpg" alt="Douche" >}}
 {{< /image-grid >}}
+
+</div>
 
 ### Plattegrond
 
