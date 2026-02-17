@@ -78,7 +78,7 @@ Verfrissing op warme dagen of sportief banen zwemmen. De regio biedt verschillen
 {{< /split >}}
 
 {{< activity-grid >}}
-    {{< activity-card title="Zwembad De Kriekenput" description="Prachtig buitenbad gelegen in het bos." link="https://www.kriekenput.nl/" link_text="Bezoek site →" featured="true" distance="10 min fietsen" img="/images/omgeving/ganzenven.jpg" >}}
+    {{< activity-card title="Zwembad De Kriekenput" description="Prachtig buitenbad gelegen in het bos." link="https://www.herperduin.nl/faciliteiten/zwembad_de_kriekeput" link_text="Bezoek site →" featured="true" distance="10 min fietsen" img="/images/omgeving/ganzenven.jpg" >}}
     {{< activity-card title="Golfbad Oss" description="Binnenbad met golfslagbad en glijbanen." link="https://golfbad.nl/" link_text="Bezoek site →" distance="10 min auto" >}}
     {{< activity-card title="Beachclub de Maashorst" description="Recreatieplas voor een heerlijke dag aan het water." link="https://beachclubdemaashorst.nl/" link_text="Bezoek site →" >}}
     {{< activity-card title="Strand Tien" description="Ontspannen bij deze fijne recreatieplas." link="https://strandtien.nl/" link_text="Bezoek site →" >}}
