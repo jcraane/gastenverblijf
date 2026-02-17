@@ -10,11 +10,9 @@ menu:
 
 Aan de rand van het prachtige natuurgebied De Maashorst in Berghem ligt ons onlangs volledig gerenoveerde B&B. Een sfeervolle plek van 33 m² die de perfecte balans biedt tussen luxe en absolute rust — ideaal voor een ontspannen verblijf met z'n tweeën.
 
-{{< split img="/images/verblijf/zithoek_1.jpg" alt="Sfeervolle zithoek" >}}
 ### Sfeervol & comfortabel
 
 De accommodatie is met veel liefde warm ingericht, waardoor je je direct thuis voelt. Na een dag wandelen of fietsen geniet je op het sfeervol verlichte privéterras van een goed glas wijn in de buitenlucht.
-{{< /split >}}
 
 {{< feature-list >}}
   {{< feature-item label="Volledig gerenoveerd in 2025" >}}
