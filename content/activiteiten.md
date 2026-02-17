@@ -43,9 +43,9 @@ Gezellige restaurants en terrassen op steenworp afstand. Van pannenkoeken tot lu
 {{< /split >}}
 
 {{< activity-grid >}}
-    {{< activity-card title="Pan & Zo" description="Gezellig pannenkoekenrestaurant met een uitgebreide kaart." link="https://panenzo.nl/" link_text="Pannenkoeken & meer →" distance="10 min auto" >}}
-    {{< activity-card title="Restaurant Clemens" description="Sfeervol dineren in het hart van de regio." link="https://restaurantclemens.nl/" link_text="Dineren in sfeer →" >}}
-    {{< activity-card title="Bomenpark" description="Luxe lunch en diner op een unieke locatie." link="https://bomenpark.nl/" link_text="Luxe lunch & diner →" >}}
+    {{< activity-card title="Pan & Zo" description="Gezellig pannenkoekenrestaurant met een uitgebreide kaart." link="https://panenzo.nl/" link_text="Pannenkoeken & meer →" distance="10 min fietsen" >}}
+    {{< activity-card title="Restaurant Clemens" description="Sfeervol dineren in het hart van de regio." link="https://restaurantclemens.nl/" link_text="Dineren in sfeer →" distance="8 min auto" >}}
+    {{< activity-card title="Bomenpark" description="Luxe lunch en diner bij de culinaire toegangspoort van natuurgebied de Maashorst." link="https://bomenpark.nl/" link_text="Luxe lunch & diner →" distance="9 min auto" >}}
 {{< /activity-grid >}}
 
 {{< /activity-section >}}
