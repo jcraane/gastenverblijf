@@ -21,7 +21,7 @@ Een sfeervol ingericht verblijf van 33 m² voor **2 personen**, met eigen inrit,
 {{< split img="/images/omgeving/ganzenven.jpg" alt="Ganzenven in de Maashorst" >}}
 ### De Omgeving
 
-Stap buiten en je staat in het grootste aaneengesloten natuurgebied van Noord-Brabant. Wandel door uitgestrekte heidevelden, fiets langs spiegelgladde vennen en ontmoet de wisenten en exmoorpony's.
+1km fietsen of wandelen en je staat in het grootste aaneengesloten natuurgebied van Noord-Brabant. Wandel door uitgestrekte heidevelden, fiets langs spiegelgladde vennen en ontmoet de wisenten en exmoorpony's.
 
 [Ontdek de omgeving](/omgeving/)
 {{< /split >}}
@@ -42,7 +42,7 @@ Stap buiten en je staat in het grootste aaneengesloten natuurgebied van Noord-Br
 {{< feature-list >}}
   {{< feature-item label="Volledig gerenoveerd in 2025" >}}
   {{< feature-item label="Privéterras met sfeerverlichting" >}}
-  {{< feature-item label="Nabij naturgebied De Maashorst" >}}
+  {{< feature-item label="Nabij natuurgebied De Maashorst" >}}
   {{< feature-item label="Eigen inrit en parkeerplaats" >}}
   {{< feature-item label="Geheel gelijkvloers" >}}
   {{< feature-item label="Inclusief airco, wifi en Nespresso" >}}

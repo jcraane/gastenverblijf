@@ -133,6 +133,7 @@ Kom tot rust, laad jezelf op en ervaar de gastvrijheid op deze unieke plek in Be
   {{< grid-image src="/images/verblijf/looppad_naar_voordeur.jpg" alt="Looppad naar voordeur" >}}
   {{< grid-image src="/images/verblijf/sfeerfotos/sfeerfoto_koffie.jpg" alt="Nespresso en thee" >}}
   {{< grid-image src="/images/verblijf/sfeerfotos/sfeerfoto_neon_licht.jpg" alt="Sfeerverlichting" >}}
+  {{< grid-image src="/images/verblijf/hal.jpg" alt="Hal" >}}
 {{< /image-grid >}}
 
 {{< cta-banner title="Interesse?" text="Bekijk onze tarieven of neem direct contact op." button_text="Bekijk tarieven" button_link="/tarieven/" >}}

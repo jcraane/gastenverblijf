@@ -57,6 +57,18 @@
       
     
 	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
+<script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/js/glightbox.min.js" defer></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    GLightbox({
+      selector: '.glightbox',
+      touchNavigation: true,
+      loop: true
+    });
+  });
+</script>
+
   </head><body class="ma0 avenir bg-near-white production is-page is-page page-omgeving">
     
   
@@ -156,12 +168,16 @@
 <div class="image-grid  mv4">
     
   <figure class="image-grid__item">
-      <img src="../images/omgeving/horses.jpg" alt="Exmoorpony&#39;s in de Maashorst" class="db w-100 br2 shadow-2">
+      <a href="../images/omgeving/horses.jpg" class="glightbox" data-gallery="gallery" data-glightbox="title: Exmoorpony&#39;s in de Maashorst">
+          <img src="../images/omgeving/horses.jpg" alt="Exmoorpony&#39;s in de Maashorst" class="db w-100 br2 shadow-2">
+      </a>
       <figcaption class="f6 mt2 color-text-light">Sierlijke Exmoorpony&#39;s</figcaption>
   </figure>
 
   <figure class="image-grid__item">
-      <img src="../images/omgeving/winter_scenery.jpg" alt="De Maashorst in de winter" class="db w-100 br2 shadow-2">
+      <a href="../images/omgeving/winter_scenery.jpg" class="glightbox" data-gallery="gallery" data-glightbox="title: De Maashorst in de winter">
+          <img src="../images/omgeving/winter_scenery.jpg" alt="De Maashorst in de winter" class="db w-100 br2 shadow-2">
+      </a>
       <figcaption class="f6 mt2 color-text-light">De Maashorst in de winter</figcaption>
   </figure>
 
@@ -175,7 +191,9 @@
 <div class="image-grid  mv4">
     
   <figure class="image-grid__item">
-      <img src="../images/omgeving/heide.jpg" alt="De prachtige heide" class="db w-100 br2 shadow-2">
+      <a href="../images/omgeving/heide.jpg" class="glightbox" data-gallery="gallery" data-glightbox="title: De prachtige heide">
+          <img src="../images/omgeving/heide.jpg" alt="De prachtige heide" class="db w-100 br2 shadow-2">
+      </a>
       
   </figure>
 

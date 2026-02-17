@@ -1,4 +1,6 @@
 <figure class="image-grid__item">
-    <img src="{{ .Get "src" }}" alt="{{ .Get "alt" | default "" }}" class="db w-100 br2 shadow-2">
+    <a href="{{ .Get "src" }}" class="glightbox" data-gallery="gallery" data-glightbox="title: {{ .Get "alt" | default "" }}">
+        <img src="{{ .Get "src" }}" alt="{{ .Get "alt" | default "" }}" class="db w-100 br2 shadow-2">
+    </a>
     {{ with .Get "caption" }}<figcaption class="f6 mt2 color-text-light">{{ . }}</figcaption>{{ end }}
 </figure>
