@@ -5,7 +5,9 @@ featured_image: '/images/omgeving/heide.jpg'
 omit_header_text: false
 featured_image_class: "cover bg-center"
 content_width: 'content-width-wide'
-menu: 'main'
+menu:
+  main:
+    weight: 20
 ---
 
 Wie Berghem zegt, zegt **De Maashorst**. Als gast bevindt u zich hier aan de rand van het grootste aaneengesloten natuurgebied van Noord-Brabant. Een uniek 'oerlandschap' waar de natuur nog echt de baas is en waar u de haast van alledag direct achter u laat zodra u de eerste stap buiten zet.

@@ -3,7 +3,9 @@ title: "Contact"
 description: "Neem contact met ons op voor vragen of reserveringen."
 featured_image: '/images/verblijf/looppad_naar_voordeur.jpg'
 content_width: 'content-width-wide'
-menu: 'main'
+menu:
+  main:
+    weight: 50
 ---
 
 Heeft u vragen over ons gastenverblijf, de omgeving of wilt u een reservering maken? Neem dan gerust contact met ons op. We proberen zo snel mogelijk te reageren.

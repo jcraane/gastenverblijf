@@ -3,7 +3,9 @@ title: "Ons Gastenverblijf"
 description: "Meer informatie over ons sfeervolle gastenverblijf."
 featured_image: '/images/verblijf/slaapkamer_vanuit_hoek.jpg'
 content_width: 'content-width-wide'
-menus: 'main'
+menu:
+  main:
+    weight: 10
 ---
 
 Ben je op zoek naar een plek waar comfort en natuur samenkomen? Aan de rand van het prachtige natuurgebied De Maashorst in Berghem ligt ons onlangs volledig gerenoveerde B&B. Deze sfeervolle plek van 33 m² biedt de perfecte balans tussen luxe en absolute rust. Het is de ideale uitvalsbasis voor een ontspannen verblijf met z’n tweeën, waar je geniet van hoogwaardige afwerking en de stilte van de natuur.
@@ -13,6 +15,16 @@ De accommodatie is met veel liefde sfeervol en warm ingericht, waardoor je je di
 Het gastenverblijf ligt aan de rand van een bosrijke omgeving.. Na een dag wandelen of fietsen kun je heerlijk nagenieten op het sfeervol verlichte privéterras, een idyllische plek voor een goed glas wijn in de buitenlucht. Om de rust en de frisse ambiance voor al onze gasten te waarborgen, is het B&B huisdiervrij en is roken enkel toegestaan op het terras.
 
 Kom tot rust, laad jezelf op en ervaar de gastvrijheid op deze unieke plek in Berghem.
+
+{{< activity-nav >}}
+  <a href="#algemene-voorzieningen" class="activity-nav__link">Voorzieningen</a>
+  <a href="#keuken" class="activity-nav__link">Keuken</a>
+  <a href="#woonkamer" class="activity-nav__link">Woonkamer</a>
+  <a href="#slaapgedeelte" class="activity-nav__link">Slaapgedeelte</a>
+  <a href="#badkamer" class="activity-nav__link">Badkamer</a>
+  <a href="#plattegrond" class="activity-nav__link">Plattegrond</a>
+  <a href="#impressie" class="activity-nav__link">Impressie</a>
+{{< /activity-nav >}}
 
 <div class="room-section">
 
@@ -142,4 +154,4 @@ Kom tot rust, laad jezelf op en ervaar de gastvrijheid op deze unieke plek in Be
   {{< grid-image src="/images/verblijf/hal.jpg" alt="Hal" >}}
 {{< /image-grid >}}
 
-{{< cta-banner title="Interesse?" text="Bekijk onze tarieven of neem direct contact op." button_text="Bekijk tarieven" button_link="/tarieven/" >}}
+{{< cta-banner title="Interesse?" text="Bekijk onze tarieven of neem direct contact op." button_text="Bekijk tarieven" button_link="/tarieven/" button2_text="Neem contact op" button2_link="/contact/" >}}
