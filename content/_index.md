@@ -32,12 +32,15 @@ Stap buiten en je staat in het grootste aaneengesloten natuurgebied van Noord-Br
   {{< grid-image src="/images/verblijf/keuken_2.jpg" alt="Keuken" >}}
   {{< grid-image src="/images/verblijf/slaapkamer_3.jpg" alt="Slaapkamer" >}}
   {{< grid-image src="/images/verblijf/terras_vanuit_achter.jpg" alt="Privéterras" >}}
+  {{< grid-image src="/images/verblijf/sfeerfotos/sfeerfoto_boek_1.jpg" alt="Sfeervolle details" >}}
+  {{< grid-image src="/images/verblijf/sfeerfotos/sfeerfoto_badkamer_2.jpg" alt="Badkamer" >}}
+  {{< grid-image src="/images/verblijf/tv_meubel.jpg" alt="TV-meubel" >}}
 {{< /image-grid >}}
 
 ### Waarom Puur Geluk?
 
 {{< feature-list >}}
-  {{< feature-item label="Volledig gerenoveerd in 2024" >}}
+  {{< feature-item label="Volledig gerenoveerd in 2025" >}}
   {{< feature-item label="Privéterras met sfeerverlichting" >}}
   {{< feature-item label="Aan de rand van De Maashorst" >}}
   {{< feature-item label="Eigen inrit en parkeerplaats" >}}

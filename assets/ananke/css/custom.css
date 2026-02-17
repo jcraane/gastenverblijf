@@ -226,6 +226,8 @@ blockquote {
 }
 
 .image-grid__item img {
+    height: 250px;
+    object-fit: cover;
     transition: transform var(--transition-fast);
 }
 
