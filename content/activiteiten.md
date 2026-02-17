@@ -45,7 +45,7 @@ Gezellige restaurants en terrassen op steenworp afstand. Van pannenkoeken tot lu
 {{< /split >}}
 
 {{< activity-grid >}}
-    {{< activity-card title="Pan & Zo" description="Gezellig pannenkoekenrestaurant met een uitgebreide kaart." link="https://panenzo.nl/" link_text="Pannenkoeken & meer →" distance="10 min fietsen" >}}
+    {{< activity-card title="Pan & Zo" description="Gezellig pannenkoekenrestaurant met een uitgebreide kaart." link="https://www.panenzo.com/" link_text="Pannenkoeken & meer →" distance="10 min fietsen" >}}
     {{< activity-card title="Restaurant Clemens" description="Sfeervol dineren in het hart van de regio." link="https://restaurantclemens.nl/" link_text="Dineren in sfeer →" distance="8 min auto" >}}
     {{< activity-card title="Bomenpark" description="Luxe lunch en diner bij de culinaire toegangspoort van natuurgebied de Maashorst." link="https://bomenpark.nl/" link_text="Luxe lunch & diner →" distance="9 min auto" >}}
 {{< /activity-grid >}}
@@ -61,8 +61,7 @@ Voor de avonturiers en sportievelingen. Van klimmen en karten tot een nostalgisc
 {{< /split >}}
 
 {{< activity-grid >}}
-    {{< activity-card title="Klimpark Uden" description="Verleg je grenzen op grote hoogte." link="https://klimparkuden.nl/" link_text="klimparkuden.nl →" featured="true" img="/images/omgeving/horses_2.jpg" >}}
-    {{< activity-card title="Solexverhuur Herpen" description="Ontdek de omgeving op een nostalgische Solex." link="https://solexverhuurherpen.nl/" link_text="solexverhuurherpen.nl →" >}}
+    {{< activity-card title="Klimpark Uden" description="Verleg je grenzen op grote hoogte." link="https://www.mastworp.nl/klimpark-uden" link_text="klimparkuden.nl →" featured="true" img="/images/omgeving/klimpark_uden.jpg" >}} 
     {{< activity-card title="Bike Adventure" description="Voor al je actieve uitjes op de fiets." link="https://bikeadventure.nl/" link_text="bikeadventure.nl →" >}}
     {{< activity-card title="Kartbaan Berghem" description="Snelheid en actie op het circuit." link="https://circuitparkberghem.nl/" link_text="circuitparkberghem.nl →" distance="5 min auto" >}}
     {{< activity-card title="Bowling Rusheuvel" description="Gezellig bowlen met vrienden of familie." link="https://rusheuvel.nl/" link_text="rusheuvel.nl →" >}}
