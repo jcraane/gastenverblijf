@@ -5,7 +5,9 @@ featured_image: '/images/verblijf/zithoek_1.jpg'
 omit_header_text: false
 featured_image_class: "cover bg-center"
 content_width: 'content-width-wide'
-menu: 'main'
+menu:
+  main:
+    weight: 40
 ---
 
 Wij verwelkomen je graag voor een ontspannen verblijf. Wij vinden het belangrijk dat je kunt genieten van een fris en hoogwaardig verblijf. Om onze hoge standaard van kwaliteit en hygiëne te behouden, hanteren wij de volgende tarieven voor ons onlangs vernieuwde gastenverblijf:

@@ -48,4 +48,4 @@ Een sfeervol ingericht verblijf van 33 m² voor **2 personen**, met eigen inrit,
   {{< feature-item label="Inclusief airco, wifi en Nespresso" >}}
 {{< /feature-list >}}
 
-{{< cta-banner title="Interesse in een verblijf?" text="Bekijk onze tarieven of neem direct contact met ons op." button_text="Bekijk tarieven" button_link="/tarieven/" >}}
+{{< cta-banner title="Interesse in een verblijf?" text="Bekijk onze tarieven of neem direct contact met ons op." button_text="Bekijk tarieven" button_link="/tarieven/" button2_text="Neem contact op" button2_link="/contact/" >}}

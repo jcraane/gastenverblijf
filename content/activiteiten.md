@@ -5,7 +5,9 @@ featured_image: '/images/omgeving/heide.jpg'
 omit_header_text: false
 featured_image_class: "cover bg-center"
 content_width: 'content-width-wide'
-menu: 'main'
+menu:
+  main:
+    weight: 30
 ---
 
 Ontdek de veelzijdigheid van Berghem en omgeving. Of je nu op zoek bent naar rust in de natuur, een sportieve uitdaging of een gezellig diner: er is voor ieder wat wils.
@@ -59,7 +61,7 @@ Voor de avonturiers en sportievelingen. Van klimmen en karten tot een nostalgisc
 {{< /split >}}
 
 {{< activity-grid >}}
-    {{< activity-card title="Klimpark Uden" description="Verleg je grenzen op grote hoogte." link="https://klimparkuden.nl/" link_text="klimparkuden.nl →" featured="true" >}}
+    {{< activity-card title="Klimpark Uden" description="Verleg je grenzen op grote hoogte." link="https://klimparkuden.nl/" link_text="klimparkuden.nl →" featured="true" img="/images/omgeving/horses_2.jpg" >}}
     {{< activity-card title="Solexverhuur Herpen" description="Ontdek de omgeving op een nostalgische Solex." link="https://solexverhuurherpen.nl/" link_text="solexverhuurherpen.nl →" >}}
     {{< activity-card title="Bike Adventure" description="Voor al je actieve uitjes op de fiets." link="https://bikeadventure.nl/" link_text="bikeadventure.nl →" >}}
     {{< activity-card title="Kartbaan Berghem" description="Snelheid en actie op het circuit." link="https://circuitparkberghem.nl/" link_text="circuitparkberghem.nl →" distance="5 min auto" >}}
@@ -77,7 +79,7 @@ Verfrissing op warme dagen of sportief banen zwemmen. De regio biedt verschillen
 {{< /split >}}
 
 {{< activity-grid >}}
-    {{< activity-card title="Zwembad De Kriekenput" description="Prachtig buitenbad gelegen in het bos." link="https://www.kriekenput.nl/" link_text="Bezoek site →" featured="true" distance="10 min fietsen" >}}
+    {{< activity-card title="Zwembad De Kriekenput" description="Prachtig buitenbad gelegen in het bos." link="https://www.kriekenput.nl/" link_text="Bezoek site →" featured="true" distance="10 min fietsen" img="/images/omgeving/ganzenven.jpg" >}}
     {{< activity-card title="Golfbad Oss" description="Binnenbad met golfslagbad en glijbanen." link="https://golfbad.nl/" link_text="Bezoek site →" distance="10 min auto" >}}
     {{< activity-card title="Beachclub de Maashorst" description="Recreatieplas voor een heerlijke dag aan het water." link="https://beachclubdemaashorst.nl/" link_text="Bezoek site →" >}}
     {{< activity-card title="Strand Tien" description="Ontspannen bij deze fijne recreatieplas." link="https://strandtien.nl/" link_text="Bezoek site →" >}}
@@ -94,19 +96,19 @@ Verfrissing op warme dagen of sportief banen zwemmen. De regio biedt verschillen
 Bioscoop, theater en musea in de regio. Van de nieuwste blockbusters tot ambachtelijke brouwerijen: er valt altijd iets te beleven.
 {{< /split >}}
 
-#### **Bioscopen**
+<h4>Bioscopen</h4>
 {{< activity-grid >}}
     {{< activity-card title="Kinepolis Oss" description="De nieuwste blockbusters in een moderne bioscoop." link="https://kinepolis.nl/bioscopen/kinepolis-oss" link_text="Tickets →" distance="10 min auto" >}}
     {{< activity-card title="TakeTen Uden" description="Luxe cinema ervaring met comfortabele stoelen." link="https://taketen.nl/" link_text="Tickets →" >}}
     {{< activity-card title="Vue Den Bosch" description="Groot aanbod aan films in de nabijgelegen stad." link="https://www.vuecinemas.nl/bioscopen/den-bosch" link_text="Tickets →" >}}
 {{< /activity-grid >}}
 
-#### **Theater & Musea**
+<h4>Theater &amp; Musea</h4>
 {{< activity-grid >}}
     {{< activity-card title="De Lievekamp" description="Theater in Oss met een breed programma." link="https://www.lievekamp.nl/" link_text="lievekamp.nl →" >}}
     {{< activity-card title="Hoessenbosch" description="Uniek openluchttheater in een bosrijke omgeving." link="https://www.hoessenbosch.nl/" link_text="hoessenbosch.nl →" >}}
     {{< activity-card title="De Groene Engel" description="Cultuurpodium voor muziek, film en theater." link="https://www.groene-engel.nl/" link_text="groene-engel.nl →" >}}
-    {{< activity-card title="Museum Jan Cunen" description="Stedelijk museum met kunst en lokale historie." link="https://museumjancunen.nl/" link_text="museumjancunen.nl →" featured="true" >}}
+    {{< activity-card title="Museum Jan Cunen" description="Stedelijk museum met kunst en lokale historie." link="https://museumjancunen.nl/" link_text="museumjancunen.nl →" featured="true" img="/images/omgeving/winter_scenery.jpg" >}}
     {{< activity-card title="Bierbrouwerij Oijen" description="Ambachtelijke brouwerij met proeverij en restaurant." link="https://speciaalbierbrouwerij.nl/" link_text="speciaalbierbrouwerij.nl →" >}}
 {{< /activity-grid >}}
 

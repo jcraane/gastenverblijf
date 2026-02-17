@@ -74,9 +74,9 @@ body {
 .cover-gradient {
     background: linear-gradient(
         to bottom,
-        rgba(0, 0, 0, 0.45) 0%,
-        rgba(0, 0, 0, 0.25) 40%,
-        rgba(0, 0, 0, 0.50) 100%
+        rgba(0, 0, 0, 0.55) 0%,
+        rgba(0, 0, 0, 0.40) 40%,
+        rgba(0, 0, 0, 0.55) 100%
     );
 }
 
@@ -280,6 +280,24 @@ blockquote {
     background-color: var(--color-primary-dark);
     color: #fff !important;
     text-decoration: none;
+}
+
+.cta-banner__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.cta-banner__button--secondary {
+    background-color: transparent;
+    color: var(--color-primary) !important;
+    border: 2px solid var(--color-primary);
+}
+
+.cta-banner__button--secondary:hover {
+    background-color: var(--color-primary);
+    color: #fff !important;
 }
 
 /* ============================================
