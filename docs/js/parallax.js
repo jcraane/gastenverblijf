@@ -21,6 +21,29 @@
   updateHeights();
   window.addEventListener('resize', updateHeights);
 
+  // Hamburger toggle
+  var navToggle = document.getElementById('nav-toggle');
+  var navMenu = document.getElementById('nav-menu');
+
+  if (navToggle && navMenu) {
+    navToggle.addEventListener('click', function() {
+      var isOpen = navMenu.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      navMenu.setAttribute('aria-hidden', isOpen ? 'false' : 'true');
+      updateHeights();
+    });
+
+    // Close menu when a nav link is clicked (e.g. same-page anchors)
+    navMenu.querySelectorAll('a').forEach(function(link) {
+      link.addEventListener('click', function() {
+        navMenu.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        navMenu.setAttribute('aria-hidden', 'true');
+        updateHeights();
+      });
+    });
+  }
+
   // No hero image — nav stays solid, nothing else to do
   if (!heroHeader) {
     navWrapper.classList.add('site-nav-wrapper--solid');
