@@ -818,6 +818,8 @@ a {
 .hero-parallax {
     position: relative;
     margin-top: calc(-1 * var(--nav-height, 64px));
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-parallax.cover {
@@ -826,6 +828,7 @@ a {
 
 .hero-parallax__overlay {
     padding-top: var(--nav-height, 64px);
+    flex: 1;
 }
 
 .hero-parallax__content {
