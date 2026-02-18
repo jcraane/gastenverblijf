@@ -132,11 +132,9 @@ img {
    Layout Helpers
    ============================================ */
 .g2 {
-    display: flex;
     gap: 1rem;
 }
 .g3 {
-    display: flex;
     gap: 2rem;
 }
 
