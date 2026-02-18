@@ -15,7 +15,7 @@ Heeft u vragen over ons gastenverblijf, de omgeving of wilt u een reservering ma
 
 ### Stuur ons een bericht
 
-{{< form-mailto email="tbd" subject="Contact via Gastenverblijf Berghem website" >}}
+{{< form-mailto email="info@puurgelukberghem.nl" subject="Contact via Gastenverblijf Berghem website" >}}
 
 </div>
 <div>
@@ -34,7 +34,7 @@ Heeft u vragen over ons gastenverblijf, de omgeving of wilt u een reservering ma
     <span class="contact-info-icon">&#x2709;</span>
     <div>
         <span class="contact-info-label">E-mail</span>
-        <span class="contact-info-value">Via het contactformulier</span>
+        <span class="contact-info-value">info@puurgelukberghem.nl</span>
     </div>
 </div>
 
