@@ -1,8 +1,11 @@
 ---
 title: "Ons Gastenverblijf"
-description: "Meer informatie over ons sfeervolle gastenverblijf."
+description: "Ontdek ons volledig ingericht gastenverblijf in Berghem: eigen keuken, woonkamer, comfortabele slaapkamer en badkamer. Alles voor een onbezorgd verblijf in de natuur."
+keywords: ["B&B Berghem", "gastenverblijf Maashorst", "overnachten Noord-Brabant", "bed and breakfast Oss"]
 featured_image: '/images/verblijf/slaapkamer_vanuit_hoek.jpg'
 content_width: 'content-width-wide'
+sitemap:
+  priority: 0.8
 menu:
   main:
     weight: 10
@@ -10,7 +13,7 @@ menu:
 
 Aan de rand van het prachtige natuurgebied De Maashorst in Berghem ligt ons onlangs volledig gerenoveerde B&B. Een sfeervolle plek van 33 m² die de perfecte balans biedt tussen luxe en absolute rust — ideaal voor een ontspannen verblijf met z'n tweeën.
 
-### Sfeervol & comfortabel
+## Sfeervol & comfortabel
 
 De accommodatie is met veel liefde warm ingericht, waardoor je je direct thuis voelt. Na een dag wandelen of fietsen geniet je op het sfeervol verlichte privéterras van een goed glas wijn in de buitenlucht.
 
@@ -39,7 +42,7 @@ De accommodatie is met veel liefde warm ingericht, waardoor je je direct thuis v
 
 <div class="room-section">
 
-### Algemene voorzieningen
+## Algemene voorzieningen
 
 {{< feature-list >}}
   {{< feature-item label="Airco" >}}
@@ -58,7 +61,7 @@ De accommodatie is met veel liefde warm ingericht, waardoor je je direct thuis v
 
 <div class="room-section">
 
-### Keuken
+## Keuken
 
 {{< feature-list >}}
   {{< feature-item label="Combi magnetron/oven" >}}
@@ -86,7 +89,7 @@ De accommodatie is met veel liefde warm ingericht, waardoor je je direct thuis v
 
 <div class="room-section">
 
-### Woonkamer
+## Woonkamer
 
 {{< feature-list >}}
   {{< feature-item label="Eettafel" >}}
@@ -104,7 +107,7 @@ De accommodatie is met veel liefde warm ingericht, waardoor je je direct thuis v
 
 <div class="room-section">
 
-### Slaapgedeelte
+## Slaapgedeelte
 
 {{< feature-list >}}
   {{< feature-item label="Comfortabel 2-persoonsbed (160 cm)" >}}
@@ -125,7 +128,7 @@ De accommodatie is met veel liefde warm ingericht, waardoor je je direct thuis v
 
 <div class="room-section">
 
-### Badkamer
+## Badkamer
 
 {{< feature-list >}}
   {{< feature-item label="Inclusief douchegel en shampoo" >}}
@@ -142,13 +145,13 @@ De accommodatie is met veel liefde warm ingericht, waardoor je je direct thuis v
 
 </div>
 
-### Plattegrond
+## Plattegrond
 
 <div style="text-align: center;">
   <img src="/images/situatie/situatie.png" alt="Plattegrond van het gastenverblijf" style="max-width: 65%; height: auto;">
 </div>
 
-### Impressie
+## Impressie
 
 {{< image-grid >}}
   {{< grid-image src="/images/verblijf/inrit.jpg" alt="Inrit" >}}

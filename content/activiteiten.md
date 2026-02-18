@@ -1,6 +1,6 @@
 ---
 title: "Activiteiten"
-description: "Ontdek de veelzijdigheid van Berghem en omgeving."
+description: "Van wandelen in de Maashorst tot restaurants, fietsen, zwemmen en cultuur in Oss — ontdek wat er allemaal te doen is rondom ons gastenverblijf in Berghem."
 featured_image: '/images/omgeving/heide.jpg'
 omit_header_text: false
 featured_image_class: "cover bg-center"
@@ -23,7 +23,7 @@ Of je nu op zoek bent naar rust in de natuur, een sportieve uitdaging of een gez
 {{< activity-section theme="natuur" id="natuur" >}}
 
 {{< split img="/images/omgeving/ganzenven.jpg" alt="Natuur in de Maashorst" >}}
-### 🌳 Natuur & Wandelen
+## 🌳 Natuur & Wandelen
 
 Geniet van de rust en de unieke flora en fauna van de Brabantse natuur. De Maashorst biedt eindeloze wandelpaden door bossen, heide en langs schilderachtige vennen.
 {{< /split >}}
@@ -39,7 +39,7 @@ Geniet van de rust en de unieke flora en fauna van de Brabantse natuur. De Maash
 {{< activity-section theme="eten" id="eten" >}}
 
 {{< split img="/images/omgeving/horses.jpg" alt="Sfeervolle omgeving" >}}
-### 🍴 Eten & Drinken
+## 🍴 Eten & Drinken
 
 Gezellige restaurants en terrassen op steenworp afstand. Van pannenkoeken tot luxe dineren: de regio heeft voor elke smaak iets bijzonders.
 {{< /split >}}
@@ -55,7 +55,7 @@ Gezellige restaurants en terrassen op steenworp afstand. Van pannenkoeken tot lu
 {{< activity-section theme="actief" id="actief" >}}
 
 {{< split img="/images/omgeving/horses_2.jpg" alt="Actief in de omgeving" >}}
-### ⚡ Actief & Sportief
+## ⚡ Actief & Sportief
 
 Voor de avonturiers en sportievelingen. Van klimmen en karten tot een nostalgische Solextocht door het Brabantse land.
 {{< /split >}}
@@ -72,7 +72,7 @@ Voor de avonturiers en sportievelingen. Van klimmen en karten tot een nostalgisc
 {{< activity-section theme="zwemmen" id="zwemmen" >}}
 
 {{< split img="/images/omgeving/heide.jpg" alt="Recreatie in de natuur" >}}
-### 🏊 Zwemmen & Waterplezier
+## 🏊 Zwemmen & Waterplezier
 
 Verfrissing op warme dagen of sportief banen zwemmen. De regio biedt verschillende zwembaden en recreatieplassen voor een heerlijke dag aan het water.
 {{< /split >}}
@@ -90,7 +90,7 @@ Verfrissing op warme dagen of sportief banen zwemmen. De regio biedt verschillen
 {{< activity-section theme="cultuur" id="cultuur" >}}
 
 {{< split img="/images/omgeving/winter_scenery.jpg" alt="Cultuur in de regio" >}}
-### 🎭 Cultuur & Uitgaan
+## 🎭 Cultuur & Uitgaan
 
 Bioscoop, theater en musea in de regio. Van de nieuwste blockbusters tot ambachtelijke brouwerijen: er valt altijd iets te beleven. Op <a href="https://www.trefhetinoss.nl/" target="_blank" rel="noopener">Tref het in Oss</a> vind je het actuele aanbod aan evenementen en uitgaanstips.
 {{< /split >}}
