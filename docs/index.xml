@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>B&amp;B Puur Geluk on B&amp;B Puur Geluk Berghem</title>
-    <link>http://localhost:63584/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content in B&amp;B Puur Geluk on B&amp;B Puur Geluk Berghem</description>
     <generator>Hugo</generator>
     <language>nl-nl</language>
-    <atom:link href="http://localhost:63584/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Activiteiten</title>
-      <link>http://localhost:63584/activiteiten/</link>
+      <link>http://localhost:1313/activiteiten/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63584/activiteiten/</guid>
+      <guid>http://localhost:1313/activiteiten/</guid>
       <description>&lt;p&gt;Of je nu op zoek bent naar rust in de natuur, een sportieve uitdaging of een gezellig diner: er is voor ieder wat wils.&lt;/p&gt;&#xA;&lt;nav class=&#34;activity-nav&#34;&gt;&#xA;    &#xA;  &lt;a href=&#34;#natuur&#34; class=&#34;activity-nav__link&#34;&gt;Natuur &amp; Wandelen&lt;/a&gt;&#xA;  &lt;a href=&#34;#eten&#34; class=&#34;activity-nav__link&#34;&gt;Eten &amp; Drinken&lt;/a&gt;&#xA;  &lt;a href=&#34;#actief&#34; class=&#34;activity-nav__link&#34;&gt;Actief &amp; Sportief&lt;/a&gt;&#xA;  &lt;a href=&#34;#zwemmen&#34; class=&#34;activity-nav__link&#34;&gt;Zwemmen&lt;/a&gt;&#xA;  &lt;a href=&#34;#cultuur&#34; class=&#34;activity-nav__link&#34;&gt;Cultuur &amp; Uitgaan&lt;/a&gt;&#xA;&#xA;&lt;/nav&gt;&#xA;&#xA;&lt;div class=&#34;activity-section activity-section--natuur&#34; id=&#34;natuur&#34;&gt;&#xA;    &#xA;&#xA;&lt;div class=&#34;flex-l items-center g3 mv4&#34;&gt;&#xA;    &lt;div class=&#34;w-100 w-50-l&#34;&gt;&#xA;        &lt;img src=&#34;./images/omgeving/ganzenven.jpg&#34; alt=&#34;Natuur in de Maashorst&#34; class=&#34;db w-100 br3 shadow-2&#34;&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;w-100 w-50-l&#34;&gt;&#xA;        &lt;h2 id=&#34;-natuur--wandelen&#34;&gt;🌳 Natuur &amp;amp; Wandelen&lt;/h2&gt;&#xA;&lt;p&gt;Geniet van de rust en de unieke flora en fauna van de Brabantse natuur. De Maashorst biedt eindeloze wandelpaden door bossen, heide en langs schilderachtige vennen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Contact</title>
-      <link>http://localhost:63584/contact/</link>
+      <link>http://localhost:1313/contact/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63584/contact/</guid>
+      <guid>http://localhost:1313/contact/</guid>
       <description>&lt;p&gt;Heeft u vragen over ons gastenverblijf, de omgeving of wilt u een reservering maken? Neem dan gerust contact met ons op. We proberen zo snel mogelijk te reageren.&lt;/p&gt;&#xA;&lt;h2 id=&#34;zo-werkt-een-boeking&#34;&gt;Zo werkt een boeking&lt;/h2&gt;&#xA;&lt;p&gt;Na uw eerste bericht stemmen we samen de gewenste verblijfsperiode af. U ontvangt een bevestiging per e-mail met alle praktische informatie over inchecken (15:00–17:00), uitchecken (vóór 10:30) en de routebeschrijving naar ons gastenverblijf aan de rand van de Maashorst in Berghem. Betaling vindt plaats voorafgaand aan uw verblijf.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Omgeving</title>
-      <link>http://localhost:63584/omgeving/</link>
+      <link>http://localhost:1313/omgeving/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63584/omgeving/</guid>
+      <guid>http://localhost:1313/omgeving/</guid>
       <description>&lt;p&gt;Natuurgebied Herperduin wordt ook wel de &amp;ldquo;Achtertuin&amp;rdquo; van Berghem genoemd. Herperduin maakt onderdeel uit van natuurgebied de Maashorst. Als gast bevindt u zich hier aan de rand van het grootste aaneengesloten natuurgebied van Noord-Brabant. Een uniek ‘oerlandschap’ waar de natuur nog echt de baas is en waar u de haast van alledag direct achter u laat zodra u de eerste stap in het landschap zet.&lt;/p&gt;&#xA;&lt;div class=&#34;flex-l items-center g3 mv4&#34;&gt;&#xA;    &lt;div class=&#34;w-100 w-50-l&#34;&gt;&#xA;        &lt;img src=&#34;./images/omgeving/ganzenven.jpg&#34; alt=&#34;Ganzenven in de Maashorst&#34; class=&#34;db w-100 br3 shadow-2&#34;&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;w-100 w-50-l&#34;&gt;&#xA;        &lt;h2 id=&#34;wandelen-en-fietsen-in-alle-rust&#34;&gt;Wandelen en Fietsen in Alle Rust&lt;/h2&gt;&#xA;&lt;p&gt;De omgeving van Berghem is een paradijs voor actievelingen die houden van stilte. Het landschap is verrassend afwisselend: het ene moment loopt u door dichte naaldbossen, het volgende moment kijkt u uit over uitgestrekte heidevelden, stuifduinen en spiegelgladde vennen.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Ons Gastenverblijf</title>
-      <link>http://localhost:63584/gastenverblijf/</link>
+      <link>http://localhost:1313/gastenverblijf/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63584/gastenverblijf/</guid>
+      <guid>http://localhost:1313/gastenverblijf/</guid>
       <description>&lt;p&gt;Aan de rand van het prachtige natuurgebied De Maashorst in Berghem ligt ons onlangs volledig gerenoveerde B&amp;amp;B. Een sfeervolle plek van 33 m² die de perfecte balans biedt tussen luxe en absolute rust — ideaal voor een ontspannen verblijf met z&amp;rsquo;n tweeën.&lt;/p&gt;&#xA;&lt;h2 id=&#34;sfeervol--comfortabel&#34;&gt;Sfeervol &amp;amp; comfortabel&lt;/h2&gt;&#xA;&lt;p&gt;De accommodatie is met veel liefde warm ingericht, waardoor je je direct thuis voelt. Na een dag wandelen of fietsen geniet je op het sfeervol verlichte privéterras van een goed glas wijn in de buitenlucht.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tarieven</title>
-      <link>http://localhost:63584/tarieven/</link>
+      <link>http://localhost:1313/tarieven/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:63584/tarieven/</guid>
+      <guid>http://localhost:1313/tarieven/</guid>
       <description>&lt;p&gt;Wij verwelkomen je graag voor een ontspannen verblijf. Wij vinden het belangrijk dat je kunt genieten van een fris en hoogwaardig verblijf. Om onze hoge standaard van kwaliteit en hygiëne te behouden, hanteren wij de volgende tarieven voor ons onlangs vernieuwde gastenverblijf:&lt;/p&gt;&#xA;&lt;div class=&#34;pricing-cards&#34;&gt;&#xA;&lt;div class=&#34;pricing-card &#34;&gt;&#xA;    &lt;div class=&#34;pricing-card__header&#34;&gt;&#xA;        &lt;h4 class=&#34;pricing-card__title&#34;&gt;Laagseizoen&lt;/h4&gt;&#xA;        &lt;p class=&#34;pricing-card__subtitle&#34;&gt;Buiten schoolvakanties&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;pricing-card__price&#34;&gt;&#xA;        &lt;span class=&#34;pricing-card__amount&#34;&gt;€ 85,-&lt;/span&gt;&#xA;        &lt;span class=&#34;pricing-card__period&#34;&gt;per nacht&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;pricing-card__details&#34;&gt;&#xA;        &lt;ul&gt;&#xA;&lt;li&gt;Geen minimum aantal nachten&lt;/li&gt;&#xA;&lt;li&gt;Vaste schoonmaakkosten: € 35,- per verblijf&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;div class=&#34;pricing-card pricing-card--highlight&#34;&gt;&#xA;    &lt;div class=&#34;pricing-card__header&#34;&gt;&#xA;        &lt;h4 class=&#34;pricing-card__title&#34;&gt;Hoogseizoen&lt;/h4&gt;&#xA;        &lt;p class=&#34;pricing-card__subtitle&#34;&gt;Schoolvakanties &amp;amp; feestdagen&lt;/p&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;pricing-card__price&#34;&gt;&#xA;        &lt;span class=&#34;pricing-card__amount&#34;&gt;€ 110,-&lt;/span&gt;&#xA;        &lt;span class=&#34;pricing-card__period&#34;&gt;per nacht&lt;/span&gt;&#xA;    &lt;/div&gt;&#xA;    &lt;div class=&#34;pricing-card__details&#34;&gt;&#xA;        &lt;ul&gt;&#xA;&lt;li&gt;Minimaal 2 nachten&lt;/li&gt;&#xA;&lt;li&gt;Vaste schoonmaakkosten: € 35,- per verblijf&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;    &lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;Goed om te weten: Door de eenmalige schoonmaakkosten wordt je verblijf per nacht voordeliger naarmate je langer bij ons tot rust komt!&lt;/p&gt;</description>
     </item>
   </channel>
