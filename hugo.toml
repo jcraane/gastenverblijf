@@ -1,4 +1,4 @@
-baseURL = 'https://jcraane.github/'
+baseURL = 'https://gastenverblijfberghem.nl/'
 languageCode = 'nl-nl'
 defaultContentLanguage = 'nl'
 title = 'B&B Puur Geluk Berghem'
@@ -19,6 +19,8 @@ filename = "sitemap.xml"
 custom_css = ["custom.css"]
 cover_dimming_class = 'cover-gradient'
 ananke.show_recent_posts = false
+description = "B&B Puur Geluk is een sfeervol gastenverblijf in Berghem, Noord-Brabant, gelegen aan de rand van de Maashorst. Ideaal voor een ontspannen verblijf in de natuur."
+author = "B&B Puur Geluk Berghem"
 
 [markup]
   [markup.goldmark]
