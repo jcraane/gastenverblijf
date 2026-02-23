@@ -8,7 +8,7 @@ menu:
     weight: 50
 ---
 
-Heeft u vragen over ons gastenverblijf, de omgeving of wilt u een reservering maken? Neem dan gerust contact met ons op. We proberen zo snel mogelijk te reageren.
+Heeft u vragen over ons gastenverblijf, de omgeving of wilt u een reservering maken? Neem dan gerust contact met ons op (Jamie Craane & Ingrid Hendriks). We proberen zo snel mogelijk te reageren.
 
 ## Zo werkt een boeking
 
