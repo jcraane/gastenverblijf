@@ -155,6 +155,7 @@ De accommodatie is met veel liefde warm ingericht, waardoor je je direct thuis v
 
 {{< image-grid >}}
   {{< grid-image src="/images/verblijf/inrit.jpg" alt="Inrit" >}}
+  {{< grid-image src="/images/verblijf/gastenverblijf_inrit_nacht.jpg" alt="Inrit" >}}
   {{< grid-image src="/images/verblijf/keuken_1.jpg" alt="Keuken" >}}
   {{< grid-image src="/images/verblijf/keuken_2.jpg" alt="Keuken vanuit de zithoek" >}}
   {{< grid-image src="/images/verblijf/zithoek_4.jpg" alt="Zithoek" >}}
