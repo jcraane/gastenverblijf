@@ -1,6 +1,6 @@
 ---
 title: "Ons Gastenverblijf"
-description: "Ontdek ons volledig ingericht gastenverblijf in Berghem: eigen keuken, woonkamer, comfortabele slaapkamer en badkamer. Alles voor een onbezorgd verblijf in de natuur."
+description: "Ontdek ons volledig ingericht gastenverblijf in Berghem: eigen keuken, woonkamer, comfortabele slaapkamer, badkamer en eigen inrit. Alles voor een onbezorgd verblijf in de natuur."
 keywords: ["B&B Berghem", "gastenverblijf Maashorst", "overnachten Noord-Brabant", "bed and breakfast Oss"]
 featured_image: '/images/verblijf/slaapkamer_vanuit_hoek.jpg'
 content_width: 'content-width-wide'
