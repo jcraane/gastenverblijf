@@ -159,7 +159,7 @@ De accommodatie is met veel liefde warm ingericht, waardoor je je direct thuis v
   {{< grid-image src="/images/verblijf/keuken_2.jpg" alt="Keuken vanuit de zithoek" >}}
   {{< grid-image src="/images/verblijf/zithoek_4.jpg" alt="Zithoek" >}}
   {{< grid-image src="/images/verblijf/terras_vanuit_achter.jpg" alt="Terras" >}}
-  {{< grid-image src="/images/verblijf/badkamer.jpg" alt="Badkamer" >}}
+  {{< grid-image src="/images/verblijf/sfeerfotos/sfeerfoto_badkamer_3.jpg" alt="Badkamer" >}}
   {{< grid-image src="/images/verblijf/slaapkamer_3.jpg" alt="Slaapkamer" >}}
   {{< grid-image src="/images/verblijf/slaapkamer_vanuit_hoek.jpg" alt="Slaapkamer vanuit hoek" >}}
   {{< grid-image src="/images/verblijf/looppad_naar_voordeur.jpg" alt="Looppad naar voordeur" >}}
