@@ -64,4 +64,7 @@ Nee, de prijzen zijn exclusief toeristenbelasting. De toeristenbelasting wordt c
 **Wat is de maximale verblijfsduur?**
 Het maximale verblijf bedraagt één week (7 nachten).
 
+**Hoe laat kan ik in- / en uitchecken?**
+Inchecken kan tussen 15:00 en 17:00. Mocht u later arriveren laat het ons dan even weten. Uitchecken kan tot 10:30.
+
 {{< cta-banner title="Reserveren?" text="Neem contact met ons op om uw verblijf te boeken." button_text="Neem contact op" button_link="/contact/" >}}

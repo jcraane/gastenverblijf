@@ -12,7 +12,7 @@ Heeft u vragen over ons gastenverblijf, de omgeving of wilt u een reservering ma
 
 ## Zo werkt een boeking
 
-Na uw eerste bericht stemmen we samen de gewenste verblijfsperiode af. U ontvangt een bevestiging per e-mail met alle praktische informatie over inchecken (15:00–17:00), uitchecken (vóór 10:30) en de routebeschrijving naar ons gastenverblijf aan de rand van de Maashorst in Berghem. Betaling vindt plaats voorafgaand aan uw verblijf.
+Na uw eerste bericht stemmen we samen de gewenste verblijfsperiode af. U ontvangt een bevestiging per e-mail met alle praktische informatie over inchecken (15:00–17:00), uitchecken (vóór 10:30) en de routebeschrijving naar ons gastenverblijf aan de rand van de Maashorst in Berghem. Betaling vindt plaats voorafgaand aan uw verblijf. Meer veelgestelde vragen vindt u op de pagina [tarieven](/tarieven/#veelgestelde-vragen).
 
 <div class="contact-layout">
 <div>
