@@ -38,7 +38,7 @@ Geniet van de rust en de unieke flora en fauna van de Brabantse natuur. De Maash
 
 {{< activity-section theme="eten" id="eten" >}}
 
-{{< split img="/images/omgeving/horses.jpg" alt="Sfeervolle omgeving" >}}
+{{< split img="/images/omgeving/panzo.png" alt="Sfeervolle omgeving" >}}
 ## 🍴 Eten & Drinken
 
 Gezellige restaurants en terrassen op steenworp afstand. Van pannenkoeken tot luxe dineren: de regio heeft voor elke smaak iets bijzonders.
@@ -54,10 +54,10 @@ Gezellige restaurants en terrassen op steenworp afstand. Van pannenkoeken tot lu
 
 {{< activity-section theme="actief" id="actief" >}}
 
-{{< split img="/images/omgeving/horses_2.jpg" alt="Actief in de omgeving" >}}
+{{< split img="/images/omgeving/karten.jpg" alt="Actief in de omgeving" >}}
 ## ⚡ Actief & Sportief
 
-Voor de avonturiers en sportievelingen. Van klimmen en karten tot een nostalgische Solextocht door het Brabantse land.
+Voor de avonturiers en sportievelingen. Van klimmen en karten tot wandelen door het Brabantse land.
 {{< /split >}}
 
 {{< activity-grid >}}
