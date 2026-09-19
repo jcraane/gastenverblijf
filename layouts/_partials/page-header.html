@@ -7,7 +7,7 @@
   </div>
   <header class="hero-parallax {{ $featured_image_class }}" id="hero-header" style="background-image: url('{{ $featured_image }}');">
     <div class="{{ $cover_dimming_class }} hero-parallax__overlay">
-      <div class="hero-parallax__content tc-l pv6 ph3 ph4-ns" id="hero-content">
+      <div class="hero-parallax__content hero-parallax__content--page tc-l pv6 ph3 ph4-ns" id="hero-content">
         {{ if not .Params.omit_header_text }}
           <div class="f2 f1-l fw2 white-90 mb0 lh-title">{{ .Title | compare.Default .Site.Title }}</div>
           {{ with .Params.description  }}
