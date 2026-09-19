@@ -1,5 +1,5 @@
 ---
-title: "B&B Puur Geluk2"
+title: "B&B Puur Geluk"
 description: "Welkom bij B&B Puur Geluk in Berghem. Een sfeervol en volledig ingericht gastenverblijf aan de rand van de Maashorst. Voor een heerlijk ontspannen verblijf."
 keywords: ["B&B Berghem", "gastenverblijf Maashorst", "overnachten Noord-Brabant", "bed and breakfast Oss"]
 theme_version: '2.8.2'
