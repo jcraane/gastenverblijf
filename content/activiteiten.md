@@ -113,4 +113,4 @@ Bioscoop, theater en musea in de regio. Van de nieuwste blockbusters tot ambacht
 
 {{< /activity-section >}}
 
-{{< cta-banner title="Klaar om Berghem te ontdekken?" text="Boek uw verblijf en ervaar zelf alles wat de omgeving te bieden heeft." button_text="Neem contact op" button_link="/contact/" >}}
+{{< cta-banner title="Klaar om Berghem te ontdekken?" text="Boek uw verblijf en ervaar zelf alles wat de omgeving te bieden heeft." button_text="Reserveer nu" button_link="/reserveren/" button2_text="Neem contact op" button2_link="/contact/" >}}

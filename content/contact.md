@@ -1,6 +1,6 @@
 ---
 title: "Contact"
-description: "Heeft u een vraag of wilt u reserveren bij B&B Puur Geluk in Berghem? Neem gerust contact op via ons formulier of stuur een e-mail naar info@puurgelukberghem.nl."
+description: "Heeft u een vraag over B&B Puur Geluk in Berghem? Neem gerust contact op via ons formulier of stuur een e-mail naar info@puurgelukberghem.nl. Reserveren kan direct online."
 featured_image: '/images/verblijf/looppad_naar_voordeur.jpg'
 content_width: 'content-width-wide'
 menu:
@@ -8,11 +8,11 @@ menu:
     weight: 50
 ---
 
-Heeft u vragen over ons gastenverblijf, de omgeving of wilt u een reservering maken? Neem dan gerust contact met ons op (Jamie Craane & Ingrid Hendriks). We proberen zo snel mogelijk te reageren.
+Heeft u vragen over ons gastenverblijf, de omgeving of een bijzondere wens voor uw verblijf? Neem dan gerust contact met ons op (Jamie Craane & Ingrid Hendriks). We proberen zo snel mogelijk te reageren.
 
 ## Zo werkt een boeking
 
-Na uw eerste bericht stemmen we samen de gewenste verblijfsperiode af. U ontvangt een bevestiging per e-mail met alle praktische informatie over inchecken (15:00–17:00), uitchecken (vóór 10:30) en de routebeschrijving naar ons gastenverblijf aan de rand van de Maashorst in Berghem. Betaling vindt plaats voorafgaand aan uw verblijf. Meer veelgestelde vragen vindt u op de pagina [tarieven](/tarieven/#veelgestelde-vragen).
+Reserveren doet u eenvoudig online via onze [reserveringskalender](/reserveren/). Daar ziet u direct de actuele beschikbaarheid. Na het boeken ontvangt u een bevestiging per e-mail met alle praktische informatie over inchecken (15:00–17:00), uitchecken (vóór 10:30) en de routebeschrijving naar ons gastenverblijf aan de rand van de Maashorst in Berghem. Meer veelgestelde vragen vindt u op de pagina [tarieven](/tarieven/#veelgestelde-vragen).
 
 <div class="contact-layout">
 <div>

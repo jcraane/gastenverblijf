@@ -47,4 +47,4 @@ De kracht van deze omgeving zit in de eenvoud: de zuivere boslucht, het gefluit 
 
 ---
 
-{{< cta-banner title="Plan uw bezoek" text="Bent u klaar om de natuur van de Maashorst zelf te ervaren?" button_text="Neem contact op" button_link="/contact/" >}}
+{{< cta-banner title="Plan uw bezoek" text="Bent u klaar om de natuur van de Maashorst zelf te ervaren?" button_text="Reserveer nu" button_link="/reserveren/" button2_text="Neem contact op" button2_link="/contact/" >}}

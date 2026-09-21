@@ -35,11 +35,13 @@ Wij bewaren uw persoonsgegevens niet langer dan strikt noodzakelijk. Gegevens me
 
 ### Delen met derden
 
-Wij delen uw persoonsgegevens niet met derden, tenzij dit noodzakelijk is voor de uitvoering van onze overeenkomst met u of om te voldoen aan een wettelijke verplichting.
+Online reserveringen verlopen via de reserveringskalender van Bedandbreakfast.nl. De gegevens die u bij het reserveren invult, worden door Bedandbreakfast.nl verwerkt om de boeking tot stand te brengen en aan ons door te geven. Op deze verwerking is de [privacyverklaring van Bedandbreakfast.nl](https://www.bedandbreakfast.nl/nl/privacy) van toepassing.
+
+Verder delen wij uw persoonsgegevens niet met derden, tenzij dit noodzakelijk is voor de uitvoering van onze overeenkomst met u of om te voldoen aan een wettelijke verplichting.
 
 ### Cookies
 
-Deze website maakt geen gebruik van tracking cookies of analytische diensten die persoonsgegevens verwerken.
+Deze website maakt zelf geen gebruik van tracking cookies of analytische diensten die persoonsgegevens verwerken. De ingesloten reserveringskalender van Bedandbreakfast.nl op de pagina [reserveren](/reserveren/) kan functionele cookies plaatsen die nodig zijn om een reservering te maken.
 
 ### Uw rechten
 

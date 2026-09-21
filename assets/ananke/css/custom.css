@@ -1028,3 +1028,17 @@ main [id] {
         border-bottom-color: var(--color-primary);
     }
 }
+
+/* ============================================
+   Booking Calendar (Bedandbreakfast.nl iBook)
+   ============================================ */
+.booking-calendar {
+    margin: 2rem 0;
+}
+
+.booking-calendar iframe {
+    display: block;
+    width: 100%;
+    border: 0;
+    background: transparent;
+}

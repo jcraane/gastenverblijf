@@ -1,0 +1,9 @@
+{{- /* Embeds the Bedandbreakfast.nl iBook booking calendar. */ -}}
+<div class="booking-calendar">
+    <iframe
+        src="{{ .Get "src" | default "https://www.bedandbreakfast.nl/nl/ibook/v2/vnRiZ5j3CuOX/black/transparent" }}"
+        title="{{ .Get "title" | default "Beschikbaarheid en reserveren" }}"
+        height="{{ .Get "height" | default "780" }}"
+        loading="lazy"
+    ></iframe>
+</div>
