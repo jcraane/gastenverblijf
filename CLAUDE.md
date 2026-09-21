@@ -3,7 +3,7 @@
 ## Project overview
 Static website for our guesthouse (gastenverblijf / B&B) in Berghem, Netherlands. Built with Hugo and the Ananke theme. The site is in Dutch. Work in progress.
 
-**URL:** https://gastenverblijfberghem.nl/
+**URL:** https://puurgelukberghem.nl/
 
 ## Tech stack
 - **Static site generator:** Hugo
