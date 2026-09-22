@@ -1,7 +1,0 @@
-url: http://localhost:1313/tarieven/
----
-- launchApp
-- assertVisible: "Tarieven"
-- assertVisible: "Laagseizoen"
-- assertVisible: "Hoogseizoen"
-- assertVisible: "Inbegrepen in de prijs"

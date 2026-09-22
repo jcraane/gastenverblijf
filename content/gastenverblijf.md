@@ -169,4 +169,4 @@ De accommodatie is met veel liefde warm ingericht, waardoor je je direct thuis v
   {{< grid-image src="/images/verblijf/hal.jpg" alt="Hal" >}}
 {{< /image-grid >}}
 
-{{< cta-banner title="Interesse?" text="Bekijk de beschikbaarheid en reserveer direct online, of bekijk eerst onze tarieven." button_text="Reserveer nu" button_link="/reserveren/" button2_text="Bekijk tarieven" button2_link="/tarieven/" >}}
+{{< cta-banner title="Interesse?" text="Bekijk de beschikbaarheid en reserveer direct online. Heeft u eerst een vraag? Neem gerust contact op." button_text="Reserveer nu" button_link="/reserveren/" button2_text="Neem contact op" button2_link="/contact/" >}}

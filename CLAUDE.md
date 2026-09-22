@@ -34,9 +34,9 @@ hugo
 ## Key pages
 - `_index.md` - Homepage
 - `gastenverblijf.md` - About the guesthouse
-- `tarieven.md` - Rates/pricing
 - `activiteiten.md` - Activities guide
 - `omgeving.md` - Surroundings
+- `reserveren.md` - Booking calendar (Bedandbreakfast.nl iBook), practical info and FAQ. Prices are deliberately not on the site: the booking calendar is the single source of truth (`/tarieven/` redirects here)
 - `contact.md` - Contact form (uses JavaScript mailto)
 
 ## Custom shortcodes

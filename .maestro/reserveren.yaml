@@ -1,0 +1,6 @@
+url: http://localhost:1313/reserveren/
+---
+- launchApp
+- assertVisible: "Reserveren"
+- assertVisible: "Inbegrepen bij uw verblijf"
+- assertVisible: "Veelgestelde vragen"

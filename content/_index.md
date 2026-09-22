@@ -59,4 +59,4 @@ Op 1 km fietsen of wandelen en je staat in het grootste aaneengesloten natuurgeb
   {{< feature-item icon="wifi" label="Inclusief airco, wifi en Nespresso" >}}
 {{< /feature-list >}}
 
-{{< cta-banner title="Interesse in een verblijf?" text="Bekijk de beschikbaarheid en reserveer direct online, of bekijk eerst onze tarieven." button_text="Reserveer nu" button_link="/reserveren/" button2_text="Bekijk tarieven" button2_link="/tarieven/" >}}
+{{< cta-banner title="Interesse in een verblijf?" text="Bekijk de beschikbaarheid en reserveer direct online. Heeft u eerst een vraag? Neem gerust contact op." button_text="Reserveer nu" button_link="/reserveren/" button2_text="Neem contact op" button2_link="/contact/" >}}

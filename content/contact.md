@@ -14,7 +14,7 @@ Heeft u vragen over ons gastenverblijf, de omgeving of een bijzondere wens voor 
 
 ## Zo werkt een boeking
 
-Reserveren doet u eenvoudig online via onze [reserveringskalender](/reserveren/). Daar ziet u direct de actuele beschikbaarheid. Na het boeken ontvangt u een bevestiging per e-mail met alle praktische informatie over inchecken (15:00–17:00), uitchecken (vóór 10:30) en de routebeschrijving naar ons gastenverblijf aan de rand van de Maashorst in Berghem. Meer veelgestelde vragen vindt u op de pagina [tarieven](/tarieven/#veelgestelde-vragen).
+Reserveren doet u eenvoudig online via onze [reserveringskalender](/reserveren/). Daar ziet u direct de actuele beschikbaarheid. Na het boeken ontvangt u een bevestiging per e-mail met alle praktische informatie over inchecken (15:00–17:00), uitchecken (vóór 10:30) en de routebeschrijving naar ons gastenverblijf aan de rand van de Maashorst in Berghem. Antwoorden op veelgestelde vragen vindt u op de pagina [reserveren](/reserveren/#veelgestelde-vragen).
 
 <div class="contact-layout">
 <div>
