@@ -13,6 +13,8 @@ menu:
 
 Bekijk hieronder de actuele beschikbaarheid en reserveer direct online. U ontvangt na het boeken een bevestiging per e-mail met alle praktische informatie over inchecken, uitchecken en de route naar ons gastenverblijf.
 
+{{< bnb-badge >}}
+
 {{< booking-calendar >}}
 
 <div class="callout">

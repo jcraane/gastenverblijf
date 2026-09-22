@@ -13,6 +13,8 @@ cascade:
 
 Aan de rand van natuurgebied De Maashorst in Berghem (Noord-Brabant) vind je ons onlangs volledig gerenoveerde gastenverblijf. Een plek waar comfort en natuur samenkomen, ideaal om even helemaal tot rust te komen.
 
+{{< bnb-badge >}}
+
 {{< split img="/images/verblijf/zithoek_1.jpg" alt="Sfeervolle zithoek" >}}
 ### Ons Gastenverblijf
 

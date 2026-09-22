@@ -1042,3 +1042,21 @@ main [id] {
     border: 0;
     background: transparent;
 }
+
+/* ============================================
+   Bedandbreakfast.nl Badge
+   ============================================ */
+.bnb-badge {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.bnb-badge img {
+    display: inline-block;
+    border-radius: 0;
+    transition: opacity var(--transition-fast);
+}
+
+.bnb-badge a:hover img {
+    opacity: 0.85;
+}
