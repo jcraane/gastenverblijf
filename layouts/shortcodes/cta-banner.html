@@ -3,12 +3,12 @@
     {{ with .Get "text" }}<p class="cta-banner__text">{{ . }}</p>{{ end }}
     <div class="cta-banner__buttons">
     {{ with .Get "button_link" }}
-    <a href="{{ . }}" class="btn btn--primary">
+    <a href="{{ . }}" class="btn btn--primary" data-goatcounter-click="cta-banner-{{ . | strings.TrimPrefix "/" | strings.TrimSuffix "/" }}" data-goatcounter-referrer="{{ $.Page.RelPermalink }}">
         {{ $.Get "button_text" | default "Meer informatie" }}
     </a>
     {{ end }}
     {{ with .Get "button2_link" }}
-    <a href="{{ . }}" class="btn btn--outline">
+    <a href="{{ . }}" class="btn btn--outline" data-goatcounter-click="cta-banner-{{ . | strings.TrimPrefix "/" | strings.TrimSuffix "/" }}" data-goatcounter-referrer="{{ $.Page.RelPermalink }}">
         {{ $.Get "button2_text" | default "Meer informatie" }}
     </a>
     {{ end }}

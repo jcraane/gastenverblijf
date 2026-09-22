@@ -57,6 +57,9 @@
 </script>
 {{ end }}
 
+<!-- Search Console + GoatCounter (only when configured in hugo.toml) -->
+{{ partials.Include "analytics.html" . }}
+
 <!-- Parallax header -->
 {{ with resources.Get "js/parallax.js" | minify | fingerprint }}
 <script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>

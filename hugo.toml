@@ -20,6 +20,11 @@ custom_css = ["custom.css"]
 body_classes = 'avenir'
 brand_name = 'Puur Geluk'
 brand_sub = 'B&B · Berghem'
+# GoatCounter site code (e.g. 'puurgeluk' for https://puurgeluk.goatcounter.com).
+# Empty disables analytics; it is only ever loaded in production builds.
+goatcounter = 'jcraane'
+# Google Search Console HTML-tag verification token (not needed with DNS verification)
+google_site_verification = ''
 ananke.show_recent_posts = false
 description = "B&B Puur Geluk is een sfeervol gastenverblijf in Berghem, Noord-Brabant, gelegen aan de rand van de Maashorst. Ideaal voor een ontspannen verblijf in de natuur."
 author = "B&B Puur Geluk Berghem"

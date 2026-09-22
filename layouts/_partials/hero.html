@@ -33,7 +33,7 @@
         {{ with $.Params.hero_buttons }}
           <div class="hero__actions">
             {{ range . }}
-              <a href="{{ .link }}" class="btn btn--{{ .style | default "primary" }}">{{ .text }}</a>
+              <a href="{{ .link }}" class="btn btn--{{ .style | default "primary" }}" data-goatcounter-click="cta-hero-{{ .link | strings.TrimPrefix "/" | strings.TrimSuffix "/" }}" data-goatcounter-referrer="{{ $.RelPermalink }}">{{ .text }}</a>
             {{ end }}
           </div>
         {{ end }}

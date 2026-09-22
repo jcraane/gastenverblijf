@@ -8,7 +8,7 @@
     <div class="site-nav__actions">
       {{ range .Site.Menus.main }}
         {{ if .Params.button }}
-          <a href="{{ .URL }}" class="btn btn--primary btn--small site-nav__book">{{ .Params.short_name | default .Name }}</a>
+          <a href="{{ .URL }}" class="btn btn--primary btn--small site-nav__book" data-goatcounter-click="cta-menu-reserveren" data-goatcounter-referrer="{{ $.RelPermalink }}">{{ .Params.short_name | default .Name }}</a>
         {{ end }}
       {{ end }}
       <button class="site-nav__hamburger" id="nav-toggle" aria-label="Menu openen" aria-expanded="false" aria-controls="nav-menu">
@@ -26,7 +26,8 @@
             <li class="site-nav__item{{ if .Params.button }} site-nav__item--button{{ end }}">
               <a href="{{ .URL }}"
                  class="{{ if .Params.button }}btn btn--primary btn--small{{ else }}site-nav__link{{ end }}"
-                 {{ if $current }}aria-current="page"{{ end }}>{{ .Name }}</a>
+                 {{ if $current }}aria-current="page"{{ end }}
+                 {{- if .Params.button }} data-goatcounter-click="cta-menu-reserveren" data-goatcounter-referrer="{{ $.RelPermalink }}"{{ end }}>{{ .Name }}</a>
             </li>
           {{ end }}
         </ul>

@@ -1,0 +1,13 @@
+{{/*
+	analytics — Search Console verification and GoatCounter (cookieless, no personal data).
+	Both are switched on through params in hugo.toml; GoatCounter only in production builds,
+	so `hugo server` never counts local visits.
+*/}}
+{{ with site.Params.google_site_verification }}
+<meta name="google-site-verification" content="{{ . }}">
+{{ end }}
+{{ if and hugo.IsProduction site.Params.goatcounter }}
+{{ with resources.Get "vendor/goatcounter/count.js" | minify | fingerprint }}
+<script data-goatcounter="https://{{ site.Params.goatcounter }}.goatcounter.com/count" src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" async></script>
+{{ end }}
+{{ end }}

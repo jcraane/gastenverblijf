@@ -39,9 +39,11 @@ Online reserveringen verlopen via de reserveringskalender van Bedandbreakfast.nl
 
 Verder delen wij uw persoonsgegevens niet met derden, tenzij dit noodzakelijk is voor de uitvoering van onze overeenkomst met u of om te voldoen aan een wettelijke verplichting.
 
-### Cookies
+### Cookies en bezoekersstatistieken
 
-Deze website maakt zelf geen gebruik van tracking cookies of analytische diensten die persoonsgegevens verwerken. De ingesloten reserveringskalender van Bedandbreakfast.nl op de pagina [reserveren](/reserveren/) kan functionele cookies plaatsen die nodig zijn om een reservering te maken.
+Deze website plaatst zelf geen cookies. Om te zien hoe de website wordt gebruikt, houden wij anonieme bezoekersstatistieken bij met [GoatCounter](https://www.goatcounter.com). GoatCounter gebruikt geen cookies en slaat geen gegevens op waarmee u als persoon herkend kan worden. Wij zien alleen totalen, zoals het aantal bezoeken per pagina, via welke website bezoekers binnenkomen en hoe vaak er op knoppen zoals "Reserveren" wordt geklikt.
+
+De ingesloten reserveringskalender van Bedandbreakfast.nl op de pagina [reserveren](/reserveren/) kan functionele cookies plaatsen die nodig zijn om een reservering te maken.
 
 ### Uw rechten
 

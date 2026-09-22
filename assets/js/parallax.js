@@ -50,6 +50,21 @@
     });
   }
 
+  // Analytics: mark email and outbound links as GoatCounter click events. count.js binds
+  // [data-goatcounter-click] on load; if it already ran, bind again (it skips bound elements).
+  document.querySelectorAll('a[href^="mailto:"], a[href^="http"]').forEach(function(link) {
+    if (link.dataset.goatcounterClick) return;
+    if (link.protocol === 'mailto:') {
+      link.dataset.goatcounterClick = 'email-klik';
+    } else if (link.hostname !== location.hostname) {
+      link.dataset.goatcounterClick = 'uitgaand-' + link.hostname.replace(/^www\./, '');
+    } else {
+      return;
+    }
+    link.dataset.goatcounterReferrer = location.pathname;
+  });
+  if (window.goatcounter && window.goatcounter.bind_events) window.goatcounter.bind_events();
+
   // "Bekijk alle foto's": open the lightbox gallery at its first photo
   document.querySelectorAll('[data-open-gallery]').forEach(function(button) {
     button.addEventListener('click', function() {
