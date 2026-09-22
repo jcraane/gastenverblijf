@@ -24,7 +24,7 @@ Bekijk hieronder de actuele beschikbaarheid en prijzen en reserveer direct onlin
 {{< booking-calendar >}}
 
 <div class="callout">
-<h3>Goed om te weten</h3>
+<h2>Goed om te weten</h2>
 <ul>
 <li>In schoolvakanties en op feestdagen geldt een minimum van 2 nachten</li>
 <li>Prijzen zijn exclusief toeristenbelasting en eenmalige schoonmaakkosten</li>
@@ -48,7 +48,7 @@ Bekijk hieronder de actuele beschikbaarheid en prijzen en reserveer direct onlin
 ## Veelgestelde vragen
 
 {{< faq q="Wat is de minimale verblijfsduur?" >}}
-Buiten de schoolvakanties is er geen minimum aantal nachten. In schoolvakanties en op feestdagen geldt een minimum van 2 nachten.
+Er geldt een minimum verblijfsduur van 2 nachten.
 {{< /faq >}}
 {{< faq q="Is er gratis parkeren?" >}}
 Ja, ons gastenverblijf beschikt over een eigen inrit met privéparkeerplaats. U kunt uw auto gratis en veilig op het terrein parkeren.
@@ -57,13 +57,10 @@ Ja, ons gastenverblijf beschikt over een eigen inrit met privéparkeerplaats. U 
 Om de rust en hygiëne voor al onze gasten te waarborgen, zijn huisdieren helaas niet toegestaan.
 {{< /faq >}}
 {{< faq q="Wat is er inbegrepen in de prijs?" >}}
-In de overnachtingsprijs zijn airco, wifi, Nespresso, thee, opgemaakte bedden en badlinnen inbegrepen. Daarnaast worden eenmalige schoonmaakkosten per verblijf in rekening gebracht.
+In de overnachtingsprijs zijn airco, wifi, Nespresso, thee, opgemaakte bedden, badlinnen en eenmalige schoonmaakkosten inbegrepen
 {{< /faq >}}
 {{< faq q="Is toeristenbelasting inbegrepen?" >}}
-Nee, de prijzen zijn exclusief toeristenbelasting. De toeristenbelasting wordt conform de geldende tarieven van de gemeente Oss berekend.
-{{< /faq >}}
-{{< faq q="Wat is de maximale verblijfsduur?" >}}
-Het maximale verblijf bedraagt één week (7 nachten).
+Ja, de prijzen zijn inclusief toeristenbelasting. De toeristenbelasting worden conform de geldende tarieven van de gemeente Oss berekend.
 {{< /faq >}}
 {{< faq q="Hoe laat kan ik in- en uitchecken?" >}}
 Inchecken kan tussen 15:00 en 17:00. Mocht u later arriveren, laat het ons dan even weten. Uitchecken kan tot 10:30.

@@ -60,3 +60,10 @@ hugo
 - Follow Hugo and Ananke theme conventions
 - Custom CSS goes in `assets/ananke/css/custom.css`
 
+
+## Performance
+- Goal (Lighthouse, mobile): performance ≥ 95 and 100 for accessibility, best practices and SEO on every page. Reserveren is the exception: its layout shift and third-party cookie warnings come from the Bedandbreakfast.nl iframe
+- No third-party requests of our own: Montserrat is self-hosted (`static/fonts/`, preloaded) and GLightbox is vendored in `assets/vendor/` and only loaded on pages with a gallery
+- Hero images are processed at WebP q65; keep new photos going through `img.html`
+- Measure against a compressed local build (`hugo -d /tmp/x && npx serve /tmp/x`) or the live site; `python -m http.server` doesn't gzip and makes CSS look 5× heavier
+- Never build with `--cleanDestinationDir` without checking `docs/`; `static/CNAME` must stay so the custom domain survives a clean build

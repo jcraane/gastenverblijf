@@ -1,3 +1,9 @@
+<!-- Favicons -->
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="theme-color" content="#2d6a4f">
+
 <!-- Open Graph site name (og:locale is set by Ananke from languageCode) -->
 <meta property="og:site_name" content="B&B Puur Geluk Berghem">
 
@@ -28,9 +34,18 @@
 }
 </script>
 
-<!-- GLightbox -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/css/glightbox.min.css">
-<script src="https://cdn.jsdelivr.net/npm/glightbox@3.3.0/dist/js/glightbox.min.js" defer></script>
+<!-- Self-hosted Montserrat (latin, variable 400–700); @font-face lives in custom.css -->
+<link rel="preload" href="/fonts/montserrat/montserrat-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+
+<!-- GLightbox: only on pages with a photo gallery. The stylesheet is only needed once the
+     lightbox opens, so it loads without blocking the first render. -->
+{{ if strings.Contains (string .Content) "glightbox" }}
+{{ with resources.Get "vendor/glightbox/glightbox.min.css" | fingerprint }}
+<link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" media="print" onload="this.media='all'">
+{{ end }}
+{{ with resources.Get "vendor/glightbox/glightbox.min.js" | fingerprint }}
+<script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
+{{ end }}
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     GLightbox({
@@ -40,6 +55,7 @@
     });
   });
 </script>
+{{ end }}
 
 <!-- Parallax header -->
 {{ with resources.Get "js/parallax.js" | minify | fingerprint }}

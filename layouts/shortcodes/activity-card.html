@@ -7,7 +7,7 @@
     </div>
     {{ end }}
     <div class="activity-content">
-        <h4>{{ .Get "title" }}{{ with .Get "distance" }} <span class="activity-card__distance">{{ . }}</span>{{ end }}</h4>
+        <h3 class="activity-card__title">{{ .Get "title" }}{{ with .Get "distance" }} <span class="activity-card__distance">{{ . }}</span>{{ end }}</h3>
         <p>{{ .Get "description" }}</p>
         {{ if .Get "link" }}
         <a href="{{ .Get "link" }}" target="_blank" rel="noopener" class="activity-link">

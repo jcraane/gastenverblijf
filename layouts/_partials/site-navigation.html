@@ -1,6 +1,6 @@
 <nav class="site-nav" role="navigation" id="main-nav" aria-label="Hoofdmenu">
   <div class="site-nav__bar">
-    <a href="{{ .Site.Home.RelPermalink }}" class="site-nav__brand" aria-label="{{ .Site.Title }}, naar de homepage">
+    <a href="{{ .Site.Home.RelPermalink }}" class="site-nav__brand">
       <span class="site-nav__brand-name">{{ site.Params.brand_name | default .Site.Title }}</span>
       {{ with site.Params.brand_sub }}<span class="site-nav__brand-sub">{{ . }}</span>{{ end }}
     </a>

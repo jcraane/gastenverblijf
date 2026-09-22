@@ -1,4 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400..700;1,400..700&display=swap');
+/* Montserrat, self-hosted (SIL Open Font License, see /fonts/montserrat/OFL.txt).
+   Latin subset of the variable font covers all Dutch characters. */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: swap;
+    src: url('/fonts/montserrat/montserrat-latin-wght.woff2') format('woff2');
+}
+
+/* Arial scaled to Montserrat's metrics, so text doesn't reflow (layout shift)
+   when the web font swaps in */
+@font-face {
+    font-family: 'Montserrat Fallback';
+    src: local('Arial'), local('Helvetica Neue'), local('Helvetica');
+    size-adjust: 113.4%;
+    ascent-override: 85%;
+    descent-override: 22%;
+    line-gap-override: 0%;
+}
 
 /* ============================================
    Brand Design Tokens
@@ -64,7 +83,7 @@ body,
 .baskerville,
 h1, h2, h3, h4, h5, h6,
 button, input, textarea {
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Montserrat', 'Montserrat Fallback', sans-serif !important;
 }
 
 body {
@@ -841,6 +860,7 @@ main[role="main"] {
     background-color: var(--color-primary-soft);
 }
 
+.callout h2,
 .callout h3 {
     margin: 0 0 0.5rem !important;
     font-size: 1.1rem;
@@ -1047,7 +1067,7 @@ blockquote {
     padding: 1.1rem 1.25rem 1.25rem;
 }
 
-.activity-card h4 {
+.activity-card h3 {
     margin: 0 0 0.4rem;
     font-size: 1.05rem;
     line-height: 1.35;
@@ -1133,7 +1153,7 @@ blockquote {
         padding: 1.75rem 2rem;
     }
 
-    .activity-card--featured h4 {
+    .activity-card--featured h3 {
         font-size: 1.25rem;
     }
 

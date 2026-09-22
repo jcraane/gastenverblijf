@@ -18,12 +18,12 @@
       "alt" ""
       "class" "hero__img"
       "style" (printf "object-position: %s" ($.Params.hero_position | default "center"))
-      "sizes" (cond $isHome "(max-width: 48em) 150vw, 100vw" "100vw")
+      "sizes" "100vw"
       "loading" "eager"
       "fetchpriority" "high"
       "landscape" true
-      "quality" 75
-      "widths" (slice 640 1024 1600 2200)
+      "quality" 65
+      "widths" (slice 640 800 1024 1600 2200)
     ) }}
     <div class="hero__scrim" aria-hidden="true"></div>
     <div class="hero__inner">
