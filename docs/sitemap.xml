@@ -2,43 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://puurgelukberghem.nl/activiteiten/</loc>
+    <loc>http://localhost:1313/activiteiten/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://puurgelukberghem.nl/</loc>
+    <loc>http://localhost:1313/</loc>
     <changefreq>monthly</changefreq>
     <priority>1</priority>
   </url><url>
-    <loc>https://puurgelukberghem.nl/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://puurgelukberghem.nl/contact/</loc>
+    <loc>http://localhost:1313/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://puurgelukberghem.nl/omgeving/</loc>
+    <loc>http://localhost:1313/omgeving/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://puurgelukberghem.nl/gastenverblijf/</loc>
+    <loc>http://localhost:1313/gastenverblijf/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url><url>
-    <loc>https://puurgelukberghem.nl/privacy/</loc>
+    <loc>http://localhost:1313/privacy/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://puurgelukberghem.nl/reserveren/</loc>
+    <loc>http://localhost:1313/reserveren/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url><url>
-    <loc>https://puurgelukberghem.nl/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://puurgelukberghem.nl/tarieven/</loc>
+    <loc>http://localhost:1313/tarieven/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
