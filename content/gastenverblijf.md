@@ -17,7 +17,7 @@ Aan de rand van het prachtige natuurgebied De Maashorst in Berghem ligt ons onla
 
 ## Sfeervol & comfortabel
 
-De accommodatie is met veel liefde warm ingericht, waardoor je je direct thuis voelt. Na een dag wandelen of fietsen geniet je op het sfeervol verlichte privéterras van een goed glas wijn in de buitenlucht.
+De accommodatie is met veel liefde warm ingericht, waardoor u zich direct thuis voelt. Na een dag wandelen of fietsen geniet u op het sfeervol verlichte privéterras van een goed glas wijn in de buitenlucht.
 
 {{< feature-list >}}
   {{< feature-item label="Volledig gerenoveerd in 2025" >}}

@@ -10,7 +10,7 @@ menu:
     weight: 30
 ---
 
-Of je nu op zoek bent naar rust in de natuur, een sportieve uitdaging of een gezellig diner: er is voor ieder wat wils.
+Of u nu op zoek bent naar rust in de natuur, een sportieve uitdaging of een gezellig diner: er is voor ieder wat wils.
 
 {{< activity-nav >}}
   <a href="#natuur" class="activity-nav__link">Natuur & wandelen</a>
@@ -61,8 +61,8 @@ Voor de avonturiers en sportievelingen. Van klimmen en karten tot wandelen door 
 {{< /split >}}
 
 {{< activity-grid >}}
-    {{< activity-card title="Klimpark Uden" description="Verleg je grenzen op grote hoogte." link="https://www.mastworp.nl/klimpark-uden" link_text="klimparkuden.nl →" featured="true" img="/images/omgeving/klimpark_uden.jpg" >}} 
-    {{< activity-card title="Bike Adventure" description="Voor al je actieve uitjes op de fiets." link="https://bikeadventure.nl/" link_text="bikeadventure.nl →" >}}
+    {{< activity-card title="Klimpark Uden" description="Verleg uw grenzen op grote hoogte." link="https://www.mastworp.nl/klimpark-uden" link_text="klimparkuden.nl →" featured="true" img="/images/omgeving/klimpark_uden.jpg" >}} 
+    {{< activity-card title="Bike Adventure" description="Voor al uw actieve uitjes op de fiets." link="https://bikeadventure.nl/" link_text="bikeadventure.nl →" >}}
     {{< activity-card title="Kartbaan Berghem" description="Snelheid en actie op het circuit." link="https://circuitparkberghem.nl/" link_text="circuitparkberghem.nl →" distance="5 min auto" >}}
     {{< activity-card title="Bowling Rusheuvel" description="Gezellig bowlen met vrienden of familie." link="https://rusheuvel.nl/" link_text="rusheuvel.nl →" >}}
 {{< /activity-grid >}}
@@ -92,7 +92,7 @@ Verfrissing op warme dagen of sportief banen zwemmen. De regio biedt verschillen
 {{< split img="/images/omgeving/winter_scenery.jpg" alt="Cultuur in de regio" >}}
 ## Cultuur & uitgaan
 
-Bioscoop, theater en musea in de regio. Van de nieuwste blockbusters tot ambachtelijke brouwerijen: er valt altijd iets te beleven. Op <a href="https://www.trefhetinoss.nl/" target="_blank" rel="noopener">Tref het in Oss</a> vind je het actuele aanbod aan evenementen en uitgaanstips.
+Bioscoop, theater en musea in de regio. Van de nieuwste blockbusters tot ambachtelijke brouwerijen: er valt altijd iets te beleven. Op <a href="https://www.trefhetinoss.nl/" target="_blank" rel="noopener">Tref het in Oss</a> vindt u het actuele aanbod aan evenementen en uitgaanstips.
 {{< /split >}}
 
 <h3 class="activity-subheading">Bioscopen</h3>

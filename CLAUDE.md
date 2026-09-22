@@ -23,8 +23,8 @@ The repo root is the Hugo site root.
 
 ## Development commands
 ```bash
-# Run local dev server
-hugo server -D
+# Run local dev server (always --renderToMemory; otherwise it overwrites docs/ with a dev build)
+hugo server -D --renderToMemory
 Sire can be accessed at http://localhost:1313/
 
 # Build the site
