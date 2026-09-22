@@ -1,6 +1,15 @@
+{{ $src := .Get "src" }}
+{{ $alt := .Get "alt" | default "" }}
+{{/* Rendered width per column count of the parent image-grid (default 2 columns) */}}
+{{ $sizes := dict
+  "1" "(min-width: 64em) 64rem, 100vw"
+  "3" "(min-width: 60em) 21rem, (min-width: 48em) 33vw, 50vw"
+  "4" "(min-width: 60em) 16rem, (min-width: 48em) 25vw, 50vw"
+}}
+{{ $cols := .Parent.Get "cols" | default "2" | string }}
 <figure class="image-grid__item">
-    <a href="{{ .Get "src" }}" class="glightbox" data-gallery="gallery" data-glightbox="title: {{ .Get "alt" | default "" }}">
-        <img src="{{ .Get "src" }}" alt="{{ .Get "alt" | default "" }}" class="db w-100 br2 shadow-2">
+    <a href="{{ partial "func/ImgURL.html" (dict "src" $src) }}" class="glightbox" data-gallery="{{ .Parent.Get "gallery" | default "gallery" }}" data-glightbox="title: {{ $alt }}">
+        {{ partial "img.html" (dict "src" $src "alt" $alt "sizes" (index $sizes $cols | default "(min-width: 64em) 32rem, 50vw") "widths" (slice 480 800 1200 1600)) }}
     </a>
-    {{ with .Get "caption" }}<figcaption class="f6 mt2 color-text-light">{{ . }}</figcaption>{{ end }}
+    {{ with .Get "caption" }}<figcaption>{{ . }}</figcaption>{{ end }}
 </figure>

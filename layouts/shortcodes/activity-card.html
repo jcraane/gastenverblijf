@@ -1,8 +1,9 @@
 {{ $featured := .Get "featured" }}
-<div class="activity-card{{ if $featured }} activity-card--featured{{ end }}">
-    {{ with .Get "img" }}
+{{ $img := .Get "img" }}
+<div class="activity-card{{ if $featured }} activity-card--featured{{ end }}{{ if not $img }} activity-card--compact{{ end }}">
+    {{ with $img }}
     <div class="activity-card__img-wrap">
-        <img src="{{ . }}" alt="{{ $.Get "title" }}" class="activity-card__img" loading="lazy">
+        {{ partial "img.html" (dict "src" . "alt" ($.Get "title") "class" "activity-card__img" "sizes" "(min-width: 48em) 40rem, 100vw" "widths" (slice 480 800 1200)) }}
     </div>
     {{ end }}
     <div class="activity-content">

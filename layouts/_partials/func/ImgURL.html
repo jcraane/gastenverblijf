@@ -1,0 +1,14 @@
+{{/*
+	ImgURL — URL of a single resized WebP variant of an image under static/images.
+	Used for lightbox links, which need one large file instead of a srcset.
+
+	Params (dict): src (required), width (default 1600)
+	@return RelPermalink of the resized image, or src itself when it can't be processed.
+*/}}
+{{ $url := .src }}
+{{ $width := .width | default 1600 }}
+{{ with resources.Get (strings.TrimPrefix "/" .src) }}
+  {{ $w := math.Min $width .Width | int }}
+  {{ $url = (.Process (printf "resize %dx webp q80" $w)).RelPermalink }}
+{{ end }}
+{{ return $url }}

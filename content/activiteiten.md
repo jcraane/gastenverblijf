@@ -1,9 +1,9 @@
 ---
 title: "Activiteiten"
 description: "Van wandelen in de Maashorst tot restaurants, fietsen, zwemmen en cultuur in Oss — ontdek wat er allemaal te doen is rondom ons gastenverblijf in Berghem."
-featured_image: '/images/omgeving/heide.jpg'
-omit_header_text: false
-featured_image_class: "cover bg-center"
+featured_image: '/images/omgeving/horses.jpg'
+hero_position: 'center 60%'
+hero_subtitle: 'Natuur, eten, sport en cultuur in de buurt'
 content_width: 'content-width-wide'
 menu:
   main:
@@ -13,17 +13,17 @@ menu:
 Of je nu op zoek bent naar rust in de natuur, een sportieve uitdaging of een gezellig diner: er is voor ieder wat wils.
 
 {{< activity-nav >}}
-  <a href="#natuur" class="activity-nav__link">Natuur & Wandelen</a>
-  <a href="#eten" class="activity-nav__link">Eten & Drinken</a>
-  <a href="#actief" class="activity-nav__link">Actief & Sportief</a>
+  <a href="#natuur" class="activity-nav__link">Natuur & wandelen</a>
+  <a href="#eten" class="activity-nav__link">Eten & drinken</a>
+  <a href="#actief" class="activity-nav__link">Actief & sportief</a>
   <a href="#zwemmen" class="activity-nav__link">Zwemmen</a>
-  <a href="#cultuur" class="activity-nav__link">Cultuur & Uitgaan</a>
+  <a href="#cultuur" class="activity-nav__link">Cultuur & uitgaan</a>
 {{< /activity-nav >}}
 
 {{< activity-section theme="natuur" id="natuur" >}}
 
 {{< split img="/images/omgeving/ganzenven.jpg" alt="Natuur in de Maashorst" >}}
-## 🌳 Natuur & Wandelen
+## Natuur & wandelen
 
 Geniet van de rust en de unieke flora en fauna van de Brabantse natuur. De Maashorst biedt eindeloze wandelpaden door bossen, heide en langs schilderachtige vennen.
 {{< /split >}}
@@ -39,7 +39,7 @@ Geniet van de rust en de unieke flora en fauna van de Brabantse natuur. De Maash
 {{< activity-section theme="eten" id="eten" >}}
 
 {{< split img="/images/omgeving/panzo.png" alt="Sfeervolle omgeving" >}}
-## 🍴 Eten & Drinken
+## Eten & drinken
 
 Gezellige restaurants en terrassen op steenworp afstand. Van pannenkoeken tot luxe dineren: de regio heeft voor elke smaak iets bijzonders.
 {{< /split >}}
@@ -55,7 +55,7 @@ Gezellige restaurants en terrassen op steenworp afstand. Van pannenkoeken tot lu
 {{< activity-section theme="actief" id="actief" >}}
 
 {{< split img="/images/omgeving/karten.jpg" alt="Actief in de omgeving" >}}
-## ⚡ Actief & Sportief
+## Actief & sportief
 
 Voor de avonturiers en sportievelingen. Van klimmen en karten tot wandelen door het Brabantse land.
 {{< /split >}}
@@ -72,7 +72,7 @@ Voor de avonturiers en sportievelingen. Van klimmen en karten tot wandelen door 
 {{< activity-section theme="zwemmen" id="zwemmen" >}}
 
 {{< split img="/images/omgeving/heide.jpg" alt="Recreatie in de natuur" >}}
-## 🏊 Zwemmen & Waterplezier
+## Zwemmen & waterplezier
 
 Verfrissing op warme dagen of sportief banen zwemmen. De regio biedt verschillende zwembaden en recreatieplassen voor een heerlijke dag aan het water.
 {{< /split >}}
@@ -90,19 +90,19 @@ Verfrissing op warme dagen of sportief banen zwemmen. De regio biedt verschillen
 {{< activity-section theme="cultuur" id="cultuur" >}}
 
 {{< split img="/images/omgeving/winter_scenery.jpg" alt="Cultuur in de regio" >}}
-## 🎭 Cultuur & Uitgaan
+## Cultuur & uitgaan
 
 Bioscoop, theater en musea in de regio. Van de nieuwste blockbusters tot ambachtelijke brouwerijen: er valt altijd iets te beleven. Op <a href="https://www.trefhetinoss.nl/" target="_blank" rel="noopener">Tref het in Oss</a> vind je het actuele aanbod aan evenementen en uitgaanstips.
 {{< /split >}}
 
-<h4>Bioscopen</h4>
+<h3 class="activity-subheading">Bioscopen</h3>
 {{< activity-grid >}}
     {{< activity-card title="Kinepolis Oss" description="De nieuwste blockbusters in een moderne bioscoop." link="https://kinepolis.nl/bioscopen/kinepolis-oss" link_text="Tickets →" distance="10 min auto" >}}
     {{< activity-card title="TakeTen Uden" description="Luxe cinema ervaring met comfortabele stoelen." link="https://taketen.nl/" link_text="Tickets →" >}}
     {{< activity-card title="Vue Den Bosch" description="Groot aanbod aan films in de nabijgelegen stad." link="https://www.vuecinemas.nl/bioscopen/den-bosch" link_text="Tickets →" >}}
 {{< /activity-grid >}}
 
-<h4>Theater &amp; Musea</h4>
+<h3 class="activity-subheading">Theater &amp; musea</h3>
 {{< activity-grid >}}
     {{< activity-card title="De Lievekamp" description="Theater in Oss met een breed programma." link="https://www.lievekamp.nl/" link_text="lievekamp.nl →" >}}
     {{< activity-card title="Hoessenbosch" description="Uniek openluchttheater in een bosrijke omgeving." link="https://www.hoessenbosch.nl/" link_text="hoessenbosch.nl →" >}}

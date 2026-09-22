@@ -1,3 +1,12 @@
-<div class="image-grid {{ with .Get "cols" }}image-grid--{{ . }}{{ end }} mv4">
+{{/* Grid of lightbox photos. cols="3"|"4" sets the desktop column count; show="8" shows only
+     the first N photos and adds a button that opens the full gallery in the lightbox. */}}
+{{ $show := .Get "show" | default 0 | int }}
+{{ $total := len (findRE `class="image-grid__item` .Inner) }}
+<div class="image-grid{{ with .Get "cols" }} image-grid--{{ . }}{{ end }}{{ if and $show (gt $total $show) }} image-grid--limit-{{ $show }}{{ end }}">
     {{ .Inner }}
 </div>
+{{ if and $show (gt $total $show) }}
+<p class="image-grid__more">
+    <button type="button" class="btn btn--outline" data-open-gallery="{{ .Get "gallery" | default "gallery" }}">Bekijk alle foto's ({{ $total }})</button>
+</p>
+{{ end }}

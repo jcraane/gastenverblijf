@@ -3,6 +3,8 @@ title: "Ons Gastenverblijf"
 description: "Ontdek ons volledig ingericht gastenverblijf in Berghem: eigen keuken, woonkamer, comfortabele slaapkamer, badkamer en eigen inrit. Alles voor een onbezorgd verblijf in de natuur."
 keywords: ["B&B Berghem", "gastenverblijf Maashorst", "overnachten Noord-Brabant", "bed and breakfast Oss"]
 featured_image: '/images/verblijf/slaapkamer_vanuit_hoek.jpg'
+hero_position: 'center 55%'
+hero_subtitle: '33 m² gelijkvloers, met eigen keuken, badkamer en privéterras'
 content_width: 'content-width-wide'
 sitemap:
   priority: 0.8
@@ -59,7 +61,7 @@ De accommodatie is met veel liefde warm ingericht, waardoor je je direct thuis v
 
 </div>
 
-<div class="room-section">
+<div class="room-section room-section--alt">
 
 ## Keuken
 
@@ -105,7 +107,7 @@ De accommodatie is met veel liefde warm ingericht, waardoor je je direct thuis v
 
 </div>
 
-<div class="room-section">
+<div class="room-section room-section--alt">
 
 ## Slaapgedeelte
 
@@ -147,13 +149,11 @@ De accommodatie is met veel liefde warm ingericht, waardoor je je direct thuis v
 
 ## Plattegrond
 
-<div style="text-align: center;">
-  <img src="/images/situatie/situatie.png" alt="Plattegrond van het gastenverblijf" style="max-width: 65%; height: auto;">
-</div>
+{{< floorplan src="/images/situatie/situatie.png" alt="Plattegrond van het gastenverblijf" >}}
 
 ## Impressie
 
-{{< image-grid >}}
+{{< image-grid cols="4" show="8" gallery="impressie" >}}
   {{< grid-image src="/images/verblijf/inrit.jpg" alt="Inrit" >}}
   {{< grid-image src="/images/verblijf/gastenverblijf_inrit_nacht.jpg" alt="Inrit" >}}
   {{< grid-image src="/images/verblijf/keuken_1.jpg" alt="Keuken" >}}

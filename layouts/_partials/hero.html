@@ -1,0 +1,53 @@
+{{/*
+	hero — page banner shared by the homepage (site-header) and subpages (page-header).
+
+	Front matter:
+	  featured_image  photo under /images/... (no photo → plain title band)
+	  hero_position   object-position for the photo, e.g. "center 40%" (default "center")
+	  hero_subtitle   short tagline under the title; `description` stays SEO-only
+	  hero_buttons    list of {text, link, style} (style: "primary" | "light")
+*/}}
+{{ $isHome := .IsHome }}
+{{ with .Params.featured_image }}
+  <div class="site-nav-wrapper" id="site-nav-wrapper">
+    {{ partials.Include "site-navigation.html" $ }}
+  </div>
+  <header class="hero {{ if $isHome }}hero--home{{ else }}hero--page{{ end }}" id="hero-header">
+    {{ partial "img.html" (dict
+      "src" .
+      "alt" ""
+      "class" "hero__img"
+      "style" (printf "object-position: %s" ($.Params.hero_position | default "center"))
+      "sizes" (cond $isHome "(max-width: 48em) 150vw, 100vw" "100vw")
+      "loading" "eager"
+      "fetchpriority" "high"
+      "landscape" true
+      "quality" 75
+      "widths" (slice 640 1024 1600 2200)
+    ) }}
+    <div class="hero__scrim" aria-hidden="true"></div>
+    <div class="hero__inner">
+      <div class="hero__content" id="hero-content">
+        <h1 class="hero__title">{{ $.Title | default site.Title }}</h1>
+        {{ with $.Params.hero_subtitle }}<p class="hero__subtitle">{{ . }}</p>{{ end }}
+        {{ with $.Params.hero_buttons }}
+          <div class="hero__actions">
+            {{ range . }}
+              <a href="{{ .link }}" class="btn btn--{{ .style | default "primary" }}">{{ .text }}</a>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  </header>
+{{ else }}
+  <div class="site-nav-wrapper site-nav-wrapper--solid" id="site-nav-wrapper">
+    {{ partials.Include "site-navigation.html" $ }}
+  </div>
+  <header class="page-title-band">
+    <div class="page-title-band__inner">
+      <h1 class="page-title-band__title">{{ $.Title | default site.Title }}</h1>
+      {{ with $.Params.hero_subtitle }}<p class="page-title-band__subtitle">{{ . }}</p>{{ end }}
+    </div>
+  </header>
+{{ end }}

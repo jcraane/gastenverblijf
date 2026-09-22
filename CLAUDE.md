@@ -7,19 +7,19 @@ Static website for our guesthouse (gastenverblijf / B&B) in Berghem, Netherlands
 
 ## Tech stack
 - **Static site generator:** Hugo
-- **Theme:** Ananke (git submodule in `gastenverblijf/themes/ananke/`)
+- **Theme:** Ananke (git submodule in `themes/ananke/`)
 - **Language:** Dutch (nl)
 - **Content format:** Markdown with Hugo shortcodes
 
 ## Project structure
-- `gastenverblijf/` - Hugo site root
-  - `content/` - Page content (Markdown)
-  - `layouts/` - Custom layout overrides and shortcodes
-  - `assets/` - CSS and other processed assets
-  - `static/` - Static files (images, etc.)
-  - `data/` - Hugo data files
-  - `hugo.toml` - Hugo configuration
-- `docs/` - Internal project notes (not published)
+The repo root is the Hugo site root.
+- `content/` - Page content (Markdown)
+- `layouts/` - Custom layout overrides, partials and shortcodes
+- `assets/` - CSS (`ananke/css/custom.css`) and JS (`js/parallax.js`, fingerprinted)
+- `static/` - Static files; `static/images` is also mounted as `assets/images` so photos go through Hugo image processing
+- `hugo.toml` - Hugo configuration
+- `docs/` - Build output (publishDir), published as the live site
+- `documentatie/` - Internal project notes (not published)
 
 ## Development commands
 ```bash
@@ -44,6 +44,15 @@ hugo
 - `activity-grid.html` - Grid layout for activity cards
 - `form-mailto.html` - Contact form with mailto
 - `split.html` - Split layout component
+- `image-grid.html` / `grid-image.html` - Lightbox photo grid (`cols`, `show`, `gallery` params)
+- `feature-list.html` / `feature-item.html` - Icon list (`icon` param, see `_partials/icon.html`)
+- `faq.html` - Collapsible FAQ item
+- `contact-item.html` - Contact detail row with icon
+
+## Images & hero
+- Always render photos through `_partials/img.html` (resized WebP + srcset); never link the multi-MB originals directly
+- Page banner comes from front matter: `featured_image`, `hero_position` (object-position), `hero_subtitle` (short tagline), `hero_buttons` (home). `description` is SEO-only and not shown
+- Custom CSS is compiled by LibSass: wrap arithmetic inside `clamp()`/`min()`/`max()` in `calc()`
 
 ## Guidelines
 - All content must be in Dutch

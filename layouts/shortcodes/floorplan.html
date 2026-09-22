@@ -1,0 +1,4 @@
+{{/* Floor plan image, centered and processed like the other photos. Usage: {{< floorplan src="/images/situatie/situatie.png" alt="..." >}} */}}
+<div class="floorplan">
+    {{ partial "img.html" (dict "src" (.Get "src") "alt" (.Get "alt") "sizes" "(min-width: 36em) 520px, 100vw" "widths" (slice 520 992) "quality" 85) }}
+</div>

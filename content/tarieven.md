@@ -2,9 +2,9 @@
 title: "Tarieven"
 description: "Bekijk onze tarieven voor een verblijf bij B&B Puur Geluk in Berghem. Laagseizoen vanaf €85, hoogseizoen vanaf €110 per nacht, inclusief airco, wifi en meer."
 keywords: ["B&B Berghem", "gastenverblijf Maashorst", "overnachten Noord-Brabant", "bed and breakfast Oss"]
-featured_image: '/images/verblijf/zithoek_1.jpg'
-omit_header_text: false
-featured_image_class: "cover bg-center"
+featured_image: '/images/verblijf/keuken_2.jpg'
+hero_position: 'center 50%'
+hero_subtitle: 'Vanaf € 85 per nacht'
 content_width: 'content-width-wide'
 sitemap:
   priority: 0.8
@@ -27,11 +27,15 @@ Wij verwelkomen je graag voor een ontspannen verblijf. Wij vinden het belangrijk
 {{< /pricing-card >}}
 </div>
 
-Goed om te weten: Door de eenmalige schoonmaakkosten wordt je verblijf per nacht voordeliger naarmate je langer bij ons tot rust komt!
-
-- Prijzen zijn exclusief toeristenbelasting
-- Huisdieren zijn niet toegestaan
-- Het maximale verblijf is 1 week
+<div class="callout">
+<h3>Goed om te weten</h3>
+<p>Door de eenmalige schoonmaakkosten wordt je verblijf per nacht voordeliger naarmate je langer bij ons tot rust komt.</p>
+<ul>
+<li>Prijzen zijn exclusief toeristenbelasting</li>
+<li>Huisdieren zijn niet toegestaan</li>
+<li>Het maximale verblijf is 1 week</li>
+</ul>
+</div>
 
 ## Inbegrepen in de prijs
 
@@ -46,25 +50,26 @@ Goed om te weten: Door de eenmalige schoonmaakkosten wordt je verblijf per nacht
 
 ## Veelgestelde vragen
 
-**Wat is de minimale verblijfsduur?**
+{{< faq q="Wat is de minimale verblijfsduur?" >}}
 In het laagseizoen (buiten schoolvakanties) is er geen minimum aantal nachten. In het hoogseizoen (schoolvakanties en feestdagen) geldt een minimum van 2 nachten.
-
-**Is er gratis parkeren?**
+{{< /faq >}}
+{{< faq q="Is er gratis parkeren?" >}}
 Ja, ons gastenverblijf beschikt over een eigen inrit met privéparkeerplaats. U kunt uw auto gratis en veilig op het terrein parkeren.
-
-**Zijn huisdieren toegestaan?**
+{{< /faq >}}
+{{< faq q="Zijn huisdieren toegestaan?" >}}
 Om de rust en hygiëne voor al onze gasten te waarborgen, zijn huisdieren helaas niet toegestaan.
-
-**Wat is er inbegrepen in de prijs?**
+{{< /faq >}}
+{{< faq q="Wat is er inbegrepen in de prijs?" >}}
 In de overnachtingsprijs zijn airco, wifi, Nespresso, thee, opgemaakte bedden en badlinnen inbegrepen. De eenmalige schoonmaakkosten van €35 per verblijf worden apart in rekening gebracht.
-
-**Is toeristenbelasting inbegrepen?**
+{{< /faq >}}
+{{< faq q="Is toeristenbelasting inbegrepen?" >}}
 Nee, de prijzen zijn exclusief toeristenbelasting. De toeristenbelasting wordt conform de geldende tarieven van de gemeente Oss berekend.
-
-**Wat is de maximale verblijfsduur?**
+{{< /faq >}}
+{{< faq q="Wat is de maximale verblijfsduur?" >}}
 Het maximale verblijf bedraagt één week (7 nachten).
-
-**Hoe laat kan ik in- / en uitchecken?**
+{{< /faq >}}
+{{< faq q="Hoe laat kan ik in- en uitchecken?" >}}
 Inchecken kan tussen 15:00 en 17:00. Mocht u later arriveren laat het ons dan even weten. Uitchecken kan tot 10:30.
+{{< /faq >}}
 
 {{< cta-banner title="Reserveren?" text="Bekijk de beschikbaarheid en reserveer direct online." button_text="Reserveer nu" button_link="/reserveren/" button2_text="Neem contact op" button2_link="/contact/" >}}

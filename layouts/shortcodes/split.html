@@ -1,8 +1,8 @@
-<div class="flex-l items-center g3 mv4">
-    <div class="w-100 w-50-l">
-        <img src="{{ .Get "img" }}" alt="{{ .Get "alt" }}" class="db w-100 br3 shadow-2">
+<div class="split{{ if .Get "reverse" }} split--reverse{{ end }}">
+    <div class="split__media">
+        {{ partial "img.html" (dict "src" (.Get "img") "alt" (.Get "alt") "sizes" "(min-width: 60em) 31rem, 100vw" "class" "split__img") }}
     </div>
-    <div class="w-100 w-50-l">
+    <div class="split__body">
         {{ .Inner | markdownify }}
     </div>
 </div>

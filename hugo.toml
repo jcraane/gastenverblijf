@@ -17,7 +17,9 @@ filename = "sitemap.xml"
 
 [params]
 custom_css = ["custom.css"]
-cover_dimming_class = 'cover-gradient'
+body_classes = 'avenir'
+brand_name = 'Puur Geluk'
+brand_sub = 'B&B · Berghem'
 ananke.show_recent_posts = false
 description = "B&B Puur Geluk is een sfeervol gastenverblijf in Berghem, Noord-Brabant, gelegen aan de rand van de Maashorst. Ideaal voor een ontspannen verblijf in de natuur."
 author = "B&B Puur Geluk Berghem"
@@ -26,3 +28,17 @@ author = "B&B Puur Geluk Berghem"
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+
+# Expose static/images to Hugo's image pipeline (resized WebP + srcset) while keeping
+# the original /images/... URLs working. Declaring mounts replaces the defaults, so
+# assets/ and static/ are listed explicitly.
+[module]
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "static/images"
+    target = "assets/images"

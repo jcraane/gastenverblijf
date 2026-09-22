@@ -1,5 +1,7 @@
 {{ define "main" }}
-  <article class="ph3 ph4-ns pv4 pv5-l f4 content-width-wide lh-copy nested-links {{ $.Param "text_color" | compare.Default "mid-gray" }}">
-    {{ .Content }}
+  <article class="page-body content-width-wide">
+    <div class="page-body__content nested-links">
+      {{ .Content }}
+    </div>
   </article>
 {{ end }}

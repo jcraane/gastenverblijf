@@ -3,12 +3,17 @@ title: "Reserveren"
 description: "Bekijk de beschikbaarheid en reserveer direct online uw verblijf bij B&B Puur Geluk in Berghem, aan de rand van de Maashorst."
 keywords: ["B&B Berghem reserveren", "gastenverblijf Maashorst boeken", "overnachten Noord-Brabant", "bed and breakfast Oss"]
 featured_image: '/images/verblijf/terras_vanuit_achter.jpg'
+hero_position: 'center 55%'
+hero_subtitle: 'Bekijk de beschikbaarheid en boek direct online'
 content_width: 'content-width-wide'
 sitemap:
   priority: 0.9
 menu:
   main:
-    weight: 45
+    weight: 60
+    params:
+      button: true
+      short_name: 'Boek'
 ---
 
 Bekijk hieronder de actuele beschikbaarheid en reserveer direct online. U ontvangt na het boeken een bevestiging per e-mail met alle praktische informatie over inchecken, uitchecken en de route naar ons gastenverblijf.

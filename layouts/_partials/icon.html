@@ -1,0 +1,15 @@
+{{/* icon — inline stroke icon (24×24, currentColor). Usage: partial "icon.html" "check" */}}
+{{- $paths := dict
+  "check"    `<path d="M20 6 9 17l-5-5"/>`
+  "home"     `<path d="M3 10.5 12 3l9 7.5"/><path d="M5 9.5V21h14V9.5"/><path d="M9.5 21v-6h5v6"/>`
+  "mail"     `<rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/>`
+  "clock"    `<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>`
+  "pin"      `<path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>`
+  "tree"     `<path d="M12 3 6 11h3l-4 6h14l-4-6h3z"/><path d="M12 17v4"/>`
+  "car"      `<path d="M5 16v-4l2-5h10l2 5v4z"/><path d="M5 12h14"/><path d="M7 16v2M17 16v2"/>`
+  "wifi"     `<path d="M2 9a14 14 0 0 1 20 0"/><path d="M5 12.5a10 10 0 0 1 14 0"/><path d="M8.5 16a5 5 0 0 1 7 0"/><path d="M12 19.5h.01"/>`
+  "sparkles" `<path d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8z"/><path d="M19 15v4M17 17h4"/>`
+  "light"    `<path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3z"/>`
+-}}
+<svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">{{ index $paths . | default (index $paths "check") | safeHTML }}</svg>
+{{- /**/ -}}

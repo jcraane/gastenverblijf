@@ -1,0 +1,8 @@
+{{/* One row in the contact details list. Usage: {{< contact-item icon="mail" label="E-mail" >}}value{{< /contact-item >}} */}}
+<div class="contact-info-item">
+    <span class="contact-info-icon">{{ partial "icon.html" (.Get "icon") }}</span>
+    <div>
+        <span class="contact-info-label">{{ .Get "label" }}</span>
+        <span class="contact-info-value">{{ .Inner | markdownify }}</span>
+    </div>
+</div>

@@ -1,0 +1,5 @@
+{{/* Collapsible FAQ item. Usage: {{< faq q="Vraag?" >}}Antwoord in markdown{{< /faq >}} */}}
+<details class="faq">
+    <summary class="faq__question">{{ .Get "q" }}</summary>
+    <div class="faq__answer">{{ .Inner | markdownify }}</div>
+</details>

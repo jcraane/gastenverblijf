@@ -43,4 +43,6 @@
 </script>
 
 <!-- Parallax header -->
-<script src="{{ "js/parallax.js" | relURL }}" defer></script>
+{{ with resources.Get "js/parallax.js" | minify | fingerprint }}
+<script src="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" defer></script>
+{{ end }}

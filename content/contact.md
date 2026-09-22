@@ -2,6 +2,8 @@
 title: "Contact"
 description: "Heeft u een vraag over B&B Puur Geluk in Berghem? Neem gerust contact op via ons formulier of stuur een e-mail naar info@puurgelukberghem.nl. Reserveren kan direct online."
 featured_image: '/images/verblijf/looppad_naar_voordeur.jpg'
+hero_position: 'center 60%'
+hero_subtitle: 'Een vraag of een bijzondere wens? Laat het ons weten.'
 content_width: 'content-width-wide'
 menu:
   main:
@@ -26,39 +28,13 @@ Reserveren doet u eenvoudig online via onze [reserveringskalender](/reserveren/)
 
 ## Contactgegevens
 
-<div class="contact-info-item">
-    <span class="contact-info-icon">&#x1f3e0;</span>
-    <div>
-        <span class="contact-info-label">Adres</span>
-        <span class="contact-info-value">Penningkruid 21, 5351KA, Berghem, Noord-Brabant</span>
-    </div>
-</div>
+{{< contact-item icon="pin" label="Adres" >}}Penningkruid 21, 5351 KA Berghem, Noord-Brabant{{< /contact-item >}}
 
-<div class="contact-info-item">
-    <span class="contact-info-icon">&#x2709;</span>
-    <div>
-        <span class="contact-info-label">E-mail</span>
-        <span class="contact-info-value">info@puurgelukberghem.nl</span>
-    </div>
-</div>
+{{< contact-item icon="mail" label="E-mail" >}}[info@puurgelukberghem.nl](mailto:info@puurgelukberghem.nl){{< /contact-item >}}
 
-<div class="contact-info-item">
-    <span class="contact-info-icon">&#x1f551;</span>
-    <div>
-        <span class="contact-info-label">Inchecken</span>
-        <span class="contact-info-value">15:00 – 17:00</span>
-    </div>
-</div>
+{{< contact-item icon="clock" label="Inchecken" >}}15:00 – 17:00{{< /contact-item >}}
 
-<div class="contact-info-item">
-    <span class="contact-info-icon">&#x1f551;</span>
-    <div>
-        <span class="contact-info-label">Uitchecken</span>
-        <span class="contact-info-value">Vóór 10:30</span>
-    </div>
-</div>
-
-> Na het versturen wordt uw standaard e-mailprogramma geopend. Uw bericht wordt niet automatisch verzonden — u kunt het nog aanpassen voordat u het verstuurt.
+{{< contact-item icon="clock" label="Uitchecken" >}}Vóór 10:30{{< /contact-item >}}
 
 </div>
 </div>

@@ -1,0 +1,58 @@
+{{/*
+	img — responsive <img> for photos under static/images (mounted as assets/images).
+
+	Renders resized WebP variants with srcset so browsers never download the multi-MB
+	originals. Falls back to a plain <img> for files Hugo can't process (e.g. missing).
+
+	Params (dict):
+	  src            "/images/verblijf/zithoek_1.jpg" (required)
+	  alt            alt text
+	  sizes          sizes attribute (default "100vw")
+	  class          class attribute
+	  style          style attribute
+	  loading        "lazy" (default) or "eager"
+	  fetchpriority  e.g. "high" for the hero image
+	  widths         slice of widths (default 480 800 1200 1600)
+	  landscape      true → crop portrait photos to 4:3 first (banners never show a tall image)
+	  quality        WebP quality (default 78)
+*/}}
+{{- $src := .src -}}
+{{- $alt := .alt | default "" -}}
+{{- $sizes := .sizes | default "100vw" -}}
+{{- $loading := .loading | default "lazy" -}}
+{{- $widths := .widths | default (slice 480 800 1200 1600) -}}
+{{- $q := .quality | default 78 -}}
+{{- with resources.Get (strings.TrimPrefix "/" $src) -}}
+  {{- $img := . -}}
+  {{- if and $.landscape (gt $img.Height $img.Width) -}}
+    {{- $img = $img.Fill (printf "%dx%d Center" $img.Width (div (mul $img.Width 3) 4)) -}}
+  {{- end -}}
+  {{- $set := slice -}}
+  {{- $fallback := "" -}}
+  {{- $fw := 0 -}}
+  {{- $fh := 0 -}}
+  {{- range $widths -}}
+    {{- if le . $img.Width -}}
+      {{- $r := $img.Process (printf "resize %dx webp q%d" . $q) -}}
+      {{- $set = $set | append (printf "%s %dw" $r.RelPermalink $r.Width) -}}
+      {{- $fallback = $r.RelPermalink -}}
+      {{- $fw = $r.Width -}}
+      {{- $fh = $r.Height -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if not $set -}}
+    {{- $r := $img.Process (printf "webp q%d" $q) -}}
+    {{- $set = $set | append (printf "%s %dw" $r.RelPermalink $r.Width) -}}
+    {{- $fallback = $r.RelPermalink -}}
+    {{- $fw = $r.Width -}}
+    {{- $fh = $r.Height -}}
+  {{- end -}}
+  <img src="{{ $fallback }}" srcset="{{ delimit $set ", " }}" sizes="{{ $sizes }}" width="{{ $fw }}" height="{{ $fh }}" alt="{{ $alt }}"
+    {{- with $.class }} class="{{ . }}"{{ end }}
+    {{- with $.style }} style="{{ . | safeCSS }}"{{ end }} loading="{{ $loading }}" decoding="async"
+    {{- with $.fetchpriority }} fetchpriority="{{ . }}"{{ end }}>
+{{- else -}}
+  <img src="{{ $src }}" alt="{{ $alt }}"
+    {{- with $.class }} class="{{ . }}"{{ end }}
+    {{- with $.style }} style="{{ . | safeCSS }}"{{ end }} loading="{{ $loading }}" decoding="async">
+{{- end -}}
