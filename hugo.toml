@@ -8,6 +8,7 @@ publishDir = "docs/"
 googleAnalytics = ""
 sectionPagesMenu = 'main'
 enableRobotsTXT = true
+disableKinds = ['taxonomy', 'term']
 relativeURLs = true
 
 [sitemap]
