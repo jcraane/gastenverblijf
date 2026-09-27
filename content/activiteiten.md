@@ -78,7 +78,7 @@ Verfrissing op warme dagen of sportief banen zwemmen. De regio biedt verschillen
 {{< /split >}}
 
 {{< activity-grid >}}
-    {{< activity-card title="Zwembad De Kriekenput" description="Prachtig buitenbad gelegen in het bos." link="https://www.herperduin.nl/faciliteiten/zwembad_de_kriekeput" link_text="Bezoek site →" featured="true" distance="10 min fietsen" img="/images/omgeving/ganzenven.jpg" >}}
+    {{< activity-card title="Zwembad De Kriekenput" description="Prachtig buitenbad gelegen in het bos." link="https://www.herperduin.nl/faciliteiten/zwembad_de_kriekeput" link_text="Bezoek site →" featured="true" distance="10 min fietsen" img="/images/omgeving/kriekeput.jpg" >}}
     {{< activity-card title="Golfbad Oss" description="Binnenbad met golfslagbad en glijbanen." link="https://golfbad.nl/" link_text="Bezoek site →" distance="10 min auto" >}}
     {{< activity-card title="Beachclub de Maashorst" description="Recreatieplas voor een heerlijke dag aan het water." link="https://beachclubdemaashorst.nl/" link_text="Bezoek site →" >}}
     {{< activity-card title="Strand Tien" description="Ontspannen bij deze fijne recreatieplas." link="https://strandtien.nl/" link_text="Bezoek site →" >}}
@@ -89,7 +89,7 @@ Verfrissing op warme dagen of sportief banen zwemmen. De regio biedt verschillen
 
 {{< activity-section theme="cultuur" id="cultuur" >}}
 
-{{< split img="/images/omgeving/winter_scenery.jpg" alt="Cultuur in de regio" >}}
+{{< split img="/images/omgeving/oss_luchtfoto.jpg" alt="Oss vanuit de lucht bij zonsondergang" >}}
 ## Cultuur & uitgaan
 
 Bioscoop, theater en musea in de regio. Van de nieuwste blockbusters tot ambachtelijke brouwerijen: er valt altijd iets te beleven. Op <a href="https://www.trefhetinoss.nl/" target="_blank" rel="noopener">Tref het in Oss</a> vindt u het actuele aanbod aan evenementen en uitgaanstips.
@@ -97,7 +97,7 @@ Bioscoop, theater en musea in de regio. Van de nieuwste blockbusters tot ambacht
 
 <h3 class="activity-subheading">Bioscopen</h3>
 {{< activity-grid >}}
-    {{< activity-card title="Kinepolis Oss" description="De nieuwste blockbusters in een moderne bioscoop." link="https://kinepolis.nl/bioscopen/kinepolis-oss" link_text="Tickets →" distance="10 min auto" >}}
+    {{< activity-card title="Kinepolis Oss" description="De nieuwste blockbusters in een moderne bioscoop." link="https://kinepolis.nl/bioscopen/kinepolis-oss" link_text="Tickets →" distance="10 min auto" featured="true" img="/images/omgeving/kinepolis.jpg" >}}
     {{< activity-card title="TakeTen Uden" description="Luxe cinema ervaring met comfortabele stoelen." link="https://taketen.nl/" link_text="Tickets →" >}}
     {{< activity-card title="Vue Den Bosch" description="Groot aanbod aan films in de nabijgelegen stad." link="https://www.vuecinemas.nl/bioscopen/den-bosch" link_text="Tickets →" >}}
 {{< /activity-grid >}}
