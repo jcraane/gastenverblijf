@@ -107,7 +107,7 @@ Bioscoop, theater en musea in de regio. Van de nieuwste blockbusters tot ambacht
     {{< activity-card title="De Lievekamp" description="Theater in Oss met een breed programma." link="https://www.lievekamp.nl/" link_text="lievekamp.nl →" >}}
     {{< activity-card title="Hoessenbosch" description="Uniek openluchttheater in een bosrijke omgeving." link="https://www.hoessenbosch.nl/" link_text="hoessenbosch.nl →" >}}
     {{< activity-card title="De Groene Engel" description="Cultuurpodium voor muziek, film en theater." link="https://www.groene-engel.nl/" link_text="groene-engel.nl →" >}}
-    {{< activity-card title="Museum Jan Cunen" description="Stedelijk museum met kunst en lokale historie." link="https://museumjancunen.nl/" link_text="museumjancunen.nl →" featured="true" img="/images/omgeving/winter_scenery.jpg" >}}
+    {{< activity-card title="Museum Jan Cunen" description="Stedelijk museum met kunst en lokale historie." link="https://museumjancunen.nl/" link_text="museumjancunen.nl →" featured="true" img="/images/omgeving/jan_cunen.jpg" img_position="center 20%" >}}
     {{< activity-card title="Bierbrouwerij Oijen" description="Ambachtelijke brouwerij met proeverij en restaurant." link="https://speciaalbierbrouwerij.nl/" link_text="speciaalbierbrouwerij.nl →" >}}
 {{< /activity-grid >}}
 

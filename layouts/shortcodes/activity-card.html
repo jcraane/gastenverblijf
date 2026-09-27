@@ -1,9 +1,11 @@
 {{ $featured := .Get "featured" }}
 {{ $img := .Get "img" }}
+{{/* img_position: optional object-position for the photo crop, e.g. "center 20%" */}}
+{{ $style := "" }}{{ with .Get "img_position" }}{{ $style = printf "object-position: %s" . }}{{ end }}
 <div class="activity-card{{ if $featured }} activity-card--featured{{ end }}{{ if not $img }} activity-card--compact{{ end }}">
     {{ with $img }}
     <div class="activity-card__img-wrap">
-        {{ partial "img.html" (dict "src" . "alt" ($.Get "title") "class" "activity-card__img" "sizes" "(min-width: 48em) 40rem, 100vw" "widths" (slice 480 800 1200)) }}
+        {{ partial "img.html" (dict "src" . "alt" ($.Get "title") "class" "activity-card__img" "sizes" "(min-width: 48em) 40rem, 100vw" "widths" (slice 480 800 1200) "style" $style) }}
     </div>
     {{ end }}
     <div class="activity-content">
