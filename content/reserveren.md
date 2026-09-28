@@ -26,8 +26,8 @@ Bekijk hieronder de actuele beschikbaarheid en prijzen en reserveer direct onlin
 <div class="callout">
 <h2>Goed om te weten</h2>
 <ul>
-<li>In schoolvakanties en op feestdagen geldt een minimum van 2 nachten</li>
-<li>Prijzen zijn exclusief toeristenbelasting en eenmalige schoonmaakkosten</li>
+<li>Er geldt een minimum verblijfsduur van 2 nachten</li>
+<li>Prijzen zijn inclusief toeristenbelasting en eenmalige schoonmaakkosten</li>
 <li>Huisdieren zijn niet toegestaan</li>
 <li>Het maximale verblijf is 1 week</li>
 </ul>
@@ -57,10 +57,10 @@ Ja, ons gastenverblijf beschikt over een eigen inrit met privéparkeerplaats. U 
 Om de rust en hygiëne voor al onze gasten te waarborgen, zijn huisdieren helaas niet toegestaan.
 {{< /faq >}}
 {{< faq q="Wat is er inbegrepen in de prijs?" >}}
-In de overnachtingsprijs zijn airco, wifi, Nespresso, thee, opgemaakte bedden, badlinnen en eenmalige schoonmaakkosten inbegrepen
+In de overnachtingsprijs zijn airco, wifi, Nespresso, thee, opgemaakte bedden, badlinnen en eenmalige schoonmaakkosten inbegrepen.
 {{< /faq >}}
 {{< faq q="Is toeristenbelasting inbegrepen?" >}}
-Ja, de prijzen zijn inclusief toeristenbelasting. De toeristenbelasting worden conform de geldende tarieven van de gemeente Oss berekend.
+Ja, de prijzen zijn inclusief toeristenbelasting. De toeristenbelasting wordt conform de geldende tarieven van de gemeente Oss berekend.
 {{< /faq >}}
 {{< faq q="Hoe laat kan ik in- en uitchecken?" >}}
 Inchecken kan tussen 15:00 en 17:00. Mocht u later arriveren, laat het ons dan even weten. Uitchecken kan tot 10:30.
