@@ -1,2 +1,4 @@
 .playwright-mcp/
 resources/_gen/images/
+gastenmap/public/
+gastenmap/data/private.yaml

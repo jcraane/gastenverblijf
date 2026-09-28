@@ -1,0 +1,152 @@
+# Walking and cycling routes for the guest folder, grouped by where they start.
+# knooppunten: junction numbers in order; a non-numeric entry is a waypoint label
+# shown between the numbers (e.g. "Bernhoven" or "langs het Ganzenven").
+# map: file in gastenmap/assets/routes/. A group can have a note (title + text) under its heading.
+# Sources: VisitBrabant, Bezoek de Maashorst.
+
+intro: |
+  Rondom Berghem ligt een fijnmazig netwerk van wandel- en fietsknooppunten. Volg de
+  bordjes van knooppunt naar knooppunt; de nummers staan per route in volgorde.
+
+
+groups:
+  - title: Wandelen vanaf de B&B
+    subtitle: Te voet te bereiken, door Herperduin en De Maashorst
+    kind: wandelen
+    routes:
+      - title: Uitkijktoren Herperduin
+        distance: 7 km
+        start: Parkeerplaats Hoessenboslaan, bij de ingang van openluchttheater Hoessenbosch.
+        knooppunten: ["52", "84", "83", "5", "88", "89", "52", "51", "13", "Uitkijktoren", "53", "15", "16", "17", "18", "85", "86", "52"]
+        text: |
+          Aan de rand van de zandverstuiving in Herperduin staat, tussen knooppunt 13 en 53,
+          op een stuifwal van 7 meter een uitkijktoren van 24 meter hoog. Het is een flinke klim,
+          maar bovenop staat u op 31 meter hoogte en kijkt u uit over de wijde omtrek, van
+          Den Bosch tot Nijmegen.
+        map: uitkijktoren.jpg
+
+      - title: Herperduin, Vennen
+        distance: 8 km
+        start: Via het klaphek bij parkeerplaats Hoessenboslaan.
+        knooppunten: ["86", "85", "18", "langs het Ganzenven", "32", "2", "33", "36", "langs het Klompven", "15", "16", "17", "87", "langs het Ganzenven", "5", "83", "84", "52"]
+        text: |
+          **Klompven** — ontstaan door zandwinning voor de aanleg van de A50. Het ven ligt buiten
+          het begrazingsgebied en wordt veel bezocht door wandelaars met honden en ruiters. In de
+          zomer wordt er gezwommen, in de winter soms geschaatst.
+
+          **Ganzenven** — een natuurlijk ven in het begrazingsgebied van Herperduin, waar de grazers
+          in de zomer drinken en verkoeling zoeken. Het grenst aan een van de twee heidevelden.
+        map: vennen.jpg
+
+      - title: Herperduin, Schaijk
+        distance: 16,8 km
+        start: Hoek Hoessenboslaan – Piekenhoefstraat (fietspad), vlak bij de B&B. Loop richting Herpen (Koolwijk).
+        knooppunten: ["81", "82", "83", "5", "87", "17", "33", "2", "93", "48", "47", "Schaijk", "50", "49", "46", "20", "16", "17", "20", "31", "35", "47", "85", "86", "52", "81"]
+        text: |
+          Een langere tocht door Herperduin naar Schaijk en terug. Wilt u nog verder, dan gaat
+          de route Maashorst, Slabroek ook door Schaijk.
+        map: schaijk.jpg
+
+      - title: Maashorst, Slabroek
+        distance: 28,5 km
+        start: Hoek Hoessenboslaan – Piekenhoefstraat (fietspad), vlak bij de B&B. Loop richting Herpen (Koolwijk).
+        knooppunten: ["81", "52", "86", "85", "47", "35", "31", "20", "17", "10", "24", "19", "30", "01", "06", "31", "82", "66", "36", "67", "56", "55", "10", "Bezoekerscentrum Maashorst", "21", "22", "20", "51", "23", "72", "70", "22", "98", "99", "28", "27", "24", "89", "51", "50", "47", "48", "93", "2", "33", "17", "87", "5", "83", "82", "81"]
+        text: |
+          Een dagtocht dwars door De Maashorst, langs het bezoekerscentrum in Slabroek.
+        map: slabroek.jpg
+
+  - title: Wandelen in De Maashorst
+    subtitle: Startpunten op korte afstand met de auto
+    kind: wandelen
+    note:
+      title: Bezoekerscentrum De Maashorst
+      text: |
+        Natuurcentrum De Maashorst zit in een boerderij aan de Erenakkerstraat 5 in Nistelrode.
+        Bij het informatiepunt starten allerlei activiteiten rond de natuur van De Maashorst.
+        Parkeren kan op 200 meter van het centrum, op de hoek Maashorstweg/Slabroekseweg.
+    routes:
+      - title: Maashorst, Bernhoven
+        distance: 8,4 km
+        start: Parkeerplaats bij Bezoekerscentrum De Maashorst in Slabroek.
+        knooppunten: ["10", "21", "23", "09", "06", "13", "12", "28", "Bernhoven", "27", "01", "02", "57", "54", "53", "10"]
+        map: bernhoven.jpg
+
+      - title: Maashorst, Nistelrode
+        distance: 10,4 km
+        start: Parkeerplaats in Nistelrode, bij de hoek Heuvelstraat/Laar.
+        knooppunten: ["1", "68", "74", "67", "56", "55", "10", "Bezoekerscentrum Maashorst", "53", "54", "57", "60", "61", "95", "94", "93", "92", "13", "10", "2", "1"]
+        map: nistelrode.jpg
+
+  - title: Kloosterwandelingen
+    subtitle: Natuur en kloostergeschiedenis in de regio
+    kind: wandelen
+    routes:
+      - title: Kloosterwandeling Megen
+        distance: 4,8 km
+        start: Knooppunt 49. Parkeren bij het toeristisch informatiecentrum, hoek Willem Kippstraat/Torenstraat.
+        knooppunten: ["49", "55", "28", "29", "5", "50", "55", "56", "53", "49"]
+        text: |
+          Een rondwandeling langs het clarissen- en franciscanenklooster van Megen. Er wonen veel
+          franciscaanse broeders en zusters in het dorp, daarom heet Megen ook wel 'Assisi aan de
+          Maas'. De route loopt voor een groot deel door de natuur langs de Maas en de akkers.
+        sights:
+          - Klooster Sint-Antonius van Padua
+          - Broeder Everarduskapel
+          - Acropolis
+          - Kapel der zeven weeën
+          - Sint-Servatiuskerk Megen
+        map: megen.jpg
+
+      - title: Kloosterwandeling Uden
+        distance: 10,7 km
+        start: Knooppunt 30, Sint Janstraat in Uden. Hier staat een informatiepaneel over de route.
+        knooppunten: ["30", "53", "51", "52", "54", "8", "50", "06", "5", "03", "55", "30"]
+        text: |
+          Uden heeft een bijzondere kloostergeschiedenis: kloosterlingen op de vlucht waren welkom
+          in Abdij Maria Toevlucht. De abdij is gesloten voor publiek, maar Museum Krona met
+          religieuze kunst in het abdijcomplex is wel open.
+        sights:
+          - Museum Krona
+          - Sint-Petrus' Stoel van Antiochiëkerk
+          - College Kruisheren
+          - Kruisherenklooster
+          - Voormalig huis van de Heilige Columba
+          - Afgebrande Sint-Petruskerk en oorlogskerkhof
+          - Pauluskerk
+          - Voormalig Retraitehuis Uden
+        map: uden.jpg
+
+      - title: Kloosterwandeling Heeswijk-Dinther
+        distance: 10,4 km
+        start: Knooppunt 35, Abdijstraat 49 in Heeswijk. Hier staat een informatiepaneel over de route.
+        knooppunten: ["35", "75", "31", "74", "60", "70", "91", "92", "24", "23", "21", "20", "25", "30", "32", "34", "35"]
+        text: |
+          U bezoekt de Abdij van Berne, met een winkel, proeflokaal en kloostertuin. Onderweg
+          geniet u van de natuur rond Heeswijk-Dinther, natuurtheater Kersouwe en Kasteel Heeswijk.
+        sights:
+          - Abdij van Berne
+          - Meierijsche Museumboerderij
+          - Natuurtheater Kersouwe
+          - Kasteel Heeswijk
+          - Sint-Willibrorduskerk Heeswijk
+        map: heeswijk-dinther.jpg
+
+  - title: Fietsen & mountainbiken
+    subtitle: Fietsen huren kan bij Bike Adventure (zie Activiteiten)
+    kind: fietsen
+    routes:
+      - title: Maashorst via Nistelrode, Slabroek en Schaijk
+        distance: 38 km
+        start: Pannenkoekenrestaurant Pan & Zo.
+        knooppunten: ["17", "23", "34", "29", "33", "32", "43", "01", "02", "04", "69", "53", "81", "54", "55", "56", "De Pannekoekenbakker Zeeland", "92", "38", "46", "91", "66", "45", "04", "03", "25", "60", "17"]
+
+      - title: Maashorst via Heesch en Zeeland
+        distance: 38 km
+        start: Knooppunt 22, bij het Mariabeeldje van de verkenners in Berghem.
+        knooppunten: ["22", "35", "77", "21", "71", "Heesch", "32", "33", "44", "04", "69", "53", "81", "54", "55", "56", "93", "39", "Zeeland", "88", "89", "90", "67", "79", "66", "45", "65", "01", "34", "23", "22"]
+
+      - title: Mountainbikeroute Herperduin (rood, gevorderden)
+        distance: ca. 14 km
+        start: "Hotel De Naaldhof (Docfalaan 22, Oss), openluchttheater Hoessenbosch (Hoessenboslaan 51, Berghem) of De Kriekeput (Schaijkseweg 3a, Herpen). Bij alle drie kunt u parkeren."
+        text: Een technische route door Herperduin met veel heuvelruggen en singletracks.
+        map: mtb-herperduin.jpg

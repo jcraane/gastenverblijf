@@ -1,0 +1,103 @@
+# Content of the printed guest folder. Text fields are Markdown.
+# [[...]] marks something still to be filled in; it prints highlighted, so it can't be missed.
+# The wifi details and phone number are in private.yaml (gitignored, the repo is public).
+
+cover:
+  img: /images/verblijf/zithoek_1.jpg
+  position: center 60%
+
+contact:
+  names: Jamie & Ingrid
+  email: info@puurgelukberghem.nl
+  address: Penningkruid 21, 5351 KA Berghem
+  website: https://puurgelukberghem.nl/
+
+welkom: |
+  Fijn dat u er bent! In deze map vindt u alles voor een ontspannen verblijf:
+  praktische informatie, de huisregels en tips om de omgeving te ontdekken.
+
+  Mist u iets, gaat er iets stuk of heeft u een vraag? Laat het ons gerust weten,
+  dan lossen we het graag voor u op.
+
+  Wij wensen u een heerlijk verblijf.
+
+tijden:
+  - label: Inchecken
+    value: 15:00 – 17:00
+  - label: Uitchecken
+    value: vóór 10:30
+  - label: Stilte
+    value: 22:00 – 07:00
+
+huisregels:
+  - Het is stil tussen 22:00 en 07:00. Zo geniet iedereen van de rust.
+  - Wilt u iemand extra laten overnachten? Overleg dit eerst met ons.
+  - Roken is binnen niet toegestaan, op het terras wel.
+  - Open vuur en kaarsen zijn niet toegestaan.
+  - Huisdieren zijn helaas niet toegestaan.
+  - Is er iets kapot? Meld het ons direct, dan kunnen we het oplossen.
+
+# "Hoe werkt het" page: one block per topic.
+hoe_werkt_het:
+  - icon: wind
+    title: Airco
+    text: "[[Bediening van de airco: afstandsbediening, verwarmen/koelen, uitzetten bij vertrek.]]"
+  - icon: flame
+    title: Verwarming
+    text: "[[Hoe de verwarming werkt, ook in de badkamer.]]"
+  - icon: coffee
+    title: Nespresso & thee
+    text: "[[Hoe de Nespresso werkt, waar cups en thee staan.]]"
+  - icon: tv
+    title: Televisie
+    text: "[[Welke afstandsbediening, zenders, apps (Netflix e.d.).]]"
+  - icon: pot
+    title: Keuken
+    text: "Inductiekookplaat met afzuiging, combimagnetron/oven, koelkast, waterkoker en broodrooster. [[Bijzonderheden bij het gebruik.]]"
+  - icon: trash
+    title: Afval
+    text: "[[Waar de vuilniszak en eventueel glas/papier heen kunnen.]]"
+  - icon: car
+    title: Parkeren
+    text: U parkeert gratis op de eigen inrit bij het gastenverblijf.
+  - icon: light
+    title: Terras
+    text: "[[Sfeerverlichting op het terras aan- en uitzetten.]]"
+
+noodnummers:
+  adres_intro: Bij een noodgeval heeft u dit adres nodig
+  items:
+    - title: Levensbedreigend
+      number: "112"
+      text: Ambulance, brandweer of politie.
+    - title: Politie (geen spoed)
+      number: 0900 8844
+    - title: Huisartsenpraktijk Berghem
+      number: 0412 40 19 00
+      text: Spoedlijn tijdens openingstijden (ma–vr 08:00–17:00). Molenweg 2c, Berghem. Bel altijd eerst.
+    - title: Huisartsenpost Uden
+      number: 088 876 50 50
+      text: "Buiten openingstijden: werkdagen na 17:00, in het weekend en op feestdagen. In ziekenhuis Bernhoven, Nistelrodeseweg 10, Uden. Bel altijd eerst."
+    - title: Tandartsenpraktijk Berghem
+      number: 0412 40 15 89
+      text: "Ma–di 08:30–20:30, wo–vr 08:30–17:00. Molenweg 2E, Berghem. Buiten openingstijden: Mondzorgpoli Den Bosch."
+      link: https://www.mondzorgpoli.nl/spoed-tandarts/den-bosch/
+      link_label: Mondzorgpoli
+    - title: Apotheek Berghem
+      number: 0412 40 17 51
+      text: Ma–vr 08:00–12:30 en 13:30–17:30. Molenweg 2A, Berghem.
+    - title: RegioApotheek in Bernhoven
+      number: 0413 40 87 80
+      text: "Dienstapotheek 's avonds, 's nachts, in het weekend en op feestdagen. Nistelrodeseweg 10, Uden."
+
+vertrek:
+  intro: Uitchecken kan tot 10:30. Wilt u voor vertrek even het volgende nalopen?
+  items:
+    - Vaat schoon en terug in de kast
+    - Koelkast leeg
+    - "Vuilniszak buiten gezet [[waar?]]"
+    - Airco en lichten uit
+    - Ramen en deuren dicht
+    - "Sleutel ingeleverd [[waar?]]"
+    - Niets vergeten? Denk aan opladers en de koelkast
+  outro: Bedankt voor uw verblijf en graag tot ziens!

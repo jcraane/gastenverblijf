@@ -1,0 +1,13 @@
+{{/*
+  gm-img — image for print: a single JPEG large enough for ~300 dpi at A4 width,
+  instead of the web partial's WebP srcset. Params: src (assets path), alt, class, style.
+*/}}
+{{- with resources.Get (strings.TrimPrefix "/" .src) -}}
+  {{- $img := . -}}
+  {{- if gt $img.Width 2200 }}{{ $img = $img.Process "resize 2200x jpg q85" }}{{ else }}{{ $img = $img.Process "jpg q90" }}{{ end -}}
+  <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $.alt }}"
+    {{- with $.class }} class="{{ . }}"{{ end }}
+    {{- with $.style }} style="{{ . | safeCSS }}"{{ end }}>
+{{- else -}}
+  {{- errorf "gm-img: image %q not found" .src -}}
+{{- end -}}

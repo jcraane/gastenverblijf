@@ -1,0 +1,8 @@
+# Copy to gastenmap/data/private.yaml and fill in. That file is gitignored because the
+# repo is public; without it the book prints highlighted placeholders instead.
+contact:
+  phone: 06 00 00 00 00
+wifi:
+  ssid: netwerknaam
+  password: wachtwoord
+  security: WPA   # WPA (also WPA2/WPA3), WEP or nopass

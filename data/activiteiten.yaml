@@ -1,0 +1,167 @@
+# Activities around the guesthouse. Single source for the Activiteiten page
+# (shortcode `activiteiten`) and the printed guest folder (gastenmap/).
+#
+# Section: id, theme (CSS modifier), nav (short label), title, intro (Markdown),
+#          img + alt (split photo), groups (optional heading + cards).
+# Card:    title, description, link, link_text, distance, img, img_position, featured.
+
+- id: natuur
+  theme: natuur
+  nav: Natuur & wandelen
+  title: Natuur & wandelen
+  intro: Geniet van de rust en de unieke flora en fauna van de Brabantse natuur. De Maashorst biedt eindeloze wandelpaden door bossen, heide en langs schilderachtige vennen.
+  img: /images/omgeving/ganzenven.jpg
+  alt: Natuur in de Maashorst
+  groups:
+    - cards:
+        - title: Natuurgebied Herperduin - De Maashorst
+          description: Natuurgebied Herperduin wordt ook wel de "Achtertuin" van Berghem genoemd. Herperduin maakt onderdeel uit van natuurgebied de Maashorst.
+          link: https://natuurgebieddemaashorst.nl/
+          link_text: Ontdek de Maashorst →
+          img: /images/omgeving/heide.jpg
+          featured: true
+          distance: 10 min fietsen
+        - title: Uitkijktoren Herperduin
+          description: De uitkijktoren van Herperduin is een absolute 'must-visit' tijdens uw verblijf. Gelegen op een van de hoogste punten van het gebied, biedt deze architectonische blikvanger een 360-graden panorama over de heide, de grazende Schotse Hooglanders en de dichte bossen.
+          link: https://www.herperduin.nl/faciliteiten/uitkijktoren
+          link_text: Meer info →
+          distance: 10 min fietsen
+
+- id: eten
+  theme: eten
+  nav: Eten & drinken
+  title: Eten & drinken
+  intro: "Gezellige restaurants en terrassen op steenworp afstand. Van pannenkoeken tot luxe dineren: de regio heeft voor elke smaak iets bijzonders."
+  img: /images/omgeving/panzo.png
+  alt: Sfeervolle omgeving
+  groups:
+    - cards:
+        - title: Pan & Zo
+          description: Gezellig pannenkoekenrestaurant met een uitgebreide kaart.
+          link: https://www.panenzo.com/
+          link_text: Pannenkoeken & meer →
+          distance: 10 min fietsen
+        - title: Restaurant Clemens
+          description: Sfeervol dineren in het hart van de regio.
+          link: https://restaurantclemens.nl/
+          link_text: Dineren in sfeer →
+          distance: 8 min auto
+        - title: Bomenpark
+          description: Luxe lunch en diner bij de culinaire toegangspoort van natuurgebied de Maashorst.
+          link: https://bomenpark.nl/
+          link_text: Luxe lunch & diner →
+          distance: 9 min auto
+
+- id: actief
+  theme: actief
+  nav: Actief & sportief
+  title: Actief & sportief
+  intro: Voor de avonturiers en sportievelingen. Van klimmen en karten tot wandelen door het Brabantse land.
+  img: /images/omgeving/karten.jpg
+  alt: Actief in de omgeving
+  groups:
+    - cards:
+        - title: Klimpark Uden
+          description: Verleg uw grenzen op grote hoogte.
+          link: https://www.mastworp.nl/klimpark-uden
+          link_text: klimparkuden.nl →
+          featured: true
+          img: /images/omgeving/klimpark_uden.jpg
+        - title: Bike Adventure
+          description: Voor al uw actieve uitjes op de fiets.
+          link: https://bikeadventure.nl/
+          link_text: bikeadventure.nl →
+        - title: Kartbaan Berghem
+          description: Snelheid en actie op het circuit.
+          link: https://circuitparkberghem.nl/
+          link_text: circuitparkberghem.nl →
+          distance: 5 min auto
+        - title: Bowling Rusheuvel
+          description: Gezellig bowlen met vrienden of familie.
+          link: https://rusheuvel.nl/
+          link_text: rusheuvel.nl →
+
+- id: zwemmen
+  theme: zwemmen
+  nav: Zwemmen
+  title: Zwemmen & waterplezier
+  intro: Verfrissing op warme dagen of sportief banen zwemmen. De regio biedt verschillende zwembaden en recreatieplassen voor een heerlijke dag aan het water.
+  img: /images/omgeving/heide.jpg
+  alt: Recreatie in de natuur
+  groups:
+    - cards:
+        - title: Zwembad De Kriekenput
+          description: Prachtig buitenbad gelegen in het bos.
+          link: https://www.herperduin.nl/faciliteiten/zwembad_de_kriekeput
+          link_text: Bezoek site →
+          featured: true
+          distance: 10 min fietsen
+          img: /images/omgeving/kriekeput.jpg
+        - title: Golfbad Oss
+          description: Binnenbad met golfslagbad en glijbanen.
+          link: https://golfbad.nl/
+          link_text: Bezoek site →
+          distance: 10 min auto
+        - title: Beachclub de Maashorst
+          description: Recreatieplas voor een heerlijke dag aan het water.
+          link: https://beachclubdemaashorst.nl/
+          link_text: Bezoek site →
+        - title: Strand Tien
+          description: Ontspannen bij deze fijne recreatieplas.
+          link: https://strandtien.nl/
+          link_text: Bezoek site →
+        - title: Riverside
+          description: Verschillende watersporten en activiteiten.
+          link: https://riverside.nl/
+          link_text: Bezoek site →
+
+- id: cultuur
+  theme: cultuur
+  nav: Cultuur & uitgaan
+  title: Cultuur & uitgaan
+  intro: 'Bioscoop, theater en musea in de regio. Van de nieuwste blockbusters tot ambachtelijke brouwerijen: er valt altijd iets te beleven. Op <a href="https://www.trefhetinoss.nl/" target="_blank" rel="noopener">Tref het in Oss</a> vindt u het actuele aanbod aan evenementen en uitgaanstips.'
+  img: /images/omgeving/oss_luchtfoto.jpg
+  alt: Oss vanuit de lucht bij zonsondergang
+  groups:
+    - heading: Bioscopen
+      cards:
+        - title: Kinepolis Oss
+          description: De nieuwste blockbusters in een moderne bioscoop.
+          link: https://kinepolis.nl/bioscopen/kinepolis-oss
+          link_text: Tickets →
+          distance: 10 min auto
+          featured: true
+          img: /images/omgeving/kinepolis.jpg
+        - title: TakeTen Uden
+          description: Luxe cinema ervaring met comfortabele stoelen.
+          link: https://taketen.nl/
+          link_text: Tickets →
+        - title: Vue Den Bosch
+          description: Groot aanbod aan films in de nabijgelegen stad.
+          link: https://www.vuecinemas.nl/bioscopen/den-bosch
+          link_text: Tickets →
+    - heading: Theater & musea
+      cards:
+        - title: De Lievekamp
+          description: Theater in Oss met een breed programma.
+          link: https://www.lievekamp.nl/
+          link_text: lievekamp.nl →
+        - title: Hoessenbosch
+          description: Uniek openluchttheater in een bosrijke omgeving.
+          link: https://www.hoessenbosch.nl/
+          link_text: hoessenbosch.nl →
+        - title: De Groene Engel
+          description: Cultuurpodium voor muziek, film en theater.
+          link: https://www.groene-engel.nl/
+          link_text: groene-engel.nl →
+        - title: Museum Jan Cunen
+          description: Stedelijk museum met kunst en lokale historie.
+          link: https://museumjancunen.nl/
+          link_text: museumjancunen.nl →
+          featured: true
+          img: /images/omgeving/jan_cunen.jpg
+          img_position: center 20%
+        - title: Bierbrouwerij Oijen
+          description: Ambachtelijke brouwerij met proeverij en restaurant.
+          link: https://speciaalbierbrouwerij.nl/
+          link_text: speciaalbierbrouwerij.nl →

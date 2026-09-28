@@ -1,0 +1,2 @@
+{{/* gm-md — Markdown text for the guest folder; [[...]] becomes a highlighted "still to fill in" mark */}}
+{{- . | replaceRE `\[\[(.+?)\]\]` `<mark class="todo">$1</mark>` | markdownify -}}

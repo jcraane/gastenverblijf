@@ -39,7 +39,15 @@ hugo
 - `reserveren.md` - Booking calendar (Bedandbreakfast.nl iBook), practical info and FAQ. Prices are deliberately not on the site: the booking calendar is the single source of truth (`/tarieven/` redirects here)
 - `contact.md` - Contact form (uses JavaScript mailto)
 
+## Gastenmap (printed guest folder)
+- Printable A4 book for the laminated folder in the guesthouse (double-sided, ring binder). Lives in `gastenmap/` and only builds in its own environment: `hugo server -e gastenmap --renderToMemory`, then print from Chrome
+- The repo is public: wifi details and phone number live in the gitignored `gastenmap/data/private.yaml` (template `gastenmap/private.example.yaml`). The book is also kept out of `docs/`: only `config/gastenmap/hugo.toml` mounts it
+- Content: `gastenmap/data/gastenmap.yaml` (welcome, house rules, how-to, emergency numbers, departure checklist) and `gastenmap/data/routes.yaml` (walking/cycling routes, maps in `gastenmap/assets/routes/`). `[[...]]` marks text still to fill in and prints highlighted
+- Activities come from `data/activiteiten.yaml`, shared with the Activiteiten page (shortcode `activiteiten`)
+- Activity and route pages are paginated by the script in `gastenmap/layouts/gastenmap.html`; the toolbar shows the page count and flags pages that overflow
+
 ## Custom shortcodes
+- `activiteiten.html` - All activity sections from `data/activiteiten.yaml`
 - `activity-card.html` - Card component for activities
 - `activity-grid.html` - Grid layout for activity cards
 - `form-mailto.html` - Contact form with mailto

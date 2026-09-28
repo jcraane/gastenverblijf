@@ -1,0 +1,305 @@
+/* Guest folder: A4 sheets, double-sided in a ring binder.
+   Recto (odd) pages have the punch margin on the left, verso (even) pages on the right.
+   Colours are tokens, so a colour print only needs different values here; everything
+   must also read well in black and white (no meaning carried by colour alone). */
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400 700;
+    font-display: block;
+    src: url('/fonts/montserrat/montserrat-latin-wght.woff2') format('woff2');
+}
+
+:root {
+    --ink: #1f1f1f;
+    --ink-body: #333;
+    --ink-soft: #5c5c5c;
+    --accent: #2d6a4f;
+    --accent-dark: #1b4332;
+    --accent-tint: #eef4f0;
+    --gold: #9a7a45;
+    --line: #d6d1c8;
+    --paper: #fff;
+    --desk: #e9e6e0;
+
+    --gutter-inner: 24mm;  /* ring binder holes */
+    --gutter-outer: 14mm;
+    --margin-top: 12mm;
+    --margin-bottom: 12mm;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+* { box-sizing: border-box; }
+
+html {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+}
+
+body {
+    margin: 0;
+    background: var(--desk);
+    color: var(--ink-body);
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 10pt;
+    line-height: 1.45;
+}
+
+h1, h2, h3, h4, h5 { color: var(--ink); margin: 0; line-height: 1.2; }
+p { margin: 0 0 2.5mm; }
+.prose p:last-child { margin-bottom: 0; }
+
+.icon { width: 1.1em; height: 1.1em; vertical-align: -0.18em; color: var(--accent); flex: none; }
+
+/* ---------- Screen toolbar ---------- */
+.toolbar {
+    position: sticky; top: 0; z-index: 10;
+    display: flex; gap: 1rem; align-items: center; justify-content: space-between;
+    padding: .75rem 1rem;
+    background: var(--accent-dark); color: #fff;
+    font-size: 13px;
+}
+.toolbar kbd { font-family: inherit; background: rgba(255,255,255,.15); padding: 0 .3em; border-radius: 3px; }
+.toolbar__status { display: block; margin-top: .2rem; opacity: .85; }
+.toolbar button {
+    flex: none; font: inherit; font-weight: 600; cursor: pointer;
+    padding: .5rem 1rem; border: 0; border-radius: 6px; background: #fff; color: var(--accent-dark);
+}
+
+/* ---------- Sheets ---------- */
+.book { padding: 10mm 0; }
+
+.sheet {
+    position: relative;
+    width: 210mm;
+    height: 297mm;
+    margin: 0 auto 10mm;
+    padding: var(--margin-top) var(--gutter-outer) var(--margin-bottom) var(--gutter-inner);
+    background: var(--paper);
+    box-shadow: 0 2px 12px rgba(0,0,0,.15);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.sheet--verso { padding-left: var(--gutter-outer); padding-right: var(--gutter-inner); }
+
+.sheet__head {
+    display: flex; justify-content: space-between;
+    padding-bottom: 2mm; margin-bottom: 6mm;
+    border-bottom: .3mm solid var(--line);
+    font-size: 7.5pt; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft);
+}
+.sheet--verso .sheet__head { flex-direction: row-reverse; }
+
+.sheet__body { flex: 1; min-height: 0; overflow: hidden; }
+
+.sheet__foot {
+    padding-top: 3mm;
+    font-size: 8pt; font-weight: 600; color: var(--ink-soft);
+    text-align: right;
+}
+.sheet--verso .sheet__foot { text-align: left; }
+
+/* Flows are poured into sheets by the script; hide the raw list meanwhile */
+.flow { visibility: hidden; }
+
+.is-overflowing { outline: 3mm solid #d00; }
+
+/* ---------- Common ---------- */
+.page-title {
+    font-size: 22pt; font-weight: 700; letter-spacing: -.01em;
+    margin-bottom: 5mm;
+}
+.page-title--sub { font-size: 16pt; margin: 8mm 0 3mm; }
+.section-title {
+    font-size: 13pt; font-weight: 700; color: var(--accent-dark);
+    padding-top: 5mm; margin-bottom: 3mm;
+    border-bottom: .5mm solid var(--accent);
+    padding-bottom: 1.5mm;
+}
+.group-title { font-size: 10.5pt; font-weight: 700; margin: 3mm 0 2mm; color: var(--ink-soft); }
+.intro { color: var(--ink-soft); margin-bottom: 2mm; }
+.prose--lead { font-size: 11.5pt; line-height: 1.6; }
+.prose--lead p { margin-bottom: 4mm; }
+
+.badge {
+    display: inline-block; vertical-align: .1em;
+    padding: .3mm 2mm; border-radius: 10mm;
+    border: .25mm solid var(--line);
+    font-size: 7.5pt; font-weight: 600; color: var(--ink-soft); white-space: nowrap;
+}
+.badge--strong { background: var(--accent-dark); border-color: var(--accent-dark); color: #fff; font-size: 9pt; padding: .6mm 2.5mm; }
+
+.qr { display: block; width: 20mm; height: 20mm; image-rendering: pixelated; flex: none; }
+
+mark.todo {
+    background: #ffe96b;
+    outline: .4mm dashed #8a6d00;
+    color: #000;
+    padding: 0 1mm;
+}
+
+.mono { font-family: 'SF Mono', Menlo, Consolas, monospace; letter-spacing: .02em; }
+
+/* ---------- Cover ---------- */
+.sheet--cover { padding-top: var(--gutter-outer); }
+.sheet--cover .sheet__body { display: flex; flex-direction: column; }
+.cover__photo { flex: 1; min-height: 0; border-radius: 4mm; overflow: hidden; }
+.cover__img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.cover__text { padding: 12mm 4mm 0; }
+.cover__eyebrow { font-size: 12pt; color: var(--ink-soft); margin: 0; }
+.cover__title { font-size: 44pt; font-weight: 700; letter-spacing: -.02em; color: var(--accent-dark); }
+.cover__sub { font-size: 12pt; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--gold); margin: 1mm 0 8mm; }
+.cover__lead { font-size: 12pt; max-width: 120mm; border-top: .5mm solid var(--accent); padding-top: 5mm; }
+.cover__foot { margin: 8mm 4mm 0; font-size: 9pt; color: var(--ink-soft); }
+
+/* ---------- Welkom ---------- */
+.signature { font-size: 12pt; font-weight: 600; color: var(--accent-dark); margin: 2mm 0 10mm; }
+
+.contact-card {
+    border: .4mm solid var(--accent); border-radius: 3mm;
+    padding: 5mm 6mm; margin-bottom: 10mm;
+}
+.contact-card h3 { font-size: 11pt; margin-bottom: 3mm; }
+.contact-list { margin: 0; display: grid; gap: 2mm; }
+.contact-list div { display: grid; grid-template-columns: 30mm 1fr; align-items: baseline; }
+.contact-list dt { color: var(--ink-soft); font-size: 9pt; }
+.contact-list dd { margin: 0; font-weight: 600; }
+.contact-list dd.big { font-size: 15pt; color: var(--accent-dark); }
+
+.toc-title { font-size: 11pt; margin-bottom: 3mm; }
+.toc { list-style: none; margin: 0; padding: 0; }
+.toc li {
+    display: flex; gap: 2mm; align-items: baseline;
+    padding: 1.8mm 0; border-bottom: .25mm dotted var(--line);
+}
+.toc li span:first-child { flex: 1; }
+.toc__page { font-weight: 700; color: var(--accent-dark); }
+
+/* ---------- Wifi & huisregels ---------- */
+.wifi {
+    display: flex; gap: 8mm; align-items: center;
+    border: .4mm solid var(--accent); border-radius: 3mm; padding: 6mm;
+}
+.wifi__qr { width: 42mm; height: 42mm; }
+.wifi__hint { color: var(--ink-soft); }
+.wifi dl { margin: 3mm 0 0; display: grid; grid-template-columns: auto 1fr; gap: 2mm 5mm; align-items: baseline; }
+.wifi dt { font-size: 9pt; color: var(--ink-soft); }
+.wifi dd { margin: 0; font-size: 14pt; font-weight: 600; color: var(--ink); word-break: break-all; }
+
+.times { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4mm; margin-top: 6mm; }
+.times__item { background: var(--accent-tint); border-radius: 3mm; padding: 3.5mm 4mm; }
+.times__item span { display: block; font-size: 8.5pt; color: var(--ink-soft); }
+.times__item strong { font-size: 12pt; color: var(--ink); }
+
+.rules { list-style: none; margin: 0; padding: 0; }
+.rules li {
+    display: flex; gap: 3mm; align-items: flex-start;
+    padding: 2.6mm 0; border-bottom: .25mm solid var(--line);
+    font-size: 10.5pt;
+}
+.rules .icon { margin-top: .15em; }
+
+/* ---------- Zo werkt het ---------- */
+.howto { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+.howto__item { border: .3mm solid var(--line); border-radius: 3mm; padding: 4mm 5mm; }
+.howto__item h3 { font-size: 11pt; margin-bottom: 2mm; display: flex; gap: 2mm; align-items: center; }
+.howto__item .icon { width: 1.3em; height: 1.3em; }
+
+/* ---------- Noodnummers ---------- */
+.address-box {
+    display: flex; flex-direction: column;
+    border: .6mm solid var(--ink); border-radius: 3mm;
+    padding: 4mm 6mm; margin-bottom: 5mm;
+}
+.address-box span { font-size: 9pt; color: var(--ink-soft); }
+.address-box strong { font-size: 15pt; color: var(--ink); }
+
+.numbers { list-style: none; margin: 0; padding: 0; }
+.numbers__item {
+    display: flex; gap: 5mm; align-items: center;
+    padding: 3.2mm 0; border-bottom: .25mm solid var(--line);
+}
+.numbers__text { flex: 1; }
+.numbers__text h3 { font-size: 10.5pt; }
+.numbers__text p { margin: .5mm 0 0; font-size: 8.5pt; color: var(--ink-soft); }
+.numbers__number { font-size: 13pt; white-space: nowrap; color: var(--ink); }
+.numbers__item--urgent .numbers__number { font-size: 26pt; line-height: 1; }
+.numbers__item--urgent h3 { font-size: 13pt; }
+.numbers__item--host { border-bottom: 0; margin-top: 3mm; background: var(--accent-tint); border-radius: 3mm; padding: 3.5mm 5mm; }
+.numbers__item--host .numbers__number { color: var(--accent-dark); }
+.qr-fig { margin: 0; text-align: center; font-size: 6.5pt; color: var(--ink-soft); }
+.qr--small { width: 15mm; height: 15mm; margin: 0 auto .5mm; }
+
+/* ---------- Activiteiten ---------- */
+.activity {
+    display: flex; gap: 5mm; align-items: center;
+    padding: 2.8mm 0; border-bottom: .25mm solid var(--line);
+}
+.activity__text { flex: 1; }
+.activity h5 { font-size: 10.5pt; margin-bottom: 1mm; }
+.activity p { margin: 0; font-size: 9pt; }
+.activity .activity__url { margin-top: 1mm; font-size: 8pt; font-weight: 600; color: var(--accent-dark); }
+.activity .qr { width: 19mm; height: 19mm; }
+
+/* ---------- Routes ---------- */
+.note { background: var(--accent-tint); border-radius: 3mm; padding: 4mm 5mm; margin: 3mm 0 1mm; }
+.note h3 { font-size: 10.5pt; margin-bottom: 1.5mm; }
+.note .prose { font-size: 9pt; }
+
+.group-head { padding-top: 2mm; }
+.group-head .section-title { padding-top: 3mm; }
+.group-head p { font-size: 9pt; color: var(--ink-soft); margin-top: -1.5mm; }
+
+.route { padding: 3mm 0 4mm; border-bottom: .25mm solid var(--line); }
+.route__head { display: flex; justify-content: space-between; align-items: center; gap: 4mm; margin-bottom: 2.5mm; }
+.route__head h4 { font-size: 12pt; display: flex; gap: 2mm; align-items: center; }
+.route__body { display: flex; gap: 6mm; align-items: flex-start; }
+.route__info { flex: 1; font-size: 9pt; }
+.route--map .route__info { flex: 0 0 64mm; }
+.route__start { margin-bottom: 2mm; }
+.route__map { flex: 1; min-width: 0; display: flex; justify-content: flex-end; }
+.route__map img { display: block; width: auto; height: auto; max-width: 100%; max-height: 74mm; border: .25mm solid var(--line); border-radius: 2mm; }
+.route__sights-title { font-weight: 600; margin: 2mm 0 1mm; }
+.route__sights { margin: 0; padding-left: 5mm; }
+.route__sights li { margin-bottom: .3mm; }
+
+.nodes { display: flex; flex-wrap: wrap; gap: 1.2mm 1mm; align-items: center; margin-top: 3mm; }
+.nodes__label { font-size: 8pt; font-weight: 600; color: var(--ink-soft); margin-right: 1.5mm; }
+.node {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-width: 6.4mm; height: 6.4mm; padding: 0 1mm;
+    border: .35mm solid var(--ink); border-radius: 3.2mm;
+    font-size: 8pt; font-weight: 700; color: var(--ink); background: #fff;
+}
+.node-via {
+    font-size: 7.5pt; font-style: italic; color: var(--ink-soft);
+    padding: 0 1mm;
+}
+
+.credits { margin-top: 4mm; font-size: 7.5pt; color: var(--ink-soft); }
+
+/* ---------- Vertrek ---------- */
+.checklist { list-style: none; margin: 6mm 0 10mm; padding: 0; }
+.checklist li {
+    display: flex; gap: 5mm; align-items: center;
+    padding: 4mm 0; border-bottom: .25mm solid var(--line);
+    font-size: 12pt;
+}
+.checkbox { flex: none; width: 7mm; height: 7mm; border: .5mm solid var(--ink); border-radius: 1.2mm; }
+.farewell { font-size: 12pt; margin-top: 4mm; }
+
+/* ---------- Print ---------- */
+@media print {
+    body { background: none; }
+    .toolbar { display: none; }
+    .book { padding: 0; }
+    .sheet { margin: 0; box-shadow: none; break-after: page; }
+    .sheet:last-child { break-after: auto; }
+    .is-overflowing { outline: none; }
+}

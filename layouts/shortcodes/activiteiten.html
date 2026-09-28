@@ -1,0 +1,23 @@
+{{/* activiteiten — section nav plus all activity sections from data/activiteiten.yaml */}}
+<nav class="activity-nav">
+  {{ range hugo.Data.activiteiten }}<a href="#{{ .id }}" class="activity-nav__link">{{ .nav }}</a>
+  {{ end }}
+</nav>
+{{ range hugo.Data.activiteiten }}
+<div class="activity-section activity-section--{{ .theme }}" id="{{ .id }}">
+<div class="split">
+    <div class="split__media">
+        {{ partial "img.html" (dict "src" .img "alt" .alt "sizes" "(min-width: 60em) 31rem, 100vw" "class" "split__img") }}
+    </div>
+    <div class="split__body">
+        {{ printf "## %s\n\n%s" .title .intro | markdownify }}
+    </div>
+</div>
+{{ range .groups }}
+{{ with .heading }}<h3 class="activity-subheading">{{ . }}</h3>{{ end }}
+<div class="activity-grid">
+    {{ range .cards }}{{ partial "activity-card.html" . }}{{ end }}
+</div>
+{{ end }}
+</div>
+{{ end }}

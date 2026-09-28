@@ -1,0 +1,41 @@
+# Environment for the printable guest folder (gastenmap). It contains the wifi password,
+# so it must never end up in docs/ (the live site):
+#   hugo server -e gastenmap --renderToMemory   → http://localhost:1313/
+# The regular build (`hugo`) doesn't load this file, so gastenmap/ stays out of the site.
+publishDir = "gastenmap/public"
+disableKinds = ['taxonomy', 'term', 'rss', 'sitemap', 'robotstxt', '404']
+enableRobotsTXT = false
+
+[params]
+goatcounter = ''
+
+# Replaces the mounts in hugo.toml: only the guest folder's content, plus the site's
+# layouts (partials), assets, images, fonts and activities data it reuses.
+[module]
+  [[module.mounts]]
+    source = "gastenmap/content"
+    target = "content"
+  [[module.mounts]]
+    source = "gastenmap/layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "layouts"
+    target = "layouts"
+  [[module.mounts]]
+    source = "gastenmap/data"
+    target = "data"
+  [[module.mounts]]
+    source = "data"
+    target = "data"
+  [[module.mounts]]
+    source = "gastenmap/assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "assets"
+    target = "assets"
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "static/images"
+    target = "assets/images"

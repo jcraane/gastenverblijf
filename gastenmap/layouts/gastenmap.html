@@ -1,0 +1,312 @@
+{{- /*
+  Printable guest folder (A4, double-sided, ring binder). Only built in the gastenmap
+  environment, see config/gastenmap/hugo.toml.
+
+  Fixed pages are written as <section class="sheet">. Longer lists (activities, routes)
+  are a <div class="flow">: the script at the bottom pours their blocks into as many
+  sheets as needed, then numbers the pages and fills in the table of contents.
+*/ -}}
+{{- $gm := hugo.Data.gastenmap -}}
+{{- $routes := hugo.Data.routes -}}
+{{- /* Wifi and phone number live in gastenmap/data/private.yaml, which is gitignored (the repo is public) */ -}}
+{{- $priv := hugo.Data.private | default dict -}}
+{{- if not $priv }}{{ warnf "gastenmap: gastenmap/data/private.yaml ontbreekt; kopieer gastenmap/private.example.yaml" }}{{ end -}}
+{{- $c := merge $gm.contact (dict "phone" "[[telefoonnummer]]") ($priv.contact | default dict) -}}
+{{- $wifi := $priv.wifi | default dict -}}
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Gastenmap · {{ site.Title }}</title>
+  <link rel="preload" href="/fonts/montserrat/montserrat-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
+  {{ with resources.Get "gastenmap/gastenmap.css" | minify }}<style>{{ .Content | safeCSS }}</style>{{ end }}
+</head>
+<body>
+
+<div class="toolbar">
+  <div>
+    <strong>Gastenmap</strong> · Afdrukken via <kbd>⌘P</kbd>: A4, dubbelzijdig (lange zijde), marges <em>Standaard</em>,
+    kop- en voetteksten <em>uit</em>, achtergrondafbeeldingen <em>aan</em>.
+    <span class="toolbar__status" id="status"></span>
+  </div>
+  <button type="button" onclick="window.print()">Afdrukken</button>
+</div>
+
+<main class="book" id="book">
+
+{{/* ---------- Cover ---------- */}}
+<section class="sheet sheet--cover">
+  <div class="cover__photo">
+    {{ partial "gm-img.html" (dict "src" $gm.cover.img "alt" "Het gastenverblijf" "class" "cover__img" "style" (printf "object-position: %s" $gm.cover.position)) }}
+  </div>
+  <div class="cover__text">
+    <p class="cover__eyebrow">Welkom bij</p>
+    <h1 class="cover__title">{{ site.Params.brand_name }}</h1>
+    <p class="cover__sub">{{ site.Params.brand_sub }}</p>
+    <p class="cover__lead">Gastenmap met praktische informatie, huisregels en tips voor de omgeving</p>
+  </div>
+  <p class="cover__foot">{{ $c.address }} · {{ replaceRE `^https?://(.+?)/?$` "$1" $c.website }}</p>
+</section>
+
+{{/* ---------- Welkom ---------- */}}
+<section class="sheet" data-head="Welkom">
+  <h2 class="page-title">Welkom</h2>
+  <div class="prose prose--lead">{{ partial "gm-md.html" $gm.welkom }}</div>
+  <p class="signature">{{ $c.names }}</p>
+
+  <div class="contact-card">
+    <h3>Contact tijdens uw verblijf</h3>
+    <dl class="contact-list">
+      <div><dt>{{ partial "icon.html" "phone" }} Telefoon</dt><dd class="big">{{ partial "gm-md.html" $c.phone }}</dd></div>
+      <div><dt>{{ partial "icon.html" "mail" }} E-mail</dt><dd>{{ $c.email }}</dd></div>
+      <div><dt>{{ partial "icon.html" "pin" }} Adres</dt><dd>{{ $c.address }}</dd></div>
+    </dl>
+  </div>
+
+  <h3 class="toc-title">In deze map</h3>
+  <ol class="toc" id="toc"></ol>
+</section>
+
+{{/* ---------- Wifi & huisregels ---------- */}}
+<section class="sheet" data-head="Wifi & huisregels" data-toc="Wifi en huisregels">
+  <h2 class="page-title">Wifi</h2>
+  <div class="wifi">
+    {{ if $wifi.ssid }}{{ partial "gm-qr.html" (dict "text" (printf "WIFI:T:%s;S:%s;P:%s;;" ($wifi.security | default "WPA") $wifi.ssid $wifi.password) "alt" "QR-code om met de wifi te verbinden" "class" "wifi__qr") }}{{ end }}
+    <div class="wifi__details">
+      <p class="wifi__hint">Scan de code met de camera van uw telefoon om direct verbinding te maken, of vul de gegevens in:</p>
+      <dl>
+        <dt>Netwerk</dt><dd class="mono">{{ partial "gm-md.html" ($wifi.ssid | default "[[netwerknaam]]") }}</dd>
+        <dt>Wachtwoord</dt><dd class="mono">{{ partial "gm-md.html" ($wifi.password | default "[[wachtwoord]]") }}</dd>
+      </dl>
+    </div>
+  </div>
+
+  <div class="times">
+    {{ range $gm.tijden }}<div class="times__item"><span>{{ .label }}</span><strong>{{ .value }}</strong></div>{{ end }}
+  </div>
+
+  <h2 class="page-title page-title--sub">Huisregels</h2>
+  <ul class="rules">
+    {{ range $gm.huisregels }}<li>{{ partial "icon.html" "check" }}<span>{{ partial "gm-md.html" . }}</span></li>{{ end }}
+  </ul>
+</section>
+
+{{/* ---------- Zo werkt het ---------- */}}
+<section class="sheet" data-head="Zo werkt het" data-toc="Zo werkt het">
+  <h2 class="page-title">Zo werkt het</h2>
+  <div class="howto">
+    {{ range $gm.hoe_werkt_het }}
+    <div class="howto__item">
+      <h3>{{ partial "icon.html" .icon }} {{ .title }}</h3>
+      <div class="prose">{{ partial "gm-md.html" .text }}</div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+
+{{/* ---------- Hulp & noodnummers ---------- */}}
+<section class="sheet" data-head="Hulp & noodnummers" data-toc="Hulp en noodnummers">
+  <h2 class="page-title">Hulp &amp; noodnummers</h2>
+  <div class="address-box">
+    <span>{{ $gm.noodnummers.adres_intro }}</span>
+    <strong>{{ $c.address }}</strong>
+  </div>
+  <ul class="numbers">
+    {{ range $i, $n := $gm.noodnummers.items }}
+    <li class="numbers__item{{ if eq $i 0 }} numbers__item--urgent{{ end }}">
+      <div class="numbers__text">
+        <h3>{{ .title }}</h3>
+        {{ with .text }}<p>{{ partial "gm-md.html" . }}</p>{{ end }}
+      </div>
+      {{ with .link }}<figure class="qr-fig">{{ partial "gm-qr.html" (dict "text" . "alt" (printf "QR-code %s" $n.link_label) "class" "qr--small") }}<figcaption>{{ $n.link_label }}</figcaption></figure>{{ end }}
+      <strong class="numbers__number">{{ .number }}</strong>
+    </li>
+    {{ end }}
+    <li class="numbers__item numbers__item--host">
+      <div class="numbers__text">
+        <h3>{{ $c.names }}</h3>
+        <p>Voor alle vragen over het gastenverblijf.</p>
+      </div>
+      <strong class="numbers__number">{{ partial "gm-md.html" $c.phone }}</strong>
+    </li>
+  </ul>
+</section>
+
+{{/* ---------- Activiteiten (flows over as many sheets as needed) ---------- */}}
+<div class="flow" data-head="Activiteiten" data-toc="Activiteiten in de omgeving">
+  <div class="block">
+    <h2 class="page-title">Activiteiten</h2>
+    <p class="intro">Een selectie van onze favorieten in de buurt. Scan de QR-code voor openingstijden en actuele informatie.</p>
+  </div>
+  {{ range hugo.Data.activiteiten }}
+  <h3 class="section-title keep-next">{{ .title }}</h3>
+  {{ range .groups }}
+  {{ with .heading }}<h4 class="group-title keep-next">{{ . }}</h4>{{ end }}
+  {{ range .cards }}
+  <div class="block activity">
+    <div class="activity__text">
+      <h5>{{ .title }}{{ with .distance }} <span class="badge">{{ . }}</span>{{ end }}</h5>
+      <p>{{ .description }}</p>
+      {{ with .link }}<p class="activity__url">{{ (urls.Parse .).Host | strings.TrimPrefix "www." }}</p>{{ end }}
+    </div>
+    {{ with .link }}{{ partial "gm-qr.html" (dict "text" . "alt" "QR-code naar de website") }}{{ end }}
+  </div>
+  {{ end }}
+  {{ end }}
+  {{ end }}
+</div>
+
+{{/* ---------- Routes ---------- */}}
+<div class="flow" data-head="Wandelen & fietsen" data-toc="Wandel- en fietsroutes">
+  <div class="block">
+    <h2 class="page-title">Wandelen &amp; fietsen</h2>
+    <div class="prose intro">{{ partial "gm-md.html" $routes.intro }}</div>
+  </div>
+  {{ range $routes.groups }}
+  {{ $kind := .kind }}
+  <div class="group-head keep-next">
+    <h3 class="section-title">{{ .title }}</h3>
+    {{ with .subtitle }}<p>{{ . }}</p>{{ end }}
+    {{ with .note }}
+    <div class="note">
+      <h3>{{ .title }}</h3>
+      <div class="prose">{{ partial "gm-md.html" .text }}</div>
+    </div>
+    {{ end }}
+  </div>
+  {{ range .routes }}
+  <article class="block route{{ if .map }} route--map{{ end }}">
+    <header class="route__head">
+      <h4>{{ partial "icon.html" (cond (eq $kind "fietsen") "bike" "walk") }} {{ .title }}</h4>
+      <span class="badge badge--strong">{{ .distance }}</span>
+    </header>
+    <div class="route__body">
+      <div class="route__info">
+        <p class="route__start"><strong>Start:</strong> {{ .start }}</p>
+        {{ with .text }}<div class="prose">{{ partial "gm-md.html" . }}</div>{{ end }}
+        {{ with .sights }}
+        <p class="route__sights-title">Bezienswaardigheden (nummers op de kaart)</p>
+        <ol class="route__sights">{{ range . }}<li>{{ . }}</li>{{ end }}</ol>
+        {{ end }}
+      </div>
+      {{ with .map }}
+      <div class="route__map">{{ partial "gm-img.html" (dict "src" (printf "routes/%s" .) "alt" "Routekaart") }}</div>
+      {{ end }}
+    </div>
+    {{ with .knooppunten }}
+    <div class="nodes" aria-label="Knooppunten">
+      <span class="nodes__label">Knooppunten</span>
+      {{ range . }}{{ if findRE `^\d+$` . }}<span class="node">{{ . }}</span>{{ else }}<span class="node-via">{{ . }}</span>{{ end }}{{ end }}
+    </div>
+    {{ end }}
+  </article>
+  {{ end }}
+  {{ end }}
+  <p class="block credits">Routes en kaarten: VisitBrabant en Bezoek de Maashorst. Kaartgegevens © OpenStreetMap-bijdragers.</p>
+</div>
+
+{{/* ---------- Vertrek (last page, easy to find at the back of the binder) ---------- */}}
+<section class="sheet" data-head="Vertrek" data-toc="Vertrek">
+  <h2 class="page-title">Vertrek</h2>
+  <p class="prose--lead">{{ partial "gm-md.html" $gm.vertrek.intro }}</p>
+  <ul class="checklist">
+    {{ range $gm.vertrek.items }}<li><span class="checkbox" aria-hidden="true"></span><span>{{ partial "gm-md.html" . }}</span></li>{{ end }}
+  </ul>
+  <p class="farewell">{{ $gm.vertrek.outro }}</p>
+  <p class="signature">{{ $c.names }}</p>
+</section>
+
+</main>
+
+{{/* Template for the sheets the flows create */}}
+<template id="sheet-template">
+  <section class="sheet"><div class="sheet__body"></div></section>
+</template>
+
+<script>
+(function () {
+  var book = document.getElementById('book');
+  var brand = {{ printf "%s · Gastenmap" site.Params.brand_name }};
+
+  function fits(body) { return body.scrollHeight <= body.clientHeight + 1; }
+
+  // Wrap fixed sheets' content in a body, add running head and page foot.
+  function frame(sheet, head) {
+    if (!sheet.querySelector('.sheet__body')) {
+      var body = document.createElement('div');
+      body.className = 'sheet__body';
+      while (sheet.firstChild) body.appendChild(sheet.firstChild);
+      sheet.appendChild(body);
+    }
+    if (head !== undefined && !sheet.classList.contains('sheet--cover')) {
+      var h = document.createElement('div');
+      h.className = 'sheet__head';
+      h.innerHTML = '<span>' + brand + '</span><span>' + head + '</span>';
+      sheet.insertBefore(h, sheet.firstChild);
+      var f = document.createElement('div');
+      f.className = 'sheet__foot';
+      sheet.appendChild(f);
+    }
+    return sheet.querySelector('.sheet__body');
+  }
+
+  function newSheet(flow) {
+    var sheet = document.getElementById('sheet-template').content.firstElementChild.cloneNode(true);
+    book.insertBefore(sheet, flow);
+    return frame(sheet, flow.dataset.head);
+  }
+
+  function paginate(flow) {
+    var blocks = Array.prototype.slice.call(flow.children);
+    var body = newSheet(flow);
+    body.parentNode.dataset.toc = flow.dataset.toc || '';
+    blocks.forEach(function (block) {
+      body.appendChild(block);
+      if (fits(body)) return;
+      // Doesn't fit: move it, plus any headings that must stay with it, to a new sheet.
+      var moving = [block];
+      var prev = block.previousElementSibling;
+      while (prev && prev.classList.contains('keep-next')) { moving.unshift(prev); prev = prev.previousElementSibling; }
+      if (moving.length === body.children.length) return; // alone and still too big: leave it, it gets flagged
+      body = newSheet(flow);
+      moving.forEach(function (el) { body.appendChild(el); });
+    });
+    flow.remove();
+  }
+
+  function run() {
+    document.querySelectorAll('.book > section.sheet').forEach(function (s) { frame(s, s.dataset.head); });
+    document.querySelectorAll('.flow').forEach(paginate);
+
+    var sheets = document.querySelectorAll('.book > .sheet');
+    var toc = document.getElementById('toc');
+    var overflow = [];
+    sheets.forEach(function (s, i) {
+      var n = i + 1;
+      s.classList.add(n % 2 ? 'sheet--recto' : 'sheet--verso');
+      var f = s.querySelector('.sheet__foot');
+      if (f) f.textContent = n;
+      if (s.dataset.toc) {
+        var li = document.createElement('li');
+        li.innerHTML = '<span>' + s.dataset.toc + '</span><span class="toc__page">' + n + '</span>';
+        toc.appendChild(li);
+      }
+      var body = s.querySelector('.sheet__body');
+      if (!fits(body)) { s.classList.add('is-overflowing'); overflow.push(n); }
+    });
+    var todo = document.querySelectorAll('mark.todo').length;
+    document.getElementById('status').textContent =
+      sheets.length + ' pagina\'s (' + Math.ceil(sheets.length / 2) + ' vellen)' +
+      (todo ? ' · ' + todo + ' punten nog aanvullen' : '') +
+      (overflow.length ? ' · TE VOL: pagina ' + overflow.join(', ') : '');
+    document.documentElement.classList.add('is-paginated');
+  }
+
+  // Measure only after fonts and images are in, otherwise heights are wrong.
+  window.addEventListener('load', function () { document.fonts.ready.then(run); });
+})();
+</script>
+</body>
+</html>
