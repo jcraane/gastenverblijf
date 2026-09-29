@@ -35,6 +35,7 @@ huisregels:
   - Roken is binnen niet toegestaan, op het terras wel.
   - Open vuur en kaarsen zijn niet toegestaan.
   - Huisdieren zijn helaas niet toegestaan.
+  - Neem de sleutel altijd mee als u naar buiten gaat en laat hem niet binnen in het slot zitten, anders krijgt u de deur niet meer open.
   - Is er iets kapot? Meld het ons direct, dan kunnen we het oplossen.
 
 # "Hoe werkt het" page: one block per topic.
@@ -42,18 +43,15 @@ hoe_werkt_het:
   - icon: flame
     title: Verwarmen en koelen
     text: Verwarmen doet u met de thermostaat, koelen met de airco. Hoe ze werken, staat bij **Apparaten** op de volgende pagina's, net als de ventilatie, de magnetron en de sfeerverlichting.
-  - icon: coffee
-    title: Nespresso & thee
-    text: "[[Hoe de Nespresso werkt, waar cups en thee staan.]]"
   - icon: tv
     title: Televisie
-    text: "[[Welke afstandsbediening, zenders, apps (Netflix e.d.).]]"
+    text: Samsung smart-tv. Netflix staat klaar, kies daar het profiel **Gast**.
   - icon: pot
     title: Keuken
-    text: "Inductiekookplaat met afzuiging, combimagnetron/oven, koelkast, waterkoker en broodrooster. [[Bijzonderheden bij het gebruik.]]"
+    text: Inductiekookplaat met afzuiging, combimagnetron/oven, koelkast, waterkoker en broodrooster.
   - icon: trash
     title: Afval
-    text: "[[Waar de vuilniszak en eventueel glas/papier heen kunnen.]]"
+    text: Zet volle vuilniszakken buiten naast de voordeur.
   - icon: car
     title: Parkeren
     text: U parkeert gratis op de eigen inrit bij het gastenverblijf.
@@ -92,9 +90,9 @@ vertrek:
   items:
     - Vaat schoon en terug in de kast
     - Koelkast leeg
-    - "Vuilniszak buiten gezet [[waar?]]"
-    - Airco en lichten uit
+    - Vuilniszak buiten naast de voordeur gezet
+    - Airco en lichten uit, ventilatie op stand 1
     - Ramen en deuren dicht
-    - "Sleutel ingeleverd [[waar?]]"
+    - Sleutel bij ons afgegeven (stuur even een appje), tenzij we iets anders hebben afgesproken
     - Niets vergeten? Denk aan opladers en de koelkast
   outro: Bedankt voor uw verblijf en graag tot ziens!
