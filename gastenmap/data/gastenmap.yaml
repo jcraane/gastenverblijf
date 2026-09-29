@@ -45,7 +45,7 @@ hoe_werkt_het:
     text: Verwarmen doet u met de thermostaat, koelen met de airco. Hoe ze werken, staat bij **Apparaten** op de volgende pagina's, net als de ventilatie, de magnetron en de sfeerverlichting.
   - icon: tv
     title: Televisie
-    text: Samsung smart-tv. Netflix staat klaar, kies daar het profiel **Gast**.
+    text: Samsung smart-tv. Kijk met uw eigen account bij Netflix, Disney+ of andere diensten; inloggen gaat meestal met een code of QR-code via uw telefoon. **Log bij vertrek weer uit**, anders kijkt de volgende gast op uw account. Zonder account kunt u Samsung TV Plus, YouTube en NPO Start gebruiken.
   - icon: pot
     title: Keuken
     text: Inductiekookplaat met afzuiging, combimagnetron/oven, koelkast, waterkoker en broodrooster.
@@ -94,5 +94,6 @@ vertrek:
     - Airco en lichten uit, ventilatie op stand 1
     - Ramen en deuren dicht
     - Sleutel bij ons afgegeven (stuur even een appje), tenzij we iets anders hebben afgesproken
+    - Uitgelogd bij Netflix en andere streamingdiensten op de tv
     - Niets vergeten? Denk aan opladers en de koelkast
   outro: Bedankt voor uw verblijf en graag tot ziens!
