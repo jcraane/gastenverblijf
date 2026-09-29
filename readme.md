@@ -36,6 +36,7 @@ Content:
 
 - `gastenmap/data/gastenmap.yaml` – welcome, house rules, how things work, emergency numbers, departure checklist. `[[...]]` marks text still to fill in and prints highlighted.
 - `gastenmap/data/routes.yaml` – walking and cycling routes; maps in `gastenmap/assets/routes/`.
+- `gastenmap/data/apparaten.yaml` – appliances and remote controls: a cut-out photo with numbered buttons and a short explanation. Photos are cut out with `swift gastenmap/tools/cutout.swift` (macOS, removes the background; example in the file).
 - `data/activiteiten.yaml` – activities, shared with the Activiteiten page on the site.
 
 A static copy can be built with `hugo -e gastenmap`; it goes to `gastenmap/public/` (gitignored). Don't publish it anywhere: it contains the wifi password.

@@ -1,0 +1,55 @@
+{{/*
+  gm-apparaat — one appliance from data/apparaten.yaml: the cut-out photo with numbered
+  leader lines to its buttons, next to the explanation per number.
+  The photo and the lines share one box measured in mm, so the SVG can use mm as units.
+  Room for the numbers is only added on the sides (left/right, top/bottom) that use it.
+*/}}
+{{- $a := . -}}
+{{- $img := resources.Get $a.img -}}
+{{- if not $img }}{{ errorf "gm-apparaat: image %q not found" $a.img }}{{ end -}}
+{{- $w := 0.0 }}{{ $h := 0.0 -}}
+{{- with $a.width }}{{ $w = float . }}{{ $h = div (mul $w $img.Height) (float $img.Width) -}}
+{{- else }}{{ $h = float ($a.height | default 115) }}{{ $w = div (mul $h $img.Width) (float $img.Height) }}{{ end -}}
+{{- $sides := slice }}{{ range $a.knoppen }}{{ $sides = $sides | append (.side | default "left") }}{{ end -}}
+{{- $gx := cond (or (in $sides "left") (in $sides "right")) 11.0 0.0 -}}
+{{- $gy := cond (or (in $sides "top") (in $sides "bottom")) 8.0 0.0 -}}
+{{- $W := add $w (mul 2 $gx) }}{{ $H := add $h (mul 2 $gy) -}}
+{{- $m := 2.8 }}{{/* marker radius plus a hair */}}
+<article class="device">
+  <figure class="device__fig" style="{{ printf "width:%.2fmm;height:%.2fmm" $W $H | safeCSS }}">
+    {{ partial "gm-img.html" (dict "src" $a.img "alt" $a.alt "class" "device__img" "style" (printf "left:%.2fmm;top:%.2fmm;width:%.2fmm;height:%.2fmm" $gx $gy $w $h)) }}
+    <svg class="device__callouts" viewBox="0 0 {{ printf "%.2f %.2f" $W $H }}" aria-hidden="true">
+      {{- range $i, $k := $a.knoppen }}
+      {{- $side := $k.side | default "left" -}}
+      {{- $tx := add $gx (mul $w (div (float $k.x) 100)) -}}
+      {{- $ty := add $gy (mul $h (div (float $k.y) 100)) -}}
+      {{- $lx := 0.0 }}{{ $ly := 0.0 -}}
+      {{- if in (slice "left" "right") $side -}}
+        {{- $lx = cond (eq $side "right") (sub $W $m) $m -}}
+        {{- $ly = add $gy (mul $h (div (float ($k.ly | default $k.y)) 100)) -}}
+      {{- else -}}
+        {{- $lx = add $gx (mul $w (div (float ($k.lx | default $k.x)) 100)) -}}
+        {{- $ly = cond (eq $side "bottom") (sub $H $m) $m -}}
+      {{- end }}
+      <g>
+        <line class="halo" x1="{{ $lx }}" y1="{{ $ly }}" x2="{{ $tx }}" y2="{{ $ty }}"/>
+        <line x1="{{ $lx }}" y1="{{ $ly }}" x2="{{ $tx }}" y2="{{ $ty }}"/>
+        <circle class="dot" cx="{{ $tx }}" cy="{{ $ty }}" r="1"/>
+        <circle class="marker" cx="{{ $lx }}" cy="{{ $ly }}" r="2.7"/>
+        <text x="{{ $lx }}" y="{{ $ly }}">{{ add $i 1 }}</text>
+      </g>
+      {{- end }}
+    </svg>
+  </figure>
+  <div class="device__text">
+    <h3>{{ partial "icon.html" $a.icon }} {{ $a.title }}</h3>
+    {{ with $a.intro }}<p class="device__intro">{{ partial "gm-md.html" . }}</p>{{ end }}
+    <ol class="device__steps">
+      {{ range $i, $k := $a.knoppen }}
+      <li><span class="device__num">{{ add $i 1 }}</span><div><strong>{{ $k.label }}</strong> {{ partial "gm-md.html" $k.text }}</div></li>
+      {{ end }}
+    </ol>
+    {{ with $a.tip }}<div class="device__tip">{{ partial "gm-md.html" . }}</div>{{ end }}
+    {{ with $a.todo }}<p>{{ partial "gm-md.html" . }}</p>{{ end }}
+  </div>
+</article>

@@ -39,12 +39,9 @@ huisregels:
 
 # "Hoe werkt het" page: one block per topic.
 hoe_werkt_het:
-  - icon: wind
-    title: Airco
-    text: "[[Bediening van de airco: afstandsbediening, verwarmen/koelen, uitzetten bij vertrek.]]"
   - icon: flame
-    title: Verwarming
-    text: "[[Hoe de verwarming werkt, ook in de badkamer.]]"
+    title: Verwarmen en koelen
+    text: Verwarmen doet u met de thermostaat, koelen met de airco. Hoe ze werken, staat bij **Apparaten** op de volgende pagina's, net als de ventilatie, de magnetron en de sfeerverlichting.
   - icon: coffee
     title: Nespresso & thee
     text: "[[Hoe de Nespresso werkt, waar cups en thee staan.]]"

@@ -4,7 +4,8 @@
 */}}
 {{- with resources.Get (strings.TrimPrefix "/" .src) -}}
   {{- $img := . -}}
-  {{- if gt $img.Width 2200 }}{{ $img = $img.Process "resize 2200x jpg q85" }}{{ else }}{{ $img = $img.Process "jpg q90" }}{{ end -}}
+  {{- if eq $img.MediaType.SubType "png" }}{{/* cut-out photos: keep the transparency */}}
+  {{- else if gt $img.Width 2200 }}{{ $img = $img.Process "resize 2200x jpg q85" }}{{ else }}{{ $img = $img.Process "jpg q90" }}{{ end -}}
   <img src="{{ $img.RelPermalink }}" width="{{ $img.Width }}" height="{{ $img.Height }}" alt="{{ $.alt }}"
     {{- with $.class }} class="{{ . }}"{{ end }}
     {{- with $.style }} style="{{ . | safeCSS }}"{{ end }}>

@@ -1,0 +1,145 @@
+# Appliances and remote controls: a cut-out photo with numbered buttons plus a short explanation.
+# Photos: the originals in assets/images/, cut out with tools/cutout.swift into assets/images/apparaten/
+# (the microwave panel was cropped out of magentron_oven.jpg first, the airco uses airco_small.jpg).
+#
+# Size on paper: height (mm, default 115) or width (mm, handier for wide photos).
+# Per button: x/y is the point on the photo (percent from the left/top edge of the image), side is
+# where the number goes (left/right/top/bottom of the photo, default left). ly (for left/right) or
+# lx (for top/bottom) moves the number along that side (percent, default y or x) so the lines
+# don't cross other buttons. Point x/y at the edge of a button, not its centre, so the dot
+# doesn't hide the symbol on it.
+
+- key: airco
+  icon: wind
+  title: Airco
+  img: images/apparaten/airco.png
+  alt: Afstandsbediening van de airco
+  height: 115   # mm, height of the photo on paper
+  intro: Met de airco koelt u het verblijf; voor verwarmen gebruikt u de thermostaat. De afstandsbediening hangt in een houder achter het rechtergordijn naast de schuifpui. Richt hem op het apparaat aan de muur.
+  knoppen:
+    - label: Aan / uit
+      text: De gele knop. Eén keer drukken zet de airco aan, nog een keer drukken weer uit.
+      x: 42.1
+      y: 46.8
+      side: left
+    - label: Warmer
+      text: Zet de temperatuur een stapje hoger.
+      x: 55.3
+      y: 34.8
+      side: right
+      ly: 42
+    - label: Kouder
+      text: Zet de temperatuur een stapje lager.
+      x: 42.1
+      y: 39.3
+      side: left
+    - label: Scherm
+      text: Toont de temperatuur die u heeft ingesteld, niet de temperatuur in de kamer.
+      x: 60
+      y: 12.8
+      side: right
+  tip: "Wij adviseren **22\u00a0°C**: comfortabel en zuinig. Houd ramen en deuren dicht als de airco aan staat en zet hem uit als u weggaat."
+
+- key: thermostaat
+  icon: flame
+  title: Verwarming
+  img: images/apparaten/thermostaat.png
+  alt: Thermostaat van de verwarming
+  width: 62
+  intro: Met de thermostaat aan de muur verwarmt u het verblijf.
+  knoppen:
+    - label: Draaiknop
+      text: Rechtsom is warmer, linksom kouder.
+      x: 20.2
+      y: 65.5
+    - label: Scherm
+      text: Toont de temperatuur in de kamer. Tijdens het draaien ziet u de temperatuur die u instelt.
+      x: 27.3
+      y: 28.4
+  tip: "Zet de thermostaat niet hoger dan **18\u00a0°C**: het verblijf is goed geïsoleerd en snel warm."
+
+- key: ventilatie
+  icon: wind
+  title: Ventilatie
+  img: images/apparaten/ventilatie.png
+  alt: Knop van de mechanische ventilatie, tussen een stopcontact en een lichtschakelaar
+  width: 80
+  intro: "De knop zit rechts op de muur als u de kamer binnenkomt. Met de draaiknop in het midden regelt u de ventilatie. Het aantal puntjes naast de knop is de stand: draai de knop naar de stand die u wilt."
+  knoppen:
+    - label: Stand 1 (één puntje)
+      text: Laag, de normale stand.
+      x: 50.6
+      y: 14.3
+      side: top
+    - label: Stand 2 (twee puntjes)
+      text: Midden.
+      x: 40.6
+      y: 25
+      side: top
+      lx: 34
+    - label: Stand 3 (drie puntjes)
+      text: Hoog, tijdens en na het douchen of koken.
+      x: 60.9
+      y: 25
+      side: top
+      lx: 67
+  tip: Zet de ventilatie na het douchen of koken een halfuurtje op stand 3 en daarna terug op stand 1.
+
+- key: sfeerverlichting
+  icon: light
+  title: Sfeerverlichting bij het bed
+  img: images/apparaten/sfeerverlichting.png
+  alt: Afstandsbediening van de sfeerverlichting
+  height: 95
+  intro: De ledverlichting bij het bed bedient u met deze kleine afstandsbediening.
+  knoppen:
+    - label: Aan / uit
+      text: De rode knop (ON) zet het licht aan, de zwarte knop ernaast (OFF) weer uit.
+      x: 90.1
+      y: 8.6
+      side: right
+    - label: Lichter / donkerder
+      text: De twee knoppen linksboven.
+      x: 9.4
+      y: 8.6
+    - label: Kleur
+      text: Kies een kleur met een van de gekleurde knoppen.
+      x: 9.4
+      y: 20.6
+    - label: Wit licht
+      text: WW is warm wit, NW neutraal wit en CW koel wit.
+      x: 9.4
+      y: 56.25
+    - label: Timer
+      text: Met 1H, 2H of 3H gaat het licht na 1, 2 of 3 uur vanzelf uit. Handig om bij in slaap te vallen.
+      x: 90.1
+      y: 32.5
+      side: right
+
+- key: magnetron
+  icon: pot
+  title: Magnetron en oven
+  img: images/apparaten/magnetron.png
+  alt: Bedieningspaneel van de combimagnetron
+  height: 115
+  intro: "Dit is een combimagnetron: magnetron én oven. Voor snel opwarmen heeft u alleen Jet Start en de draaiknop nodig."
+  knoppen:
+    - label: Jet Start
+      text: Start op vol vermogen voor 30 seconden. Elke keer dat u nog eens drukt, komen er 30 seconden bij.
+      x: 17.5
+      y: 93.6
+    - label: Draaiknop
+      text: Tijdens het opwarmen maakt u de tijd hiermee langer (rechtsom) of korter (linksom).
+      x: 27.6
+      y: 53.75
+    - label: Stop
+      text: Stopt de magnetron. Openen van de deur zet hem ook stil.
+      x: 88
+      y: 93.6
+      side: right
+    - label: Quick Heat (oven)
+      text: "Druk een paar keer tot de gewenste temperatuur in beeld staat en druk op Jet Start. De oven warmt leeg voor; bij de piep is hij op temperatuur. Zet het eten erin, stel met de draaiknop de tijd in en druk weer op Jet Start."
+      x: 90.6
+      y: 40.9
+      side: right
+  tip: Geen metaal of aluminiumfolie in de magnetron. Gebruik bij de oven altijd een ovenwant, alles wordt heet.

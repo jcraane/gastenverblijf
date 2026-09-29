@@ -44,7 +44,9 @@ hugo
 - The repo is public: wifi details and phone number live in the gitignored `gastenmap/data/private.yaml` (template `gastenmap/private.example.yaml`). The book is also kept out of `docs/`: only `config/gastenmap/hugo.toml` mounts it
 - Content: `gastenmap/data/gastenmap.yaml` (welcome, house rules, how-to, emergency numbers, departure checklist) and `gastenmap/data/routes.yaml` (walking/cycling routes, maps in `gastenmap/assets/routes/`). `[[...]]` marks text still to fill in and prints highlighted
 - Activities come from `data/activiteiten.yaml`, shared with the Activiteiten page (shortcode `activiteiten`)
-- Activity and route pages are paginated by the script in `gastenmap/layouts/gastenmap.html`; the toolbar shows the page count and flags pages that overflow
+- Appliances (`gastenmap/data/apparaten.yaml`, partial `gm-apparaat.html`): cut-out PNG in `gastenmap/assets/images/apparaten/` with numbered leader lines; button positions are percentages of the photo. Cut out with `gastenmap/tools/cutout.swift` (macOS Vision). Heating is the thermostat (max 18 °C), cooling the airco
+- The dev server doesn't re-render after editing `gastenmap/data/*.yaml`; restart it
+- Activity, appliance and route pages are paginated by the script in `gastenmap/layouts/gastenmap.html`; the toolbar shows the page count and flags pages that overflow
 
 ## Custom shortcodes
 - `activiteiten.html` - All activity sections from `data/activiteiten.yaml`

@@ -211,6 +211,37 @@ mark.todo {
 .howto__item h3 { font-size: 11pt; margin-bottom: 2mm; display: flex; gap: 2mm; align-items: center; }
 .howto__item .icon { width: 1.3em; height: 1.3em; }
 
+/* ---------- Apparaten ---------- */
+.device { display: flex; gap: 6mm; align-items: flex-start; padding-bottom: 6mm; border-bottom: .25mm solid var(--line); }
+.device + .device { padding-top: 7mm; }
+.device:last-child { border-bottom: 0; }
+.device__fig { position: relative; flex: none; margin: 0; }
+.device__img { position: absolute; top: 0; display: block; filter: drop-shadow(0 .6mm 1.2mm rgba(0,0,0,.22)); }
+.device__callouts { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+.device__callouts line { stroke: var(--accent-dark); stroke-width: .3; }
+.device__callouts line.halo { stroke: #fff; stroke-width: 1; stroke-linecap: round; }
+.device__callouts .dot { fill: var(--accent-dark); stroke: #fff; stroke-width: .4; }
+.device__callouts .marker { fill: var(--accent-dark); }
+.device__callouts text {
+    fill: #fff; font-family: 'Montserrat', Arial, sans-serif; font-size: 3.2px; font-weight: 700;
+    text-anchor: middle; dominant-baseline: central;
+}
+
+.device__text { flex: 1; min-width: 0; padding-top: 1mm; }
+.device__text h3 { font-size: 14pt; margin-bottom: 2mm; display: flex; gap: 2mm; align-items: center; }
+.device__intro { color: var(--ink-soft); }
+.device__steps { list-style: none; margin: 3mm 0 4mm; padding: 0; }
+.device__steps li { display: flex; gap: 3mm; align-items: flex-start; padding: 1.8mm 0; border-bottom: .25mm dotted var(--line); }
+.device__steps li:last-child { border-bottom: 0; }
+.device__num {
+    flex: none; width: 5.4mm; height: 5.4mm; border-radius: 50%;
+    display: inline-flex; align-items: center; justify-content: center;
+    background: var(--accent-dark); color: #fff; font-size: 8.5pt; font-weight: 700;
+}
+.device__steps strong { color: var(--ink); }
+.device__tip { background: var(--accent-tint); border-radius: 3mm; padding: 3.5mm 4.5mm; margin-bottom: 3mm; }
+.device__tip strong { color: var(--accent-dark); font-size: 11.5pt; }
+
 /* ---------- Noodnummers ---------- */
 .address-box {
     display: flex; flex-direction: column;

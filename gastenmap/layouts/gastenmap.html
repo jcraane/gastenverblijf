@@ -106,6 +106,12 @@
   </div>
 </section>
 
+{{/* ---------- Apparaten (photo with numbered buttons; flows over as many sheets as needed) ---------- */}}
+<div class="flow" data-head="Apparaten" data-toc="Apparaten en afstandsbedieningen">
+  <h2 class="page-title keep-next">Apparaten</h2>
+  {{ range hugo.Data.apparaten }}{{ partial "gm-apparaat.html" . }}{{ end }}
+</div>
+
 {{/* ---------- Hulp & noodnummers ---------- */}}
 <section class="sheet" data-head="Hulp & noodnummers" data-toc="Hulp en noodnummers">
   <h2 class="page-title">Hulp &amp; noodnummers</h2>
