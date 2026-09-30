@@ -41,6 +41,10 @@ Content:
 
 A static copy can be built with `hugo -e gastenmap`; it goes to `gastenmap/public/` (gitignored). Don't publish it anywhere: it contains the wifi password.
 
+## Routines
+
+Scheduled cloud agents (such as the monthly website report) keep their instructions in `routines/`. See `routines/README.md` for what runs when, how the cloud environment and its credentials are set up, and how to add a routine.
+
 ## todo
 
 **Slot**

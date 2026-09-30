@@ -83,3 +83,7 @@ hugo
 - Click events: add `data-goatcounter-click="<name>"` (+ `data-goatcounter-referrer` for the source page). Naming: `cta-<menu|hero|banner>-<target>`, `contactformulier-verzenden`; `email-klik` and `uitgaand-<host>` are added automatically by `assets/js/parallax.js`
 - Bookings themselves happen inside the Bedandbreakfast.nl iframe and can't be tracked here; take booking numbers from the Bedandbreakfast.nl dashboard
 - If analytics changes, keep the privacy statement (`content/privacy.md`) in sync
+
+## Routines
+- Scheduled cloud agents (claude.ai/code/routines) read their instructions from `routines/<name>.md`; `routines/README.md` lists them and the conventions (read-only, API keys as environment API credentials, never a login, never secrets in the public repo)
+- When changing click events, page paths or Lighthouse targets, check whether `routines/maandrapport.md` refers to them
