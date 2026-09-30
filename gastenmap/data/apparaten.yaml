@@ -1,6 +1,7 @@
 # Appliances and remote controls: a cut-out photo with numbered buttons plus a short explanation.
 # Photos: the originals in assets/images/, cut out with tools/cutout.swift into assets/images/apparaten/
-# (the microwave panel was cropped out of magentron_oven.jpg first, the airco uses airco_small.jpg).
+# (the microwave panel was cropped out of magentron_oven.jpg first, the airco uses airco_small.jpg;
+# the white terrace switch blends into the wall, so it was straightened and cropped by hand instead).
 #
 # Size on paper: height (mm, default 115) or width (mm, handier for wide photos).
 # Per button: x/y is the point on the photo (percent from the left/top edge of the image), side is
@@ -115,6 +116,20 @@
       x: 90.1
       y: 32.5
       side: right
+
+- key: terrasverlichting
+  icon: light
+  title: Terrasverlichting
+  img: images/apparaten/terrasverlichting.png
+  alt: Lichtschakelaar met vier toetsen voor de terrasverlichting
+  width: 55
+  intro: De schakelaar zit naast de houder van de afstandsbediening van de airco, achter het rechtergordijn bij de schuifpui.
+  knoppen:
+    - label: Aan / uit
+      text: Alle vier de toetsen doen hetzelfde. Druk op een willekeurige toets om de terrasverlichting aan te zetten en nog een keer om hem weer uit te zetten.
+      x: 25
+      y: 25
+  tip: Zet de terrasverlichting uit als u naar bed gaat of weggaat.
 
 - key: magnetron
   icon: pot

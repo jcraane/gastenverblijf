@@ -42,7 +42,7 @@ huisregels:
 hoe_werkt_het:
   - icon: flame
     title: Verwarmen en koelen
-    text: Verwarmen doet u met de thermostaat, koelen met de airco. Hoe ze werken, staat bij **Apparaten** op de volgende pagina's, net als de ventilatie, de magnetron en de sfeerverlichting.
+    text: Verwarmen doet u met de thermostaat, koelen met de airco. Hoe ze werken, staat bij **Apparaten** op de volgende pagina's, net als de ventilatie, de magnetron en de verlichting.
   - icon: tv
     title: Televisie
     text: Samsung smart-tv. Kijk met uw eigen account bij Netflix, Disney+ of andere diensten; inloggen gaat meestal met een code of QR-code via uw telefoon. **Log bij vertrek weer uit**, anders kijkt de volgende gast op uw account. Zonder account kunt u Samsung TV Plus, YouTube en NPO Start gebruiken.
@@ -57,7 +57,7 @@ hoe_werkt_het:
     text: U parkeert gratis op de eigen inrit bij het gastenverblijf.
   - icon: light
     title: Terras
-    text: "[[Sfeerverlichting op het terras aan- en uitzetten.]]"
+    text: De terrasverlichting zet u aan en uit met de schakelaar naast de houder van de airco-afstandsbediening. Zie **Apparaten**.
 
 noodnummers:
   adres_intro: Bij een noodgeval heeft u dit adres nodig
