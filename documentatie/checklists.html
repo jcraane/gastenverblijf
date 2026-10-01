@@ -1,0 +1,325 @@
+<!doctype html>
+<!--
+  Checklists voor onszelf: gereedmaken voor gasten en schoonmaak.
+  Gewoon openen in Chrome en printen (A4, enkelzijdig); elke checklist past op één pagina.
+  Niet gepubliceerd: documentatie/ valt buiten de Hugo-build.
+-->
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Checklists gastenverblijf</title>
+  <style>
+    @font-face {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400 700;
+      src: url('../static/fonts/montserrat/montserrat-latin-wght.woff2') format('woff2');
+    }
+
+    :root {
+      --ink: #1f1f1f;
+      --ink-body: #333;
+      --ink-soft: #5c5c5c;
+      --accent: #2d6a4f;
+      --accent-dark: #1b4332;
+      --line: #d6d1c8;
+      --paper: #fff;
+      --desk: #e9e6e0;
+    }
+
+    @page { size: A4; margin: 0; }
+
+    * { box-sizing: border-box; }
+
+    html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+    body {
+      margin: 0;
+      background: var(--desk);
+      color: var(--ink-body);
+      font-family: 'Montserrat', Arial, sans-serif;
+      font-size: 9.5pt;
+      line-height: 1.35;
+    }
+
+    h1, h2 { color: var(--ink); margin: 0; line-height: 1.2; }
+
+    .toolbar {
+      position: sticky; top: 0; z-index: 10;
+      display: flex; gap: 1rem; align-items: center; justify-content: space-between;
+      padding: .75rem 1rem;
+      background: var(--accent-dark); color: #fff;
+      font-size: 13px;
+    }
+    .toolbar kbd { font-family: inherit; background: rgba(255,255,255,.15); padding: 0 .3em; border-radius: 3px; }
+    .toolbar button {
+      flex: none; font: inherit; font-weight: 600; cursor: pointer;
+      padding: .5rem 1rem; border: 0; border-radius: 6px; background: #fff; color: var(--accent-dark);
+    }
+
+    .sheets { padding: 10mm 0; }
+
+    .sheet {
+      width: 210mm;
+      height: 297mm;
+      margin: 0 auto 10mm;
+      padding: 12mm 15mm 10mm;
+      background: var(--paper);
+      box-shadow: 0 2px 12px rgba(0,0,0,.15);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+
+    .sheet__head {
+      display: flex; justify-content: space-between; align-items: baseline;
+      padding-bottom: 2mm; margin-bottom: 5mm;
+      border-bottom: .5mm solid var(--accent);
+    }
+    .sheet__head h1 { font-size: 20pt; letter-spacing: -.01em; }
+    .sheet__brand { font-size: 7.5pt; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-soft); }
+
+    .intro { color: var(--ink-soft); margin: 0 0 4mm; }
+
+    .fields {
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 5mm;
+      margin-bottom: 4mm;
+    }
+    .field { font-size: 7.5pt; font-weight: 600; color: var(--ink-soft); text-transform: uppercase; letter-spacing: .05em; }
+    .field::after { content: ''; display: block; height: 7mm; border-bottom: .3mm solid var(--ink); }
+
+    .groups { column-count: 2; column-gap: 9mm; }
+
+    .group { break-inside: avoid; margin-bottom: 4mm; }
+    .group h2 {
+      font-size: 10.5pt; color: var(--accent-dark);
+      padding-bottom: 1mm; margin-bottom: 1mm;
+      border-bottom: .25mm solid var(--line);
+    }
+
+    .checklist { list-style: none; margin: 0; padding: 0; }
+    .checklist li { display: flex; gap: 2.5mm; align-items: flex-start; padding: .8mm 0; }
+    .checklist li::before {
+      content: ''; flex: none;
+      width: 3.8mm; height: 3.8mm; margin-top: .2mm;
+      border: .35mm solid var(--ink); border-radius: .8mm;
+    }
+
+    .notes { margin-top: auto; padding-top: 2mm; }
+    .notes h2 { font-size: 10.5pt; color: var(--accent-dark); margin-bottom: 1mm; }
+    .notes__lines { height: 18mm; background: repeating-linear-gradient(transparent 0 8.4mm, var(--line) 8.4mm 8.7mm); }
+
+    @media print {
+      body { background: none; }
+      .toolbar { display: none; }
+      .sheets { padding: 0; }
+      .sheet { margin: 0; box-shadow: none; break-after: page; }
+      .sheet:last-child { break-after: auto; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="toolbar">
+  <div>
+    <strong>Checklists</strong> · Afdrukken via <kbd>⌘P</kbd>: A4, enkelzijdig, marges <em>Geen</em>,
+    kop- en voetteksten <em>uit</em>. Eén checklist per pagina; print alleen pagina 1 of 2 voor één soort.
+  </div>
+  <button type="button" onclick="window.print()">Afdrukken</button>
+</div>
+
+<main class="sheets">
+
+<section class="sheet">
+  <header class="sheet__head">
+    <h1>Gereedmaken voor gasten</h1>
+    <span class="sheet__brand">Puur Geluk · Berghem</span>
+  </header>
+  <p class="intro">Na de schoonmaak, op de dag van aankomst (inchecken 15:00–17:00).</p>
+  <div class="fields">
+    <span class="field">Gast</span>
+    <span class="field">Aankomst</span>
+    <span class="field">Nachten</span>
+    <span class="field">Gedaan door</span>
+  </div>
+
+  <div class="groups">
+    <div class="group">
+      <h2>Boeking</h2>
+      <ul class="checklist">
+        <li>Boeking nagekeken in Bedandbreakfast.nl: namen, aantal gasten, nachten</li>
+        <li>Aankomsttijd bekend; bij aankomst na 17:00 afspraak gemaakt</li>
+        <li>Bijzondere wensen geregeld (bijv. babybedje)</li>
+      </ul>
+    </div>
+    <div class="group">
+      <h2>Slaapkamer</h2>
+      <ul class="checklist">
+        <li>Bed opgemaakt met schoon beddengoed (160 cm)</li>
+        <li>Extra kussens en plaid klaargelegd</li>
+        <li>Kledingkast leeg, hangers aanwezig</li>
+        <li>Sfeerverlichting werkt, afstandsbediening bij het bed</li>
+      </ul>
+    </div>
+    <div class="group">
+      <h2>Badkamer</h2>
+      <ul class="checklist">
+        <li>Schone handdoeken per gast (groot en klein) en badmat</li>
+        <li>Douchegel en shampoo aangevuld</li>
+        <li>Handzeep aangevuld</li>
+        <li>Toiletpapier: rol in de houder plus reserve</li>
+      </ul>
+    </div>
+    <div class="group">
+      <h2>Keuken</h2>
+      <ul class="checklist">
+        <li>Nespresso-cups en thee aangevuld</li>
+        <li>Suiker en koffiemelk aanwezig</li>
+        <li>Schone theedoek, vaatdoek en keukenhanddoek</li>
+        <li>Afwasmiddel en afwasborstel</li>
+        <li>Koelkast leeg, schoon en aan</li>
+        <li>Reserve vuilniszakken</li>
+      </ul>
+    </div>
+    <div class="group">
+      <h2>Apparaten en klimaat</h2>
+      <ul class="checklist">
+        <li>Tv werkt en is uitgelogd bij streamingdiensten van de vorige gast</li>
+        <li>Batterijen van alle afstandsbedieningen werken</li>
+        <li>Afstandsbediening van de airco in de houder achter het rechtergordijn</li>
+        <li>Thermostaat ingesteld (max. 18 °C); bij warm weer airco op 22 °C voorgekoeld</li>
+        <li>Ventilatie op stand 1</li>
+        <li>Wifi werkt</li>
+      </ul>
+    </div>
+    <div class="group">
+      <h2>Buiten</h2>
+      <ul class="checklist">
+        <li>Inrit vrij om te parkeren</li>
+        <li>Looppad naar de voordeur vrij en schoon</li>
+        <li>Terrasmeubels schoon, kussens buiten (bij droog weer)</li>
+        <li>Terrasverlichting werkt</li>
+      </ul>
+    </div>
+    <div class="group">
+      <h2>Laatste ronde</h2>
+      <ul class="checklist">
+        <li>Gastenmap compleet op tafel</li>
+        <li>Welkomstattentie neergezet</li>
+        <li>Ramen dicht, verblijf gelucht en op temperatuur</li>
+        <li>Bij aankomst in het donker: terras- en buitenlicht aan</li>
+        <li>Sleutel klaar voor overdracht</li>
+        <li>Rondje gelopen met de ogen van de gast</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="notes">
+    <h2>Opmerkingen</h2>
+    <div class="notes__lines"></div>
+  </div>
+</section>
+
+<section class="sheet">
+  <header class="sheet__head">
+    <h1>Schoonmaak</h1>
+    <span class="sheet__brand">Puur Geluk · Berghem</span>
+  </header>
+  <p class="intro">Na vertrek van de gasten (uitchecken vóór 10:30). Werk van boven naar beneden en eindig met de vloeren.</p>
+  <div class="fields">
+    <span class="field">Vertrokken gast</span>
+    <span class="field">Datum</span>
+    <span class="field">Tijd klaar</span>
+    <span class="field">Gedaan door</span>
+  </div>
+
+  <div class="groups">
+    <div class="group">
+      <h2>Bij binnenkomst</h2>
+      <ul class="checklist">
+        <li>Ramen open om te luchten, ventilatie op stand 3</li>
+        <li>Sleutel terug</li>
+        <li>Rondje gelopen: schade, kapotte of ontbrekende spullen genoteerd</li>
+        <li>Achtergelaten spullen apart gelegd</li>
+        <li>Tv: uitgelogd bij Netflix en andere streamingdiensten</li>
+      </ul>
+    </div>
+    <div class="group">
+      <h2>Slaapkamer</h2>
+      <ul class="checklist">
+        <li>Bed afgehaald: beddengoed, kussenslopen en molton naar de was</li>
+        <li>Matras en kussens gecontroleerd op vlekken</li>
+        <li>Kledingkast en lades leeg en afgenomen</li>
+        <li>Nachtkastjes, lampen en tv afgestoft</li>
+        <li>Onder het bed gezogen</li>
+      </ul>
+    </div>
+    <div class="group">
+      <h2>Badkamer</h2>
+      <ul class="checklist">
+        <li>Handdoeken en badmat naar de was</li>
+        <li>Douche, glaswand en kraan ontkalkt en drooggetrokken</li>
+        <li>Afvoer van de douche schoon, haren verwijderd</li>
+        <li>Toilet binnen en buiten schoongemaakt, ook de voet</li>
+        <li>Wastafel, kraan en douchemeubel schoon</li>
+        <li>Spiegel streepvrij</li>
+        <li>Prullenbak geleegd</li>
+      </ul>
+    </div>
+    <div class="group">
+      <h2>Keuken</h2>
+      <ul class="checklist">
+        <li>Vaat gecontroleerd: alles schoon en terug in de kast</li>
+        <li>Koelkast leeg, binnen en buiten afgenomen</li>
+        <li>Inductiekookplaat en afzuigkap ontvet</li>
+        <li>Combimagnetron/oven binnen en buiten schoon, draaiplateau gewassen</li>
+        <li>Nespresso: cupbak en lekbak geleegd en gespoeld</li>
+        <li>Waterkoker ontkalkt (indien nodig), kruimels uit de broodrooster</li>
+        <li>Aanrecht, spoelbak en kraan schoon</li>
+        <li>Kastdeurtjes en handgrepen afgenomen</li>
+        <li>Theedoek, vaatdoek en keukenhanddoek naar de was</li>
+      </ul>
+    </div>
+    <div class="group">
+      <h2>Woonkamer</h2>
+      <ul class="checklist">
+        <li>Eettafel en stoelen afgenomen</li>
+        <li>Bank gezogen, kussens opgeschud</li>
+        <li>Tv-meubel en tv afgestoft</li>
+        <li>Afstandsbedieningen gedesinfecteerd</li>
+        <li>Lichtschakelaars, deurklinken en thermostaat afgenomen</li>
+      </ul>
+    </div>
+    <div class="group">
+      <h2>Buiten</h2>
+      <ul class="checklist">
+        <li>Terrasmeubels afgenomen, kussens naar binnen bij regen</li>
+        <li>Asbak geleegd en schoon</li>
+        <li>Terras en looppad geveegd</li>
+        <li>Vuilniszakken naast de voordeur opgeruimd</li>
+      </ul>
+    </div>
+    <div class="group">
+      <h2>Afronding</h2>
+      <ul class="checklist">
+        <li>Alle prullenbakken geleegd, nieuwe zak erin</li>
+        <li>Ramen en schuifpui streepvrij (binnenkant)</li>
+        <li>Vloeren gezogen en gedweild</li>
+        <li>Ramen dicht, ventilatie terug op stand 1</li>
+        <li>Airco, lichten en tv uit</li>
+        <li>Was gestart, tekorten genoteerd voor de volgende boeking</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="notes">
+    <h2>Opmerkingen, schade en tekorten</h2>
+    <div class="notes__lines"></div>
+  </div>
+</section>
+
+</main>
+</body>
+</html>
