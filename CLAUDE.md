@@ -20,6 +20,7 @@ The repo root is the Hugo site root.
 - `hugo.toml` - Hugo configuration
 - `docs/` - Build output (publishDir), published as the live site
 - `documentatie/` - Internal project notes (not published)
+- `berichten/berichten.yaml` - Standard WhatsApp messages to guests per stay moment (`wanneer.dag`/`tijd`, `{placeholders}`, `tekst.u` for one guest and `tekst.jullie` for a couple/group); not built by Hugo, meant to be automated later. Public repo: no codes, wifi or phone numbers, only placeholders
 
 ## Development commands
 ```bash

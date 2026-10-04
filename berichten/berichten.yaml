@@ -1,0 +1,68 @@
+# Standaardberichten aan gasten (WhatsApp), per moment van het verblijf.
+# Wordt niet door Hugo gebouwd; bedoeld om te kopiëren en later te automatiseren.
+#
+# wanneer.dag:  voor-aankomst | aankomst | verblijf | vertrek | na-vertrek
+# wanneer.tijd: verzendtijd (HH:MM)
+# tekst.u:      één gast; tekst.jullie: stel of groep. Kies op basis van de boeking.
+# Placeholders tussen {} worden bij verzenden ingevuld: {naam} (bij een stel beide namen), {afzender}.
+# De repo is openbaar: geen deurcodes, wifi of telefoonnummers in de tekst, alleen placeholders.
+
+- id: aankomst
+  wanneer:
+    dag: aankomst
+    tijd: "10:00"
+  kanaal: whatsapp
+  tekst:
+    u: |
+      Goedemorgen {naam}! ☀️
+
+      Vandaag is het zover: we kijken ernaar uit u te verwelkomen bij Puur Geluk. Inchecken kan tussen 15:00 en 17:00. Komt u later, laat het ons dan even weten.
+
+      U kunt gratis parkeren op de parkeerplek bij het gastenverblijf.
+
+      Goede reis en tot straks! 🌿
+      {afzender}
+    jullie: |
+      Goedemorgen {naam}! ☀️
+
+      Vandaag is het zover: we kijken ernaar uit jullie te verwelkomen bij Puur Geluk. Inchecken kan tussen 15:00 en 17:00. Komen jullie later, laat het ons dan even weten.
+
+      Jullie kunnen gratis parkeren op de parkeerplek bij het gastenverblijf.
+
+      Goede reis en tot straks! 🌿
+      {afzender}
+
+- id: vertrek
+  wanneer:
+    dag: vertrek
+    tijd: "08:30"
+  kanaal: whatsapp
+  tekst:
+    u: |
+      Goedemorgen {naam}! ☀️
+
+      We hopen dat u een fijn verblijf heeft gehad bij Puur Geluk. Vandaag kunt u uitchecken tot 10:30.
+
+      Wilt u voor vertrek nog even:
+      • de vuilniszak buiten naast de voordeur zetten
+      • de airco en lichten uitzetten
+      • uitloggen bij Netflix en andere streamingdiensten op de tv
+
+      Stuur ons een appje als u klaar bent, dan halen we de sleutel op.
+
+      Bedankt voor uw komst en hopelijk tot ziens! 🌿
+      {afzender}
+    jullie: |
+      Goedemorgen {naam}! ☀️
+
+      We hopen dat jullie een fijn verblijf hebben gehad bij Puur Geluk. Vandaag kunnen jullie uitchecken tot 10:30.
+
+      Willen jullie voor vertrek nog even:
+      • de vuilniszak buiten naast de voordeur zetten
+      • de airco en lichten uitzetten
+      • uitloggen bij Netflix en andere streamingdiensten op de tv
+
+      Stuur ons een appje als jullie klaar zijn, dan halen we de sleutel op.
+
+      Bedankt voor jullie komst en hopelijk tot ziens! 🌿
+      {afzender}
