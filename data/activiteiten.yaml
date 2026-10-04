@@ -29,6 +29,11 @@
           link: https://www.herperduin.nl/faciliteiten/uitkijktoren
           link_text: Meer info →
           distance: 10 min fietsen
+        - title: Bloemenpark Appeltern
+          description: Voorheen De Tuinen van Appeltern. Meer dan 200 voorbeeldtuinen vol ideeën, geuren en kleuren; een ontspannen dagje uit voor jong en oud. Geopend van maart tot begin november.
+          link: https://appeltern.nl/nl/
+          link_text: appeltern.nl →
+          distance: 31 min auto
 
 - id: eten
   theme: eten
@@ -54,6 +59,11 @@
           link: https://bomenpark.nl/
           link_text: Luxe lunch & diner →
           distance: 9 min auto
+        - title: Brasserie De Gouden Leeuw
+          description: Brasserie aan de Markt in het historische centrum van Grave, voor lunch, diner of high tea.
+          link: https://brasseriedegoudenleeuw.nl/
+          link_text: Lunch & diner →
+          distance: 22 min auto
 
 - id: actief
   theme: actief
@@ -176,6 +186,11 @@
           featured: true
           img: /images/omgeving/jan_cunen.jpg
           img_position: center 20%
+        - title: Leerlooierij Museum Ravenstein
+          description: Looierij uit 1882 in het vestingstadje Ravenstein, met oude machines, gereedschap en historische filmbeelden van het leerlooien. Het museum is van april tot en met september in het weekend open; de stadstuin dagelijks.
+          link: https://leerlooierijravenstein.nl/
+          link_text: leerlooierijravenstein.nl →
+          distance: 15 min auto
         - title: Bierbrouwerij Oijen
           description: Ambachtelijke brouwerij met proeverij en restaurant.
           link: https://speciaalbierbrouwerij.nl/
