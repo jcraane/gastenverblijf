@@ -107,6 +107,10 @@
       border: .35mm solid var(--ink); border-radius: .8mm;
     }
 
+    /* Longer list: tighter rows so it still fits on one A4. */
+    .sheet--compact .checklist li { padding: .35mm 0; }
+    .sheet--compact .group { margin-bottom: 2.5mm; }
+
     .notes { margin-top: auto; padding-top: 2mm; }
     .notes h2 { font-size: 10.5pt; color: var(--accent-dark); margin-bottom: 1mm; }
     .notes__lines { height: 18mm; background: repeating-linear-gradient(transparent 0 8.4mm, var(--line) 8.4mm 8.7mm); }
@@ -181,7 +185,8 @@
         <li>Schone theedoek, vaatdoek en keukenhanddoek</li>
         <li>Afwasmiddel en afwasborstel</li>
         <li>Koelkast leeg, schoon en aan</li>
-        <li>Reserve vuilniszakken</li>
+        <li>Nieuwe vuilniszak in de prullenbak</li>
+        <li>Reserve vuilniszakken (grijs en plastic) in de la leggen</li>
       </ul>
     </div>
     <div class="group">
@@ -224,7 +229,7 @@
   </div>
 </section>
 
-<section class="sheet">
+<section class="sheet sheet--compact">
   <header class="sheet__head">
     <h1>Schoonmaak</h1>
     <span class="sheet__brand">Puur Geluk · Berghem</span>
@@ -311,6 +316,8 @@
         <li>Vloeren gezogen en gedweild</li>
         <li>Ramen dicht, ventilatie terug op stand 1</li>
         <li>Airco, lichten en tv uit</li>
+        <li>Thermostaat terug op 12 °C</li>
+        <li>Nachtlampjes op de lader</li>
         <li>Was gestart, tekorten genoteerd voor de volgende boeking</li>
       </ul>
     </div>
