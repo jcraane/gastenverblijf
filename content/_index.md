@@ -19,7 +19,7 @@ hero_buttons:
 
 ## Welkom bij B&B Puur Geluk
 
-Aan de rand van natuurgebied De Maashorst in Berghem (Noord-Brabant) vindt u ons onlangs volledig gerenoveerde gastenverblijf. Een plek waar comfort en natuur samenkomen, ideaal om even helemaal tot rust te komen.
+Aan de rand van natuurgebied De Maashorst in Berghem vind je ons onlangs volledig (2025) gerenoveerde gastenverblijf welke we sinds eind september 2026 verhuren als B&B light. Een plek waar comfort en natuur samenkomen, ideaal om even helemaal tot rust te komen.
 
 {{< split img="/images/verblijf/bed_zithoek.jpg" alt="Slaapkamer met zicht op de zithoek" >}}
 ## Ons gastenverblijf
