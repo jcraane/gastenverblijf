@@ -79,7 +79,7 @@ De accommodatie is met veel liefde warm ingericht, waardoor u zich direct thuis 
 
 {{< image-grid >}}
   {{< grid-image src="/images/verblijf/keuken_1.jpg" alt="Keuken" >}}
-  {{< grid-image src="/images/verblijf/sfeerfotos/sfeerfoto_koffie.jpg" alt="Nespresso en thee" >}}
+  {{< grid-image src="/images/verblijf/sfeerfotos/sfeerfoto_koffie_thee.jpg" alt="Nespresso en thee" >}}
 {{< /image-grid >}}
 
 </div>
@@ -164,7 +164,7 @@ De accommodatie is met veel liefde warm ingericht, waardoor u zich direct thuis 
   {{< grid-image src="/images/verblijf/slaapkamer_3.jpg" alt="Slaapkamer" >}}
   {{< grid-image src="/images/verblijf/slaapkamer_vanuit_hoek.jpg" alt="Slaapkamer vanuit hoek" >}}
   {{< grid-image src="/images/verblijf/looppad_naar_voordeur.jpg" alt="Looppad naar voordeur" >}}
-  {{< grid-image src="/images/verblijf/sfeerfotos/sfeerfoto_koffie.jpg" alt="Nespresso en thee" >}}
+  {{< grid-image src="/images/verblijf/sfeerfotos/sfeerfoto_koffie_thee.jpg" alt="Nespresso en thee" >}}
   {{< grid-image src="/images/verblijf/sfeerfotos/sfeerfoto_neon_licht.jpg" alt="Sfeerverlichting" >}}
   {{< grid-image src="/images/verblijf/hal.jpg" alt="Hal" >}}
 {{< /image-grid >}}
