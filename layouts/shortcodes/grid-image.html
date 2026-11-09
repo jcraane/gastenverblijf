@@ -1,5 +1,7 @@
 {{ $src := .Get "src" }}
 {{ $alt := .Get "alt" | default "" }}
+{{/* position: optional object-position for the 4:3 crop, e.g. "center 10%" to keep the top of a tall photo */ -}}
+{{ $style := "" }}{{ with .Get "position" }}{{ $style = printf "object-position: %s" . }}{{ end -}}
 {{/* Rendered width per column count of the parent image-grid (default 2 columns) */}}
 {{ $sizes := dict
   "1" "(min-width: 64em) 64rem, 100vw"
@@ -9,7 +11,7 @@
 {{ $cols := .Parent.Get "cols" | default "2" | string }}
 <figure class="image-grid__item">
     <a href="{{ partial "func/ImgURL.html" (dict "src" $src) }}" class="glightbox" data-gallery="{{ .Parent.Get "gallery" | default "gallery" }}" data-glightbox="title: {{ $alt }}">
-        {{ partial "img.html" (dict "src" $src "alt" $alt "sizes" (index $sizes $cols | default "(min-width: 64em) 32rem, 50vw") "widths" (slice 480 800 1200 1600)) }}
+        {{ partial "img.html" (dict "src" $src "alt" $alt "sizes" (index $sizes $cols | default "(min-width: 64em) 32rem, 50vw") "widths" (slice 480 800 1200 1600) "style" $style) }}
     </a>
     {{ with .Get "caption" }}<figcaption>{{ . }}</figcaption>{{ end }}
 </figure>

@@ -1,6 +1,6 @@
 ---
 title: "Omgeving"
-description: "Ontdek de Maashorst in Berghem, Noord-Brabant: wandelen, fietsen en de grote grazers. Het grootste aaneengesloten natuurgebied van Nederland, direct om de hoek."
+description: "Ontdek de omgeving van Berghem: wandelen en fietsen in de Maashorst tussen de grote grazers, en het historische vestingstadje Ravenstein aan de Maas."
 featured_image: '/images/omgeving/heide.jpg'
 hero_position: 'center 65%'
 hero_subtitle: 'De Maashorst ligt direct om de hoek'
@@ -47,4 +47,30 @@ De kracht van deze omgeving zit in de eenvoud: de zuivere boslucht, het gefluit 
 
 ---
 
-{{< cta-banner title="Plan uw bezoek" text="Bent u klaar om de natuur van de Maashorst zelf te ervaren?" button_text="Reserveer nu" button_link="/reserveren/" button2_text="Neem contact op" button2_link="/contact/" >}}
+{{< split img="/images/omgeving/ravenstein/straatje.jpg" alt="Straatje met kinderkopjes in Ravenstein" reverse="true" >}}
+## Vestingstadje Ravenstein
+
+Op een kwartiertje rijden ligt Ravenstein, een klein vestingstadje aan de Maas. Vanaf 1360 stond hier een kasteel dat tol hief op de schepen op de rivier. Het kasteel is verdwenen, maar de bolwerken en grachten van de vesting zijn nog goed te herkennen. In de smalle straatjes met kinderkopjes stapt u zo een paar eeuwen terug in de tijd.
+
+* **Kasteelsepoort:** poort uit de 14e eeuw en een van de oudste gebouwen van het stadje.
+* **Molen De Nijverheid:** stellingmolen uit 1857 op een oud bastion, met ernaast een bakkerij en een proeflokaal.
+* **Leerlooierij Museum:** looierij uit 1882 waar de oude machines nog staan.
+* **Vestingwallen:** wandel langs de grachten en oude bolwerken, en over de Maasdijk.
+{{< /split >}}
+
+{{< image-grid cols="4" gallery="ravenstein" >}}
+  {{< grid-image src="/images/omgeving/ravenstein/kasteelsepoort.jpg" alt="De Kasteelsepoort" >}}
+  {{< grid-image src="/images/omgeving/ravenstein/molen_de_nijverheid.jpg" alt="Molen De Nijverheid" position="center 0%" >}}
+  {{< grid-image src="/images/omgeving/ravenstein/luciakerk.jpg" alt="De Sint-Luciakerk" >}}
+  {{< grid-image src="/images/omgeving/ravenstein/vestinggracht.jpg" alt="Gracht langs de oude vesting" >}}
+  {{< grid-image src="/images/omgeving/ravenstein/bierbrouwerij_de_gerstaar.jpg" alt="Voormalige bierbrouwerij De Gerstaar" >}}
+  {{< grid-image src="/images/omgeving/ravenstein/kapel.jpg" alt="Kapel in Ravenstein" >}}
+  {{< grid-image src="/images/omgeving/ravenstein/poort_tuin.jpg" alt="Poort met herfstbladeren" >}}
+  {{< grid-image src="/images/omgeving/ravenstein/water_vesting.jpg" alt="Water en groen rond de vesting" >}}
+{{< /image-grid >}}
+
+Openingstijden van de molen en het museum vindt u bij onze [activiteiten](/activiteiten/#cultuur).
+
+---
+
+{{< cta-banner title="Plan uw bezoek" text="Bent u klaar om de Maashorst en Ravenstein zelf te ontdekken?" button_text="Reserveer nu" button_link="/reserveren/" button2_text="Neem contact op" button2_link="/contact/" >}}
